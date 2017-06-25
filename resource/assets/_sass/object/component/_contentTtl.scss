@@ -1,0 +1,53 @@
+.c-contentTtl {
+
+	@include font-size(16);
+	font-weight: bold;
+	letter-spacing: 3;
+	
+	@include respond(pc) {
+		display: inline-block;
+	}
+	
+	&--primary {
+		@extend .c-contentTtl;
+		color: #000;
+		border: 2px solid #000;
+		border-left: none;
+		border-right: none;
+		text-align: center;
+		padding: 24px 0px;
+
+		@include respond(pc){
+			
+			width: 320px;
+		}
+
+		@include respond(tb){
+			
+			width: 320px;
+		}
+
+
+		@include respond(xs) {
+			padding: 0px 0px;
+			width: 60%;
+			font-weight: bold;
+			border-left: 1px solid $color-gray-a1;
+			border-right: 1px solid $color-gray-a1;
+			border-top: none;
+			border-bottom: none;
+		}
+	}
+
+	&--secondary {
+		@extend .c-contentTtl;
+		text-align: center;
+		padding: 24px 0px;
+		width: 320px;
+		color: #fff;
+		border: 2px solid #fff;
+		border-left: none;
+		border-right: none;
+	}
+
+}

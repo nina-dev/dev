@@ -1,0 +1,93 @@
+.c-humberger {
+    background: $color-main;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    height: 60px;
+    width: 60px;
+    
+    span {
+      background: #fff;
+      display: block;
+      height: 3px;
+      left: 50%;
+      margin-left: -20px;
+      position: absolute;
+      top: 50%;
+      width: 40px;
+  
+    }
+}
+
+.c-humberger--fixed {
+    background: $color-main;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    height: 36px;
+    width: 40px;
+    
+    span {
+      background: #fff;
+      display: block;
+      height: 3px;
+      left: 50%;
+      margin-left: -12px;
+      position: absolute;
+      top: 50%;
+      width: 24px;
+  
+    }
+}
+
+.type-1--fixed {
+  span {
+    transition: all 0.3s;
+    transform: rotate(0deg);
+  }
+  .top {
+    transform: translateY(-8px);
+  }
+  .bottom {
+    transform: translateY(8px);
+  }
+}
+
+.type-1--fixed.is-animate {
+  .middle {
+    background: rgba(255, 255, 255, 0);
+  }
+  .top {
+    transform: rotate(-45deg) translateY(0px);
+  }
+  .bottom {
+    transform: rotate(45deg) translateY(0px);
+  }
+}
+
+
+.type-1 {
+  span {
+    transition: all 0.3s;
+    transform: rotate(0deg);
+  }
+  .top {
+    transform: translateY(-12px);
+  }
+  .bottom {
+    transform: translateY(12px);
+  }
+}
+
+.type-1.is-animate {
+  .middle {
+    background: rgba(255, 255, 255, 0);
+  }
+  .top {
+    transform: rotate(-45deg) translateY(0px);
+  }
+  .bottom {
+    transform: rotate(45deg) translateY(0px);
+  }
+}
+

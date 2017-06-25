@@ -1,0 +1,111 @@
+.l-footer {
+
+	width: 100%;
+	
+	
+	@include respond(pc) {
+		padding: 0 3.125% 40px;
+		display: table;
+		margin-top: 160px;
+	}
+
+	@include respond(tb) {
+		//padding: 0 3.125% 32px;
+		position: relative;
+		margin-top: 40px;
+		
+	}
+
+	@include respond(xs) {
+		//padding: 0 3.125% 32px;
+		position: relative;
+		
+	}	
+}
+
+
+.l-footer--lower {
+	@extend .l-footer;
+	
+	@include respond(pc) {
+		margin-top: 60px;
+	}
+
+	@include respond(tb) {
+		margin-top: 0px;
+	}
+	
+}
+
+.l-footer__item {
+
+	@include respond(pc) {
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	@include respond(tb) {
+		position: absolute;
+		padding-bottom: 32px;
+	}
+
+	@include respond(xs) {
+		position: absolute;
+		padding-bottom: 32px;
+	}
+
+	&--left {
+		@extend .l-footer__item;
+		
+		@include respond(pc) {
+			text-align: left;
+		}
+		@include respond(tb) {
+			top: 110px;
+			left: 0px;
+			text-align: center;
+			width: 100%;
+		}
+
+		@include respond(xs) {
+			top: 100px;
+			left: 0px;
+			text-align: center;
+			width: 100%;
+		}
+	}
+
+	&--right {
+		@extend .l-footer__item;
+		
+		@include respond(pc) {
+			text-align: right;
+		}
+
+		@include respond(tb) {
+			top: 0px;
+			height: 80px;
+			width: 100%;
+		}
+
+		@include respond(xs) {
+			top: 0px;
+			height: 80px;
+			width: 100%;
+			border-bottom: 1px solid $color-gray-f2;
+		}
+
+		a {
+
+			@include respond(tb) {
+				display: block;
+			}
+			
+		}
+		
+	}
+}
+
+
+
+

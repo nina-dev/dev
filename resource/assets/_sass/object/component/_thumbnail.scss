@@ -1,0 +1,150 @@
+.c-thumbnail {
+
+	&--midium {
+		border: 1px solid $color-gray-c;
+		border-top: none;
+		
+		&__img {
+			overflow: hidden;
+			//max-height: 140px;
+			text-align: center;
+			background: $color-gray-f5;
+		}
+
+		&__ttl {
+			font-weight: bold;
+			@include font-size(16);
+			color: $color-gray-3;
+			padding: 16px 16px 24px 16px;
+			line-height: 1.8;
+			
+			@include respond(pc) {
+				padding: 16px 16px 24px 16px;
+			}
+
+			@include respond(xs) {
+				padding: 16px 6.125% 16px 6.125%;
+			}
+		}
+	}
+
+	&--large {
+
+		@include respond(pc) {
+			padding-bottom: 32px;
+		}
+
+		@include respond(tb) {
+			padding: 13px 2.125%;
+		}
+
+		@include respond(xs) {
+			border: 1px solid $color-gray-f5;
+			//box-shadow: 0 3px 1px 0 rgba(162,162,162,0.50);
+			padding-bottom: 16px;
+			//box-shadow: 0 2px 1px 0 rgba(0,0,0,0.50);
+		}
+		
+		
+		&__item {
+
+			margin-top: 8px;
+
+			&--img {
+				overflow: hidden;
+				text-align: center;
+				
+				@include respond(xs) {
+					padding: 24px 6.125% 0;
+				}
+				
+
+				&--mask {
+					@extend .c-thumbnail--large__item--img;
+					@include clipWidth(100%, 213px);
+				}
+			}
+
+			&--ttl {
+				@extend .c-thumbnail--large__item;
+				font-weight: bold;
+				color: $color-gray-3;
+				line-height: 1.8;
+				
+				@include respond(pc) {
+					@include font-size(18);
+					margin-top: 32px;
+				}
+
+				@include respond(tb) {
+					@include font-size(14);
+					margin-top: 16px;
+					//padding: 0 3.125%;
+					text-align: center;
+				}
+				
+				@include respond(xs) {
+					@include font-size(16);
+					margin-top: 8px;
+					margin: 0 6.125% 0 6.125%;
+					text-align: left;
+				}
+			}
+
+			&--text {
+				@extend .c-thumbnail--large__item;
+				color: $color-gray-6;
+				
+				@include respond(pc) {
+					padding: 0 3.125%;
+				}
+
+				@include respond(tb) {
+					@include font-size(11);
+					text-align: center;
+					color: $color-gray-a1;
+				}
+
+				@include respond(xs) {
+					@include font-size(13);
+					line-height: 1.4;
+					margin: 0 6.125% 0 6.125%;
+					margin-top: 4spx;
+					text-align: left;
+					color: $color-gray-a1;
+				}
+
+			}
+
+			&--btn {
+				width: 240px;
+				margin-top: 32px;
+				@include center;
+				font-weight: bold;
+				
+				@include respond(xs) {
+					width: 100%;
+					margin-top: 16px;
+					padding: 16px 3.125% 0px 0;
+					border-top: 1px solid $color-gray-f2;
+					@include font-size(12);
+					text-align: right!important;
+					
+				}
+
+				@include respond(tb) {
+					width: 100%;
+					@include font-size(12);
+					margin-top: 16px;
+					background: $color-gray-f5;
+					padding: 8px 0;
+				}
+
+				
+
+			}
+			
+		}	
+	}
+	
+}

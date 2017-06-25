@@ -1,0 +1,66 @@
+.c-contentTtl {
+
+	@include font-size(14);
+	font-weight: bold;
+	letter-spacing: 4;
+	
+	@include respond(pc) {
+		display: inline-block;
+		//background: #000;
+	}
+	
+	&--primary {
+		@extend .c-contentTtl;
+		text-align: center;
+		//padding: 24px 40px;
+
+		@include respond(pc){
+			color: #000;
+			@include font-size(16);
+			border-bottom: 4px solid $color-gray-3;
+			color: $color-gray-3;
+			padding-bottom: 16px;
+		}
+		@include respond(tb){
+			width: 320px;
+		}
+		@include respond(xs) {
+			padding: 0px 0px;
+			width: 60%;
+			font-weight: bold;
+			border-left: 1px solid $color-gray-a1;
+			border-right: 1px solid $color-gray-a1;
+			border-top: none;
+			border-bottom: none;
+		}
+	}
+
+	&--secondary {
+		
+		@extend .c-contentTtl;
+		text-align: center;
+
+		@include respond(pc){
+			color: $color-cache;
+			@include font-size(16);
+			border-bottom: 4px solid $color-main;
+			padding-bottom: 10px;
+		}
+		
+		@include respond(tb) {
+			width: 320px;
+		}
+		
+		@include respond(xs) {
+			color: $color-cache;
+			padding: 0px 0px;
+			width: 70%;
+			font-weight: bold;
+			border-left: 1px solid $color-main;
+			border-right: 1px solid $color-main;
+			border-top: none;
+			border-bottom: none;
+		}
+	}
+
+}

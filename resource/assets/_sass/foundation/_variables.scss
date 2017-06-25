@@ -1,0 +1,120 @@
+// color
+//--------------------------
+$color-main: #6349E2;
+$color-sub: #00B2C7;
+
+$color-accent--blue: #5874D1;
+$color-accent--purple: #9966CC;
+$color-accent--green: #31cbac;
+$color-accent--orange: #EF9E19;
+$color-accent--red: #ff5577;
+
+
+$color-accent--s-blue: #E1E8FF;
+$color-accent--s-purple: #C9D3F1;
+$color-accent--s-green: #9EFAA0;
+$color-accent--s-orange: #FACB9E;
+$color-accent--s-red: #F9BEBE;
+
+
+$color-gray-3: #333;
+$color-gray-6: #666;
+$color-gray-a1: #A1A1A1;
+$color-gray-c: #CCC;
+$color-gray-f5: #F5F8FA;
+$color-gray-f2: #F2F2F2;
+
+
+
+
+// style guide: color
+//--------------------------
+.styleguideContent > ul.styleguideColor {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4px;
+
+    > li[color] {
+        width: 140px;
+        margin: 0 8px;
+        padding: 4px;
+        border: 1px solid $color-gray-c;
+        text-align: center;
+
+        &:before {
+            content: "";
+            display: block;
+            padding-top: 100%;
+        }
+
+        > strong,
+        > em {
+            display: block;
+        }
+    }
+
+    > li[color="main"]:before {
+        background-color: $color-main;
+    }
+
+    > li[color="accent--blue"]:before {
+        background-color: $color-accent--blue;
+    }
+
+    > li[color="accent--purple"]:before {
+        background-color: $color-accent--purple;
+    }
+    > li[color="accent--green"]:before {
+        background-color: $color-accent--green;
+    }
+    > li[color="accent--orange"]:before {
+        background-color: $color-accent--orange;
+    }
+    > li[color="accent--red"]:before {
+        background-color: $color-accent--red
+    }
+    
+
+    > li[color="gray-3"]:before {
+        background-color: $color-gray-3;
+    }
+
+    > li[color="gray-6"]:before {
+        background-color: $color-gray-6;
+    }
+
+    > li[color="gray-a1"]:before {
+        background-color: $color-gray-a1;
+    }
+
+    > li[color="gray-c"]:before {
+        background-color: $color-gray-c;
+    }
+
+    > li[color="gray-f5"]:before {
+        background-color: $color-gray-f5;
+    }
+
+    > li[color="gray-f2"]:before {
+        background-color: $color-gray-f2;
+    }
+
+    > li[color="white"]:before {
+        background-color: #fff;
+    }
+
+    > li[color="black"]:before {
+        background-color: #000;
+    }
+}
+
+/*doc
+---
+title: variables
+name: variables
+category: foundation
+---
+
+color定義はindexのcolor項目参照
+[index](index.html)
+*/

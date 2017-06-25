@@ -1,0 +1,243 @@
+.l-header {
+	width: 100%;
+	border-top: 6px solid $color-main;
+}
+
+
+.l-header__ttl {
+
+	background: #fff;
+	max-width: 100%;
+	@include center;
+	@include font-size(14);
+	border-bottom: 1px solid $color-gray-f2;
+	
+	
+	@include respond(pc) {
+		padding: 24px 0;
+	}
+	
+	@include respond(tb) {
+		display: none;
+	}
+
+	@include respond(xs) {
+		display: none;
+	}
+
+}
+
+.l-header__ttl__inner {
+
+	@include widtnPercent( 640, 600 );
+	@include center;
+	
+	h1 {
+
+		@include font-size(16);
+		
+		@include respond(tb) {
+			@include font-size(12);
+		}
+	}
+}
+
+.l-header__info {
+
+	background: #fff;
+	position: relative;
+	@include widtnPercent( 640, 640 );
+	display: table;
+	margin-top: 24px;
+
+	@include respond(pc) {
+		width: 100%;
+		
+	}
+
+	@include respond(xs) {
+		margin-top: 16px;
+	}
+
+	&--primary {
+		@extend .l-header__info;
+		margin-top: 0px;
+		position: fixed;
+		@include widtnPercent( 640, 640);
+		top: 0px;
+		z-index: 10000;
+		background: #fff;
+		@include css3(transition-duration, .5s);
+		padding: 16px 3.125%;		
+		box-shadow: 0 4px 6px 0 rgba(239,239,239,0.50);
+
+		
+		@include respond(pc) {
+			@include css3(transform, translatey(-120px));
+		}
+
+		@include respond(tb) {
+			@include css3(transform, translatey(-120px));
+			height: 60px;
+		}
+
+		@include respond(xs) {
+			@include css3(transform, translatey(-120px));
+			padding: 4px 3.125% 4px 0%;
+			top: 0px;
+			left: 0%;
+			width: 100%;
+			padding: 16px 0;
+		}
+
+		&.is-show {
+			@extend .l-header__info--primary;
+			@include css3(transform, translatey(0px));
+
+		}
+		
+	}
+}
+
+
+.l-header__info__item {
+
+	display: table-cell;
+	vertical-align: middle;
+		
+	@include respond(pc) {
+	}
+			
+	&--right {
+		@extend .l-header__info__item;
+		//right: 3.125%;
+		position: relative;
+		right: 3.125%;
+		
+		&--fixed {
+			@extend .l-header__info__item--right;
+			right: 0%;
+			
+			@include respond(xs) {
+				top: 9px;
+			}
+			
+			&.c-humberger {
+				background: $color-main;
+				display: block;
+				position: absolute;
+				cursor: pointer;
+				height: 36px;
+				width: 40px;
+				right: 3.125%;
+
+
+				span {
+					background: #fff;
+					display: block;
+					height: 3px;
+					left: 50%;
+					margin-left: -12px;
+					position: absolute;
+					top: 50%;
+					width: 24px;
+				}
+			}
+
+			&.type-1 {
+				span {
+					transition: all 0.3s;
+					transform: rotate(0deg);
+				}
+
+				.top {
+					transform: translateY(-8px);
+				}
+				.bottom {
+					transform: translateY(8px);
+				}
+			}
+
+			&.type-1.is-animate {
+				.middle {
+					background: rgba(255, 255, 255, 0);
+				}
+				.top {
+					transform: rotate(-45deg) translateY(0px);
+				}
+				.bottom {
+					transform: rotate(45deg) translateY(0px);
+				}
+			}
+		}
+		
+				
+		@include respond(pc) {
+			//top: 26px;
+		}
+
+		@include respond(tb) {
+		}
+	}
+
+
+	&--left {	
+
+		@extend .l-header__info__item;
+		padding-left: 3.125%;
+		
+		&--fixed {
+
+			@extend .l-header__info__item--left;
+			padding-left: 0%;
+			
+			img {
+				@include respond(xs) {
+					width: 58px!important;
+				}
+
+			}
+		}
+
+		@include respond(xs) {
+			padding-left: 5.125%;
+		}
+
+		img {
+			@include respond(pc) {
+				width: 80px;
+			}
+
+			@include respond(tb) {
+				width: 78px;
+			}
+
+			@include respond(xs) {
+				width: 58px;
+			}
+		}
+	}
+}
+
+
+.l-header.is-animate {
+    @include animation(header-anime .5s ease-out 0s forwards);
+    //イージングは、ease、linear、ease-in、ease-out、ease-in-out
+}
+
+@include keyframes(header-anime){
+
+    0% {
+    	//opacity: 0;//
+        @include css3(transform,translateY(-103px));
+        @include css3(transform-origin,left top);
+        
+        transform-origin: left top;
+    }
+    100% {
+    	//opacity: 1;//
+        @include css3(transform,translateY(0px));
+        @include css3(transform-origin,left top);
+    }
+
+}

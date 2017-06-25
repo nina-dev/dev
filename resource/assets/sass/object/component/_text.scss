@@ -1,0 +1,63 @@
+.c-text {
+	@include font-size(14);
+	
+	&--small {
+		@include font-size(12);
+	}
+
+	&--large {
+		@include font-size(18);
+	}
+}
+
+.c-text--bold {
+	@include font-size(14);
+	font-weight: bold;
+	
+	&--small {
+		@extend .c-text--bold;
+		@include font-size(12);
+	}
+
+	&--midium {
+		@extend .c-text--bold;
+		@include font-size(16);
+	}
+
+	&--large {
+		@extend .c-text--bold;
+		@include font-size(18);
+	}
+}
+
+/*doc
+---
+title: c-text
+name: c-text
+category: object-component
+---
+
+## テキスト
+
+```block
+
+<p class="c-text">テキスト</p>
+
+```
+
+## テキスト(スモール)
+
+```block
+
+<p class="c-text--small">テキスト</p>
+
+```
+
+## テキスト(ラージ)
+
+```block
+
+<p class="c-text--large">テキスト</p>
+
+```
+*/

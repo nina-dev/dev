@@ -1,0 +1,83 @@
+.c-ttl {
+
+	@include font-size(16);
+	font-weight: bold;
+	letter-spacing: 3;
+	display: inline-block;
+
+	&--primary {
+		@extend .c-ttl;
+		text-align: center;
+		padding: 42px 0px;
+		width: 320px;
+		color: #000;
+		border: 2px solid #000;
+		border-left: none;
+		border-right: none;
+		
+		&--white {
+			@extend .c-ttl--primary;
+			border: 3px solid #fff;
+			border-left: none;
+			border-right: none;
+			color: #fff;
+		}
+		
+	}
+
+
+	&--quinary {
+		@extend .c-ttl;
+		position: relative;
+		
+		&::before,::after {
+			 content: "";
+			 position: absolute;
+			 width: 88px;
+			 left: 0;
+			 right: 0;
+			 bottom: -15px;
+			 border-bottom: 4px solid $color-gray-3;
+		}
+
+		&--blue {
+			@extend .c-ttl--quinary;
+			
+			&::before,::after {
+				border-bottom: 4px solid $color-accent--blue;
+			}
+		}	
+
+		&--purple {
+			@extend .c-ttl--quinary;
+			
+			&::before,::after {
+				border-bottom: 4px solid $color-accent--purple;
+			}
+		}	
+
+		&--green {
+			@extend .c-ttl--quinary;
+			
+			&::before,::after {
+				border-bottom: 4px solid $color-accent--green;
+			}
+		}	
+
+		&--orange {
+			@extend .c-ttl--quinary;
+			
+			&::before,::after {
+				border-bottom: 4px solid $color-accent--orange;
+			}
+		}	
+
+		&--red {
+			@extend .c-ttl--quinary;
+			
+			&::before,::after {
+				border-bottom: 4px solid $color-accent--red;
+			}
+		}	
+	}
+}

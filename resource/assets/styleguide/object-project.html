@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <title>Style Guide - pc: object-project</title>
+    <link rel="stylesheet" href="../../../css/style.css">
+    <link rel="stylesheet" href="./doc_assets/styleguide.css">
+    <script type="text/javascript" src="/js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="./doc_assets/styleguide.js"></script>
+  </head>
+  <body>
+    <div class="styleguideContainer">
+      <header class="styleguideHeader">
+        <h1>Style Guide : object-project</h1>
+        <nav class="styleguideGlobalNav">
+          <ul>
+            <li><a href="index.html">TOP</a></li>
+          
+            
+            <li><a href="object-animation.html">object-animation</a></li>
+            
+          
+            
+            <li><a href="object-component.html">object-component</a></li>
+            
+          
+            
+            <li><a href="object-layout.html">object-layout</a></li>
+            
+          
+            
+            <li><a href="foundation.html">foundation</a></li>
+            
+          
+            
+            <li><a href="object-project.html">object-project</a></li>
+            
+          
+            
+          
+          </ul>
+        </nav>
+        <nav class="styleguideLocalNav">
+          <ul>
+          
+            <li><a href="#p-slideshow--primary">p-slideshow--primary</a></li>
+          
+            <li><a href="#p-slideshow--secondary">p-slideshow--secondary</a></li>
+          
+            <li><a href="#p-slideshow--tertiary">p-slideshow--tertiary</a></li>
+          
+          </ul>
+        </nav>
+      </header>
+      <section class="styleguideContent">
+<h1 id="p-slideshow--primary" class="styleguide">p-slideshow--primary</h1>
+
+<h2>スライドショーの基本ベース</h2>
+<div class="sg-codeExpContanier">
+  <div class="sg-codeOutput">
+    <div class="sg-codeOutput__label">Example</div>
+    <div class="sg-codeOutput__blockPlacer">
+      
+<div class="p-slideshow--primary">
+    <ul class="p-slideshow--primary__inner">
+        <li class="p-slideshow--primary__inner__item">
+            <p><a href="http://example.com"><img src="https://hataractive.jp/img/pc/Useful/1461/1.png"></a></p>
+        </li>
+        <li class="p-slideshow--primary__inner__item">
+            <p><a href="http://example.com"><img src="https://hataractive.jp/img/pc/Useful/1461/2.png"></a></p>
+        </li>
+        <li class="p-slideshow--primary__inner__item">
+            <p><a href="http://example.com"><img src="https://hataractive.jp/img/pc/Useful/1461/3.png"></a></p>
+        </li>
+    </ul>
+    <div class="progress-bar"></div>
+</div>
+
+
+    </div>
+  </div>
+  <div class="sg-codeBlock">
+    <div class='highlight'><pre>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-slideshow--primary"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"p-slideshow--primary__inner"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"p-slideshow--primary__inner__item"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"http://example.com"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"https://hataractive.jp/img/pc/Useful/1461/1.png"</span><span class="nt">&gt;&lt;/a&gt;&lt;/p&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"p-slideshow--primary__inner__item"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"http://example.com"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"https://hataractive.jp/img/pc/Useful/1461/2.png"</span><span class="nt">&gt;&lt;/a&gt;&lt;/p&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"p-slideshow--primary__inner__item"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"http://example.com"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"https://hataractive.jp/img/pc/Useful/1461/3.png"</span><span class="nt">&gt;&lt;/a&gt;&lt;/p&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress-bar"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+</pre></div>
+  </div>
+</div>
+
+<h1 id="p-slideshow--secondary" class="styleguide">p-slideshow--secondary</h1>
+
+<h2>スライドショー100%画像</h2>
+<div class="sg-codeExpContanier">
+  <div class="sg-codeOutput">
+    <div class="sg-codeOutput__label">Example</div>
+    <div class="sg-codeOutput__blockPlacer">
+      
+<div class="p-slideshow--secondary">
+    <ul class="p-slideshow--secondary__inner">
+        <li class="p-slideshow--secondary__inner__item">
+            <p><a href="http://example.com"><img src="https://hataractive.jp/img/pc/Useful/1461/1.png"></a></p>
+        </li>
+        <li class="p-slideshow--secondary__inner__item">
+            <p><a href="http://example.com"><img src="https://hataractive.jp/img/pc/Useful/1461/2.png"></a></p>
+        </li>
+        <li class="p-slideshow--secondary__inner__item">
+            <p><a href="http://example.com"><img src="https://hataractive.jp/img/pc/Useful/1461/3.png"></a></p>
+        </li>
+    </ul>
+    <div class="progress-bar"></div>
+</div>
+
+
+    </div>
+  </div>
+  <div class="sg-codeBlock">
+    <div class='highlight'><pre>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-slideshow--secondary"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"p-slideshow--secondary__inner"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"p-slideshow--secondary__inner__item"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"http://example.com"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"https://hataractive.jp/img/pc/Useful/1461/1.png"</span><span class="nt">&gt;&lt;/a&gt;&lt;/p&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"p-slideshow--secondary__inner__item"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"http://example.com"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"https://hataractive.jp/img/pc/Useful/1461/2.png"</span><span class="nt">&gt;&lt;/a&gt;&lt;/p&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"p-slideshow--secondary__inner__item"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"http://example.com"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"https://hataractive.jp/img/pc/Useful/1461/3.png"</span><span class="nt">&gt;&lt;/a&gt;&lt;/p&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress-bar"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+</pre></div>
+  </div>
+</div>
+
+<h1 id="p-slideshow--tertiary" class="styleguide">p-slideshow--tertiary</h1>
+
+<h2>スライドショー100%画像</h2>
+<div class="sg-codeExpContanier">
+  <div class="sg-codeOutput">
+    <div class="sg-codeOutput__label">Example</div>
+    <div class="sg-codeOutput__blockPlacer">
+      
+<div class="p-slideshow--tertiary">
+    <ul class="p-slideshow--tertiary__inner">
+        <li class="p-slideshow--tertiary__inner__item">
+            <p><a href="http://example.com"><img src="https://hataractive.jp/img/pc/Useful/1461/1.png"></a></p>
+        </li>
+        <li class="p-slideshow--tertiary__inner__item">
+            <p><a href="http://example.com"><img src="https://hataractive.jp/img/pc/Useful/1461/2.png"></a></p>
+        </li>
+        <li class="p-slideshow--tertiary__inner__item">
+            <p><a href="http://example.com"><img src="https://hataractive.jp/img/pc/Useful/1461/3.png"></a></p>
+        </li>
+    </ul>
+    <div class="progress-bar"></div>
+</div>
+
+
+    </div>
+  </div>
+  <div class="sg-codeBlock">
+    <div class='highlight'><pre>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-slideshow--tertiary"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"p-slideshow--tertiary__inner"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"p-slideshow--tertiary__inner__item"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"http://example.com"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"https://hataractive.jp/img/pc/Useful/1461/1.png"</span><span class="nt">&gt;&lt;/a&gt;&lt;/p&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"p-slideshow--tertiary__inner__item"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"http://example.com"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"https://hataractive.jp/img/pc/Useful/1461/2.png"</span><span class="nt">&gt;&lt;/a&gt;&lt;/p&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"p-slideshow--tertiary__inner__item"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"http://example.com"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"https://hataractive.jp/img/pc/Useful/1461/3.png"</span><span class="nt">&gt;&lt;/a&gt;&lt;/p&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress-bar"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+</pre></div>
+  </div>
+</div>
+      </section>
+      <footer>
+        <!-- <p>This documentation generated using <a href="http://github.com/trulia/hologram">Hologram</a> -->
+      </footer>
+    </div>
+  </body>
+</html>

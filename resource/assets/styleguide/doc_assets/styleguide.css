@@ -1,0 +1,275 @@
+body {
+    word-wrap: break-word;
+}
+.styleguideContainer {
+    margin-top: 144px;
+}
+.styleguideHeader {
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.16);
+}
+.styleguideHeader h1 {
+    margin: 0;
+    padding: 8px;
+    background-color: #000;
+    font-size: 24px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #888;
+}
+.styleguideGlobalNav ul {
+    background-color: #505050;
+    font-size: 0;
+}
+.styleguideGlobalNav li {
+    display: inline-block;
+    margin-right: 1px;
+}
+.styleguideGlobalNav li:last-child {
+    margin-right: 0;
+}
+.styleguideGlobalNav li a {
+    display: block;
+    padding: 8px;
+    background-color: #333;
+    font-size: 12px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+.styleguideGlobalNav li a:hover {
+    background-color: #999;
+    color: #fff;
+}
+.styleguideLocalNav ul {
+    margin: 0;
+    padding: 0;
+    background-color: #5e666b;
+    font-size: 0;
+}
+.styleguideLocalNav li {
+    display: inline-block;
+    margin-right: 1px;
+}
+.styleguideLocalNav li:last-child {
+    margin-right: 0;
+}
+.styleguideLocalNav li a {
+    display: block;
+    padding: 4px 8px;
+    background-color: #105c90;
+    font-size: 11px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+.styleguideLocalNav li a:hover {
+    background-color: #117bc3;
+    color: #fff;
+}
+.styleguideContent {
+    margin: 16px 16px 200px;
+}
+.styleguideContent > h1 {
+    margin: 100px 0 0;
+    padding: 0 8px;
+    background-color: #cde2f1;
+    font-size: 24px;
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+.styleguideContent > h2,
+.styleguideContent > h3,
+.styleguideContent > h4 {
+    margin: 24px 0 0;
+}
+.styleguideContent > h2 {
+    margin-top: 40px;
+    border-bottom: 1px solid #aaa;
+    font-size: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.styleguideContent > h3 {
+    font-size: 20px;
+    font-size: 2rem;
+    font-weight: normal;
+}
+.styleguideContent > h4 {
+    margin: 24px 0 0 16px;
+    font-weight: bold;
+}
+.styleguideContent > p,
+.styleguideContent > ul,
+.styleguideContent > ul > li > p,
+.styleguideContent > ul > li > ul,
+.styleguideContent > ul > li > ul > li > p {
+    margin: 8px 0 0 16px;
+}
+.styleguideContent > ul > li,
+.styleguideContent > ul > li > ul > li {
+    margin-top: 8px;
+}
+.styleguideContent > ul > li > ul > li {
+    margin-left: 16px;
+    text-indent: -16px;
+}
+.styleguideContent > ul > li > h3,
+.styleguideContent > ul > li > h4,
+.styleguideContent > ul > li > h5,
+.styleguideContent > ul > li > ul > li > h3,
+.styleguideContent > ul > li > ul > li > h4,
+.styleguideContent > ul > li > ul > li > h5 {
+    margin-top: 16px;
+    font-size: 12px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.styleguideContent > strong,
+.styleguideContent > p > strong,
+.styleguideContent > ul > li > strong,
+.styleguideContent > ul > li > p > strong,
+.styleguideContent > ul > li > ul > li > strong,
+.styleguideContent > ul > li > ul > li > p > strong {
+    font-size: 13px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.styleguideContent > em,
+.styleguideContent > p > em,
+.styleguideContent > ul > li > em,
+.styleguideContent > ul > li > p > em,
+.styleguideContent > ul > li > ul > li > em,
+.styleguideContent > ul > li > ul > li > p > em {
+    color: #d01040;
+    font-style: normal;
+}
+.styleguideContent .styleguideIcn {
+    margin-bottom: -14px;
+    font-style: normal;
+    font-size: 14px;
+    font-size: 1.4rem;
+    color: #d01040;
+}
+.styleguideContent .styleguideNote {
+    margin-top: 24px;
+}
+.styleguideContent .styleguideBlock {
+    margin: 8px 0 0;
+}
+.styleguideContent > h4 + p,
+.styleguideContent > h4 + ul {
+    margin: 8px 0 0 32px;
+}
+.styleguideContent .styleguideIcn + .sg-codeExpContanier {
+    margin-left: 16px;
+}
+.codeExample {
+    border: 1px solid #ccc;
+}
+.codeExample .exampleOutput {
+    padding: 8px;
+}
+.codeExample .codeBlock {
+    border-top: 1px solid #ccc;
+    background-color: #eee;
+}
+.codeExample .codeBlock .highlight {
+    padding: 8px;
+}
+
+/* highlight */
+.sg-codeExpContanier {
+    margin-top: 12px;
+}
+.sg-codeOutput .sg-codeOutput__label {
+    color: #999;
+}
+.sg-codeOutput .sg-codeOutput__blockPlacer {
+    position: relative;
+    padding: 8px;
+    border: 1px solid #d9ddda;
+    border-radius: 4px 4px 0 0;
+}
+.sg-codeBlock .highlight {
+    padding: 8px;
+    border: 1px solid #d9ddda;
+    border-radius: 4px;
+    background-color: #eee;
+    font-size: 12px;
+}
+.sg-codeBlock .highlight pre {
+    overflow: auto;
+}
+.sg-codeOutput + .sg-codeBlock .highlight {
+    border-radius: 0 0 4px 4px;
+    border-top: none;
+}
+hll { background-color: #ffffcc }
+.c { color: #999988; font-style: italic } /* Comment */
+.err { color: #a61717; background-color: #e3d2d2 } /* Error */
+.k { color: #000000; font-weight: bold } /* Keyword */
+.o { color: #000000; font-weight: bold } /* Operator */
+.cm { color: #999988; font-style: italic } /* Comment.Multiline */
+.cp { color: #999999; font-weight: bold; font-style: italic } /* Comment.Preproc */
+.c1 { color: #999988; font-style: italic } /* Comment.Single */
+.cs { color: #999999; font-weight: bold; font-style: italic } /* Comment.Special */
+.gd { color: #000000; background-color: #ffdddd } /* Generic.Deleted */
+.ge { color: #000000; font-style: italic } /* Generic.Emph */
+.gr { color: #aa0000 } /* Generic.Error */
+.gh { color: #999999 } /* Generic.Heading */
+.gi { color: #000000; background-color: #ddffdd } /* Generic.Inserted */
+.go { color: #888888 } /* Generic.Output */
+.gp { color: #555555 } /* Generic.Prompt */
+.gs { font-weight: bold } /* Generic.Strong */
+.gu { color: #aaaaaa } /* Generic.Subheading */
+.gt { color: #aa0000 } /* Generic.Traceback */
+.kc { color: #000000; font-weight: bold } /* Keyword.Constant */
+.kd { color: #000000; font-weight: bold } /* Keyword.Declaration */
+.kn { color: #000000; font-weight: bold } /* Keyword.Namespace */
+.kp { color: #000000; font-weight: bold } /* Keyword.Pseudo */
+.kr { color: #000000; font-weight: bold } /* Keyword.Reserved */
+.kt { color: #445588; font-weight: bold } /* Keyword.Type */
+.m { color: #009999 } /* Literal.Number */
+.s { color: #d01040 } /* Literal.String */
+.na { color: #008080 } /* Name.Attribute */
+.nb { color: #0086B3 } /* Name.Builtin */
+.nc { color: #445588; font-weight: bold } /* Name.Class */
+.no { color: #008080 } /* Name.Constant */
+.nd { color: #3c5d5d; font-weight: bold } /* Name.Decorator */
+.ni { color: #800080 } /* Name.Entity */
+.ne { color: #990000; font-weight: bold } /* Name.Exception */
+.nf { color: #990000; font-weight: bold } /* Name.Function */
+.nl { color: #990000; font-weight: bold } /* Name.Label */
+.nn { color: #555555 } /* Name.Namespace */
+.nt { color: #000080 } /* Name.Tag */
+.nv { color: #008080 } /* Name.Variable */
+.ow { color: #000000; font-weight: bold } /* Operator.Word */
+.w { color: #bbbbbb } /* Text.Whitespace */
+.mf { color: #009999 } /* Literal.Number.Float */
+.mh { color: #009999 } /* Literal.Number.Hex */
+.mi { color: #009999 } /* Literal.Number.Integer */
+.mo { color: #009999 } /* Literal.Number.Oct */
+.sb { color: #d01040 } /* Literal.String.Backtick */
+.sc { color: #d01040 } /* Literal.String.Char */
+.sd { color: #d01040 } /* Literal.String.Doc */
+.s2 { color: #d01040 } /* Literal.String.Double */
+.se { color: #d01040 } /* Literal.String.Escape */
+.sh { color: #d01040 } /* Literal.String.Heredoc */
+.si { color: #d01040 } /* Literal.String.Interpol */
+.sx { color: #d01040 } /* Literal.String.Other */
+.sr { color: #009926 } /* Literal.String.Regex */
+.s1 { color: #d01040 } /* Literal.String.Single */
+.ss { color: #990073 } /* Literal.String.Symbol */
+.bp { color: #999999 } /* Name.Builtin.Pseudo */
+.vc { color: #008080 } /* Name.Variable.Class */
+.vg { color: #008080 } /* Name.Variable.Global */
+.vi { color: #008080 } /* Name.Variable.Instance */
+.il { color: #009999 } /* Literal.Number.Integer.Long */

@@ -1,0 +1,101 @@
+* {
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+}
+
+html,body {
+    height: 100%;
+}
+
+html {
+    font-size: 62.5%;
+    // (SPのみ!!!)
+    // -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body {
+    background-color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, 'Quicksand', sans-serif;
+    font-size: 1.4em;
+    color: #000;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    -webkit-text-size-adjust: 100%;
+    position: relative;
+    overflow-x: hidden;
+    left: 0;
+    height: 100%;
+}
+
+a {
+//a:visited,
+//a:active {
+    color: $color-gray-3;
+    text-decoration: none;
+
+    &:hover {
+        color: $color-gray-3;
+    }
+}
+
+
+img {
+    max-width : 100% ;
+    height : auto ;
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+p,
+ul,
+ol,
+dl {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+button,
+input,
+select,
+textarea {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+         -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+article,aside,canvas,details,figcaption,figure,
+header,footer,main,menu,nav,section,summary {
+    display: block;
+}
+
+iframe { 
+    width : 100%; 
+}

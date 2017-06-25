@@ -1,0 +1,52 @@
+.c-table {
+
+	
+	@include font-size(16);
+	display: table;
+	
+
+	dt,dd {
+		
+		text-align: left;
+		line-height: 1.8;
+		display: table-cell;
+		padding: 0 1em 1.3em 1em;
+
+
+		@include respond(xs) {
+			padding: 0 0 .8em 0;
+			@include font-size(14);
+		}
+	}
+	
+	dt {
+		font-weight: bold;
+		color: $color-main;
+		width: 108px;
+		padding-left: 0px;
+		
+		@include respond(tb){
+			width: 80px;
+		}
+
+		@include respond(xs){
+			//width: 100%;
+			width: 80px;
+		}
+	}
+
+	dd {
+
+		@include respond(tb) {
+			margin-left: 0px;
+			@include font-size(16);
+
+		}
+
+		@include respond(xs) {
+			margin-left: 0px;
+
+		}
+		
+	}
+}

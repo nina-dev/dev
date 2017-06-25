@@ -1,0 +1,21 @@
+.u-margin {
+
+	&--top {
+
+		&--30 {
+			margin-top: 32px;
+		}
+
+		&--20 {
+			margin-top: 16px;
+		}
+		
+	}
+}
+
+#particles-js {
+	@include respond(xs) {
+		display: none;
+	}
+}
+

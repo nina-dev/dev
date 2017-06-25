@@ -1,0 +1,92 @@
+.p-related {
+
+	@include respond(pc) {
+		position: relative;
+		padding: 60px 0 0;
+		@include widtnPercent( 640, 600 );
+		min-width: 980px;
+		@include center;
+		text-align: center;
+	}
+
+	@include respond(tb) {
+		padding: 24px 0px 40px 0px;
+		border-top: 6px solid $color-gray-c;
+		margin-top: 40px;
+	}
+
+	@include respond(xs) {
+		padding: 16px 0px 40px 0px;
+		border-top: 16px solid $color-gray-f5;
+		margin-top: 40px;
+	}
+
+	&__cache {
+		font-weight: bold;
+		
+		@include respond(pc) {
+			@include font-size(24);
+			line-height: 1;
+		}
+
+		@include respond(tb) {
+			@include font-size(20);
+			padding: 0 3.125% 0 3.125%;
+		}
+
+		@include respond(xs) {
+			@include font-size(16);
+			padding: 0 3.125% 0 3.125%;
+		}
+
+		
+	}
+
+	&__text {
+		margin-top: 16px;
+		
+		@include respond(tb) {
+			margin-top: 4px;
+			@include font-size(16);
+			padding: 0 3.125% 0 3.125%;
+		}
+
+		@include respond(xs) {
+			margin-top: 4px;
+			padding: 0 3.125% 0 3.125%;
+		}
+
+	}
+
+
+	&__ttl {
+		@include center;
+	}
+
+	&__item {
+
+		@include respond(pc){
+			text-align: left;
+			margin-top: 48px;
+			background: $color-gray-6;
+			padding-top: 32px;
+			
+			> li {
+				opacity: .4;
+			}
+		}
+
+		@include respond(tb){
+			padding: 16px 0;
+			margin-top: 16px;
+			background: $color-gray-f5;
+		}
+
+		@include respond(xs){
+			padding: 8px 3.125%;
+			margin-top: 16px;
+			background: $color-gray-f5;
+		}
+	}
+
+}

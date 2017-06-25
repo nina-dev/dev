@@ -1,0 +1,268 @@
+// ベンダープレフィックスを自動で付与する
+$set-prefix: '' , -moz- , -webkit-,　-ms-, -o-;
+
+
+// プロパティにプレフィックスを付与
+@mixin css3($name, $value) {
+ 
+    @each $prefix in $set-prefix {
+ 
+        #{$prefix}#{$name}: $value;
+
+    }
+ 
+}
+
+
+// IE hack
+//--------------------------
+@mixin ie($ver: '') {
+    // IE8
+    @if $ver == 'ie8' {
+        @media \0screen {
+            @content;
+        }
+    }
+
+    // IE9-10
+    @else if $ver == 'ie9-10' {
+        @media all and (min-width:0\0) {
+            @content;
+        }
+    }
+
+    // IE10
+    @else if $ver == 'ie10' {
+        @media all and (-ms-high-contrast:none\0) {
+            @content;
+        }
+    }
+}
+
+// コンテンツをセンターに配置
+//--------------------------
+@mixin itemCenter() {
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+// コンテンツをセンターに配置
+//--------------------------
+@mixin center() {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+// clearfix
+//--------------------------
+@mixin clearfix() {
+    *zoom: 1;
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+
+// font size
+//--------------------------
+@mixin font-size($size: 14, $base: 10) {
+    font-size: ($size / $base) + rem;
+}
+
+
+// widthParcent
+//--------------------------
+@mixin widtnPercent( $parentPxWidth, $pxWidth ){
+    width: ceil((( $pxWidth / $parentPxWidth ) * 10000% )) / 100;
+}
+
+
+
+
+// レスポンシブ
+//--------------------------
+@mixin respond($media) {
+
+  // $sm-device-width (768px)以下の場合
+  @if $media == xs {
+    @media print, screen and (min-width: 0px) and (max-width:640px) { @content; }
+  }
+
+  //$xl-device-width (1000px)以上の場合
+  @else if $media == pc {
+    @media print, screen and (min-width: 1160px) { @content; }
+  }
+
+  //$xl-device-width (1000px)以上の場合
+  @else if $media == tb {
+    @media print, screen and (min-width: 641px) and (max-width:1159px) { @content; }
+  }
+
+  @else {
+    @media print, screen and ('#{$media}') { @content; }
+  }
+}
+
+
+/*doc
+---
+title: mixin-respond
+name: mixin-respond
+category: foundation
+---
+
+```sass
+@include respond(pc){
+    example
+}
+```
+```sass
+@include respond(md){
+    example
+}
+```
+```sass
+@include respond(xs){
+    example
+}
+```
+*/
+
+// CSSアニメーション
+//-------------------------
+
+@mixin keyframes($animation-name:animation) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+
+@mixin animation($animation-name) {
+  -webkit-animation: $animation-name;
+  -moz-animation: $animation-name;
+  animation: $animation-name;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+
+
+@mixin gradient($start-color, $end-color, $orientation)
+ {
+ background: $start-color;
+ @if $orientation == vertical
+ {
+ // vertical
+ background: -moz-linear-gradient(top,  $start-color 0%, $end-color 100%);
+ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$start-color), color-stop(100%,$end-color));
+ background: -webkit-linear-gradient(top,  $start-color 0%,$end-color 100%);
+ background: -o-linear-gradient(top,  $start-color 0%,$end-color 100%);
+ background: -ms-linear-gradient(top,  $start-color 0%,$end-color 100%);
+ background: linear-gradient(to bottom,  $start-color 0%,$end-color 100%);
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$start-color', endColorstr='$end-color',GradientType=0 );
+ }
+ @else if $orientation == horizontal
+ {
+ // horizontal
+ background: -moz-linear-gradient(left,  $start-color 0%, $end-color 100%);
+ background: -webkit-gradient(linear, left top, right top, color-stop(0%,$start-color), color-stop(100%,$end-color));
+ background: -webkit-linear-gradient(left,  $start-color 0%,$end-color 100%);
+ background: -o-linear-gradient(left,  $start-color 0%,$end-color 100%);
+ background: -ms-linear-gradient(left,  $start-color 0%,$end-color 100%);
+ background: linear-gradient(to right,  $start-color 0%,$end-color 100%);
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$start-color', endColorstr='$end-color',GradientType=1 );
+ }
+ @else
+ {
+ // radial
+ background: -moz-radial-gradient(center, ellipse cover,  $start-color 0%, $end-color 100%);
+ background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,$start-color), color-stop(100%,$end-color));
+ background: -webkit-radial-gradient(center, ellipse cover,  $start-color 0%,$end-color 100%);
+ background: -o-radial-gradient(center, ellipse cover,  $start-color 0%,$end-color 100%);
+ background: -ms-radial-gradient(center, ellipse cover,  $start-color 0%,$end-color 100%);
+ background: radial-gradient(ellipse at center,  $start-color 0%,$end-color 100%);
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$start-color', endColorstr='$end-color',GradientType=1 );
+ }
+ }
+
+ /*doc
+---
+title: mixin-gradient
+name: mixin-gradient
+category: foundation
+---
+
+```sass
+
+@include gradient(#ff00ff, #ff00cc, vertical);
+@include gradient(#ff00ff, #ff00cc, radial);
+@include gradient(#ff00ff, #ff00cc, horizontal);
+
+```
+*/
+
+
+// clipWidth
+//--------------------------
+@mixin clipWidth( $maskWidth, $maskHeight ){
+  width: $maskWidth;
+  height: $maskHeight;
+  position: relative;
+}
+
+
+/*doc
+---
+title: mixin-clipWidth
+name: mixin-clipWidth
+category: foundation
+---
+
+```sass
+@include clipWidth(640px, 400px);
+```
+*/
+
+
+
+// widthParcent
+//--------------------------
+@mixin clipWidth__mask( $valueTop, $valueRight, $valueBottom, $valueLeft ){
+  position: absolute;
+  clip: rect($valueTop, $valueRight, $valueBottom, $valueLeft);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  overflow: hidden;
+  left: 0;
+  
+}
+
+/*doc
+---
+title: mixin-clipWidth__mask
+name: mixin-clipWidth__mask
+category: foundation
+---
+
+```sass
+@include clipWidth__mask(auto, 50vh, 100vh, auto);
+```
+*/
+
+
+
+

@@ -1,0 +1,67 @@
+.c-cube {
+	background-repeat: repeat;
+	width: 120px;
+	height: 180px;
+	
+	&--border {
+		height: 2px;
+		width: 300px;
+		background: $color-main;
+	}
+
+	&--primary {
+		@extend .c-cube;
+		//background: url("../img/common/shape1.png");
+		background: #CDD0F6;
+	}
+
+	&--secondary {
+		@extend .c-cube;
+		background: url("../img/common/shape2.png");
+	}
+
+	&--tertiary {
+		@extend .c-cube;
+		//border: 40px solid #eff0fc;
+		border: 24px solid #eff0fc;
+		background: #fff;
+		width: 150px;
+		height: 150px;
+		//background: #E3F1D4;
+		//background: url("../img/common/shape3.png");
+	}
+
+	&--quarternary {
+		@extend .c-cube;
+		background: url("../img/common/shape4.png");
+	}
+
+	&--quinary {
+		@extend .c-cube;
+		background: url("../img/common/shape5.png") left 33px;
+		
+	}
+
+	&--senary {
+
+		@extend .c-cube;
+		background: url("../img/common/bg01.jpg");
+
+		&--overlay {
+			background: $color-main  url("../img/common/bg01.jpg");
+			background-blend-mode: overlay;
+			
+		}
+
+		&--screen {
+			background: linear-gradient(125deg, $color-accent--orange, $color-accent--red) fixed,  url("../img/common/bg01.jpg");
+			background-blend-mode: screen;
+			
+		}
+
+		&--multiply {
+			background: #6AA2E4  url("../img/common/bg01.jpg");
+			background-blend-mode: multiply;
+		}	
+	}
+}

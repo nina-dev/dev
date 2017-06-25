@@ -1,0 +1,19 @@
+
+.p-categoryList {
+
+	padding: 0px 16px 16px 0;
+	list-style: disc;
+	
+	
+	
+	> li {
+		margin-top: 4px;
+		margin-left: 20px;
+		@include font-size(16);
+		
+		&:first-child {
+			margin-top: 0px;
+		}
+	}
+
+}

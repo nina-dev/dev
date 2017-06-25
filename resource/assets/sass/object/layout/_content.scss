@@ -1,0 +1,92 @@
+
+.l-content {
+
+	@include respond(pc){
+		@include widtnPercent( 640, 630 );
+		@include center;
+		position: relative;
+	}
+
+	@include respond(xs){
+		//background:$color-gray-f5;
+	}
+
+	&--primary {
+
+		@extend .l-content;
+		
+		@include respond(pc) {	
+			padding: 20px 0;
+		}
+		
+	}
+
+	&--secondary {
+		@extend .l-content;
+
+		@include respond(pc) {	
+			margin-top: 16px;
+		}
+	}
+
+	
+
+
+	&__btn {
+		@include respond(pc){
+			width: 400px;
+			@include center;
+			margin-top: 56px;
+		}
+	}
+}
+
+.l-content__inner {
+
+	@include center;
+	
+	@include respond(pc){
+		opacity: 0;
+		@include css3 (transform, translateY(50px));
+		@include css3(transition, all 1s);
+	}
+
+	&.scrollin {
+		@include respond(pc){
+			opacity : 1;
+			@include css3 (transform, translateY(0px));
+		}
+	}
+
+		
+	&--primary {
+
+		@extend .l-content__inner;
+
+		@include respond(pc) {	
+			width: 1140px;
+			@include clearfix;
+			opacity: 0;
+		}
+			
+		@include respond(xs) {	
+				
+		}
+	}
+
+	@include respond(xs){
+		@include center;
+	}
+
+}
+
+
+.l-content--lower {
+
+	@include respond(pc){
+		@include widtnPercent( 640, 600 );
+		@include center;
+		position: relative;
+		margin-top: 40px;
+	}
+}

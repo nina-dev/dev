@@ -1,0 +1,58 @@
+.c-cube {
+	background-repeat: repeat;
+	width: 120px;
+	height: 180px;
+
+	&--primary {
+		@extend .c-cube;
+		background: url("/img/common/shape1.png");
+	}
+
+	&--secondary {
+		@extend .c-cube;
+		background: url("/img/common/shape2.png");
+	}
+
+	&--tertiary {
+		@extend .c-cube;
+		background: url("/img/common/shape3.png");
+	}
+
+	&--quarternary {
+		@extend .c-cube;
+		background: url("/img/common/shape4.png");
+	}
+
+	&--quinary {
+		@extend .c-cube;
+		background: url("/img/common/shape5.png") left 33px;
+		
+	}
+
+	&--senary {
+
+		@extend .c-cube;
+		background: url("/img/common/bg01.jpg");
+
+		&--overlay {
+			background: $color-main  url("/img/common/bg01.jpg");
+			background-blend-mode: overlay;
+			
+		}
+
+		&--screen {
+			background: linear-gradient(125deg, $color-accent--orange, $color-accent--red) fixed,  url("./img/common/bg01.jpg");
+			background-blend-mode: screen;
+			
+		}
+
+		&--multiply {
+			background: #6AA2E4  url("/img/common/bg01.jpg");
+			background-blend-mode: multiply;
+		}
+		
+		
+		
+		
+	}
+}

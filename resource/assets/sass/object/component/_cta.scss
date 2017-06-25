@@ -1,0 +1,82 @@
+.c-cta {
+	width: 100%;
+	text-align: left;
+	@include font-size(16);
+	//box-shadow: 0 2px 0px 0 #ccc;
+}
+
+.c-cta__ttl {
+	font-weight: bold;	
+	
+	@include respond(pc) {
+		@include font-size(24);
+		border-left: 8px solid $color-main;
+		padding-left: 16px;
+		line-height: 2;
+	}
+
+	@include respond(tb) {
+		@include font-size(20);
+		line-height: 2;
+		border-top: 3px solid $color-main;
+		padding-top: 16px;
+	}
+
+	@include respond(xs) {
+		@include font-size(18);
+		border-top: 3px solid $color-main;
+		padding-top: 16px;
+	}
+}
+
+.c-cta__inner {
+
+	@include respond(pc) {
+		background: $color-gray-f0;
+		padding: 32px 40px;
+		margin-top: 24px;
+	}
+
+	@include respond(tb) {
+		background: $color-gray-f0;
+		padding: 16px 3.125% 24px;
+		margin-top: 16px;
+	}
+
+	@include respond(xs) {
+		margin-top: 16px;
+		padding: 16px 4.125%;
+		background: #AAF2E2;
+	}
+}
+
+.c-cta__inner__col {
+	margin-top: 16px;
+	line-height: 1.7;
+	
+	@include respond(xs) {
+		@include font-size(14);
+		margin-top: 8px;
+	}
+	
+	&:first-child {
+		margin-top: 0px;
+	}
+}
+
+.c-cta__inner__btn {
+	margin-top: 32px;
+	@include center;
+	
+	@include respond(tb) {
+		margin-top: 24px;
+	}
+	
+	@include respond(xs) {
+		margin-top: 16px;
+		
+		@include font-size(16);
+	}
+
+}
+

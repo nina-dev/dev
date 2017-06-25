@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <title>Style Guide - pc: object-component</title>
+    <link rel="stylesheet" href="../../../css/style.css">
+    <link rel="stylesheet" href="./doc_assets/styleguide.css">
+    <script type="text/javascript" src="/js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="./doc_assets/styleguide.js"></script>
+  </head>
+  <body>
+    <div class="styleguideContainer">
+      <header class="styleguideHeader">
+        <h1>Style Guide : object-component</h1>
+        <nav class="styleguideGlobalNav">
+          <ul>
+            <li><a href="index.html">TOP</a></li>
+          
+            
+            <li><a href="object-animation.html">object-animation</a></li>
+            
+          
+            
+            <li><a href="object-component.html">object-component</a></li>
+            
+          
+            
+            <li><a href="object-layout.html">object-layout</a></li>
+            
+          
+            
+            <li><a href="foundation.html">foundation</a></li>
+            
+          
+            
+            <li><a href="object-project.html">object-project</a></li>
+            
+          
+            
+          
+          </ul>
+        </nav>
+        <nav class="styleguideLocalNav">
+          <ul>
+          
+            <li><a href="#c-circle">c-circle</a></li>
+          
+            <li><a href="#c-icon">c-icon</a></li>
+          
+            <li><a href="#c-logo">c-logo</a></li>
+          
+            <li><a href="#c-mask">c-mask</a></li>
+          
+            <li><a href="#c-overlay">c-overlay</a></li>
+          
+            <li><a href="#c-tab">c-tab</a></li>
+          
+            <li><a href="#c-text">c-text</a></li>
+          
+          </ul>
+        </nav>
+      </header>
+      <section class="styleguideContent">
+<h1 id="c-circle" class="styleguide">c-circle</h1>
+
+<h2>ロゴ</h2>
+<div class="sg-codeExpContanier">
+  <div class="sg-codeOutput">
+    <div class="sg-codeOutput__label">Example</div>
+    <div class="sg-codeOutput__blockPlacer">
+      
+<span class="c-circle"></span>
+
+
+    </div>
+  </div>
+  <div class="sg-codeBlock">
+    <div class='highlight'><pre>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-circle"</span><span class="nt">&gt;&lt;/span&gt;</span>
+
+</pre></div>
+  </div>
+</div>
+
+<h1 id="c-icon" class="styleguide">c-icon</h1>
+
+<h2>アイコン</h2>
+<div class="sg-codeExpContanier">
+  <div class="sg-codeOutput">
+    <div class="sg-codeOutput__label">Example</div>
+    <div class="sg-codeOutput__blockPlacer">
+      
+<svg role="image" class="c-icon" style="margin-left:16px;">
+    <use xlink:href="icons.svg#facebook" />
+</svg>
+<svg role="image" class="c-icon" style="margin-left:16px;">
+    <use xlink:href="icons.svg#hatebook" />
+</svg>
+<svg role="image" class="c-icon" style="margin-left:16px;">
+    <use xlink:href="icons.svg#line" />
+</svg>
+<svg role="image" class="c-icon" style="margin-left:16px;">
+    <use xlink:href="icons.svg#twitter" />
+</svg>
+<svg role="image" class="c-icon" style="margin-left:16px;">
+    <use xlink:href="icons.svg#arrow-left" />
+</svg>
+<svg role="image" class="c-icon" style="margin-left:16px;">
+    <use xlink:href="icons.svg#arrow-right" />
+</svg>
+<svg role="image" class="c-icon" style="margin-left:16px;">
+    <use xlink:href="icons.svg#arrow-up" />
+</svg>
+
+
+
+    </div>
+  </div>
+  <div class="sg-codeBlock">
+    <div class='highlight'><pre>
+<span class="nt">&lt;svg</span> <span class="na">role=</span><span class="s">"image"</span> <span class="na">class=</span><span class="s">"c-icon"</span> <span class="na">style=</span><span class="s">"margin-left:16px;"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"icons.svg#facebook"</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/svg&gt;</span>
+<span class="nt">&lt;svg</span> <span class="na">role=</span><span class="s">"image"</span> <span class="na">class=</span><span class="s">"c-icon"</span> <span class="na">style=</span><span class="s">"margin-left:16px;"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"icons.svg#hatebook"</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/svg&gt;</span>
+<span class="nt">&lt;svg</span> <span class="na">role=</span><span class="s">"image"</span> <span class="na">class=</span><span class="s">"c-icon"</span> <span class="na">style=</span><span class="s">"margin-left:16px;"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"icons.svg#line"</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/svg&gt;</span>
+<span class="nt">&lt;svg</span> <span class="na">role=</span><span class="s">"image"</span> <span class="na">class=</span><span class="s">"c-icon"</span> <span class="na">style=</span><span class="s">"margin-left:16px;"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"icons.svg#twitter"</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/svg&gt;</span>
+<span class="nt">&lt;svg</span> <span class="na">role=</span><span class="s">"image"</span> <span class="na">class=</span><span class="s">"c-icon"</span> <span class="na">style=</span><span class="s">"margin-left:16px;"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"icons.svg#arrow-left"</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/svg&gt;</span>
+<span class="nt">&lt;svg</span> <span class="na">role=</span><span class="s">"image"</span> <span class="na">class=</span><span class="s">"c-icon"</span> <span class="na">style=</span><span class="s">"margin-left:16px;"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"icons.svg#arrow-right"</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/svg&gt;</span>
+<span class="nt">&lt;svg</span> <span class="na">role=</span><span class="s">"image"</span> <span class="na">class=</span><span class="s">"c-icon"</span> <span class="na">style=</span><span class="s">"margin-left:16px;"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"icons.svg#arrow-up"</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/svg&gt;</span>
+
+
+</pre></div>
+  </div>
+</div>
+
+<h1 id="c-logo" class="styleguide">c-logo</h1>
+
+<h2>ロゴ</h2>
+<div class="sg-codeExpContanier">
+  <div class="sg-codeOutput">
+    <div class="sg-codeOutput__label">Example</div>
+    <div class="sg-codeOutput__blockPlacer">
+      
+<svg role="image" class="c-logo">
+    <use xlink:href="icons.svg#logo" />
+</svg>
+
+
+    </div>
+  </div>
+  <div class="sg-codeBlock">
+    <div class='highlight'><pre>
+<span class="nt">&lt;svg</span> <span class="na">role=</span><span class="s">"image"</span> <span class="na">class=</span><span class="s">"c-logo"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"icons.svg#logo"</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/svg&gt;</span>
+
+</pre></div>
+  </div>
+</div>
+
+<h1 id="c-mask" class="styleguide">c-mask</h1>
+
+<h2>画像のマスキング</h2>
+<div class="sg-codeExpContanier">
+  <div class="sg-codeOutput">
+    <div class="sg-codeOutput__label">Example</div>
+    <div class="sg-codeOutput__blockPlacer">
+      
+<li class="l-grid__col--3 c-thumbnail--large">
+                                <div class="c-thumbnail--large__item--img--mask a-animation--clipMask">
+                                <div class="c-mask--clip"></div>
+                                <div class="c-mask--img"><img class="" src="/img/top/service01.png"></div>
+                                </div>
+                                <p class="c-thumbnail--large__item--ttl">UIデザイン</p>
+                                <p class="c-thumbnail--large__item--text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                                <p class="c-thumbnail--large__item--btn c-btn--secondary"><a href="#">リンクリンクリンク</a></p>
+                            </li>
+
+
+    </div>
+  </div>
+  <div class="sg-codeBlock">
+    <div class='highlight'><pre>
+<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"l-grid__col--3 c-thumbnail--large"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-thumbnail--large__item--img--mask a-animation--clipMask"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-mask--clip"</span><span class="nt">&gt;&lt;/div&gt;</span>
+                                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-mask--img"</span><span class="nt">&gt;&lt;img</span> <span class="na">class=</span><span class="s">""</span> <span class="na">src=</span><span class="s">"/img/top/service01.png"</span><span class="nt">&gt;&lt;/div&gt;</span>
+                                <span class="nt">&lt;/div&gt;</span>
+                                <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"c-thumbnail--large__item--ttl"</span><span class="nt">&gt;</span>UIデザイン<span class="nt">&lt;/p&gt;</span>
+                                <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"c-thumbnail--large__item--text"</span><span class="nt">&gt;</span>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<span class="nt">&lt;/p&gt;</span>
+                                <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"c-thumbnail--large__item--btn c-btn--secondary"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>リンクリンクリンク<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+                            <span class="nt">&lt;/li&gt;</span>
+
+</pre></div>
+  </div>
+</div>
+
+<h1 id="c-overlay" class="styleguide">c-overlay</h1>
+
+<h2>スクエア</h2>
+<div class="sg-codeExpContanier">
+  <div class="sg-codeOutput">
+    <div class="sg-codeOutput__label">Example</div>
+    <div class="sg-codeOutput__blockPlacer">
+      
+<p style="width:300px; height: 300px;" class="c-overlay"></p>
+
+
+    </div>
+  </div>
+  <div class="sg-codeBlock">
+    <div class='highlight'><pre>
+<span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">"width:300px; height: 300px;"</span> <span class="na">class=</span><span class="s">"c-overlay"</span><span class="nt">&gt;&lt;/p&gt;</span>
+
+</pre></div>
+  </div>
+</div>
+
+<h1 id="c-tab" class="styleguide">c-tab</h1>
+
+<h2>プライマリー</h2>
+<div class="sg-codeExpContanier">
+  <div class="sg-codeOutput">
+    <div class="sg-codeOutput__label">Example</div>
+    <div class="sg-codeOutput__blockPlacer">
+      
+<span class="c-tab--primary">タイトル</span>
+
+
+    </div>
+  </div>
+  <div class="sg-codeBlock">
+    <div class='highlight'><pre>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-tab--primary"</span><span class="nt">&gt;</span>タイトル<span class="nt">&lt;/span&gt;</span>
+
+</pre></div>
+  </div>
+</div>
+
+<h1 id="c-text" class="styleguide">c-text</h1>
+
+<h2>テキスト</h2>
+<div class="sg-codeExpContanier">
+  <div class="sg-codeOutput">
+    <div class="sg-codeOutput__label">Example</div>
+    <div class="sg-codeOutput__blockPlacer">
+      
+<p class="c-text">テキスト</p>
+
+
+    </div>
+  </div>
+  <div class="sg-codeBlock">
+    <div class='highlight'><pre>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"c-text"</span><span class="nt">&gt;</span>テキスト<span class="nt">&lt;/p&gt;</span>
+
+</pre></div>
+  </div>
+</div>
+
+<h2>テキスト(スモール)</h2>
+<div class="sg-codeExpContanier">
+  <div class="sg-codeOutput">
+    <div class="sg-codeOutput__label">Example</div>
+    <div class="sg-codeOutput__blockPlacer">
+      
+<p class="c-text--small">テキスト</p>
+
+
+    </div>
+  </div>
+  <div class="sg-codeBlock">
+    <div class='highlight'><pre>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"c-text--small"</span><span class="nt">&gt;</span>テキスト<span class="nt">&lt;/p&gt;</span>
+
+</pre></div>
+  </div>
+</div>
+
+<h2>テキスト(ラージ)</h2>
+<div class="sg-codeExpContanier">
+  <div class="sg-codeOutput">
+    <div class="sg-codeOutput__label">Example</div>
+    <div class="sg-codeOutput__blockPlacer">
+      
+<p class="c-text--large">テキスト</p>
+
+
+    </div>
+  </div>
+  <div class="sg-codeBlock">
+    <div class='highlight'><pre>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"c-text--large"</span><span class="nt">&gt;</span>テキスト<span class="nt">&lt;/p&gt;</span>
+
+</pre></div>
+  </div>
+</div>
+      </section>
+      <footer>
+        <!-- <p>This documentation generated using <a href="http://github.com/trulia/hologram">Hologram</a> -->
+      </footer>
+    </div>
+  </body>
+</html>

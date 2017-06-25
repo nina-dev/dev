@@ -1,0 +1,54 @@
+.c-humberger {
+    background: #fff;
+    display: block;
+    height: 30px;
+    position: relative;
+    width: 30px;
+    cursor: pointer;
+    
+    @include respond(xs) {
+        height: 24px;
+    }
+    
+    span {
+      background: #000;
+      display: block;
+      height: 3px;
+      left: 50%;
+      margin-left: -14px;
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      
+      @include respond(xs) {
+        width: 32px;
+      }
+    }
+	
+}
+
+.type-1 {
+  span {
+    transition: all 0.3s;
+    transform: rotate(0deg);
+  }
+  .top {
+    transform: translateY(-12px);
+  }
+  .bottom {
+    transform: translateY(12px);
+  }
+}
+
+.type-1.is-animate {
+  .middle {
+    background: rgba(255, 255, 255, 0);
+  }
+  .top {
+    transform: rotate(-45deg) translateY(0px);
+  }
+  .bottom {
+    transform: rotate(45deg) translateY(0px);
+  }
+}
+

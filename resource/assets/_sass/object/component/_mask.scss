@@ -1,0 +1,39 @@
+.c-mask {
+	
+	&--clip {
+		@include clipWidth__mask(auto, 0vh, 100vh, auto);
+		background: $color-gray-f5;
+	}
+	
+	&--img {
+		@include clipWidth__mask(auto, 0vh, 100vh, auto);
+	}
+
+}
+
+
+
+
+/*doc
+---
+title: c-mask
+name: c-mask
+category: object-component
+---
+
+## 画像のマスキング
+
+```block
+
+<li class="l-grid__col--3 c-thumbnail--large">
+                                <div class="c-thumbnail--large__item--img--mask a-animation--clipMask">
+                                <div class="c-mask--clip"></div>
+                                <div class="c-mask--img"><img class="" src="/img/top/service01.png"></div>
+                                </div>
+                                <p class="c-thumbnail--large__item--ttl">UIデザイン</p>
+                                <p class="c-thumbnail--large__item--text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                                <p class="c-thumbnail--large__item--btn c-btn--secondary"><a href="#">リンクリンクリンク</a></p>
+                            </li>
+
+```
+*/

@@ -1,0 +1,191 @@
+.p-service {
+
+	background: #eff0fc;
+	
+
+	@include respond(pc) {
+		text-align: center;
+		position: relative;
+		padding: 80px 0 0;
+		margin-top: 100px;
+		width: 100%	;
+		background: none;
+		
+	}
+
+	@include respond(tb) {
+		padding: 60px .6% 40px;
+		margin-top: 60px;
+	}
+
+	@include respond(xs) {
+		padding-top: 32px;
+	}
+
+	&--secondary {
+		@include respond(pc) {
+			text-align: center;
+			width: 848px;
+		}
+		
+	}
+
+	
+	&__cache {
+		font-weight: bold;
+		@include font-size(32);
+		margin-top: 60px;
+		
+		@include respond(tb) {
+			@include font-size(26);
+			text-align: center;
+			margin-top: 40px;
+		}
+		
+		@include respond(xs) {
+			margin-top: 32px;
+			@include font-size(20);
+			text-align: center;
+			@include widtnPercent( 640, 540 );
+			text-align: center;
+			@include center;
+			
+		}
+
+		&--secondary {
+			@extend .p-service__cache;
+			@include font-size(28);
+			
+		}
+	}
+
+	&__category {
+
+		@include respond(pc) {
+			margin-top: 32px;
+			width: 240px;
+			@include center;
+		}
+		
+	}
+
+	&__text {
+		
+		line-height: 1.8;
+		
+		@include respond(pc) {
+			margin-top: 24px;
+			width: 570px;
+			@include center;
+		}
+
+		@include respond(tb) {
+			margin-top: 16px;
+			@include widtnPercent( 640, 460 );
+			@include center;
+			text-align: center;
+		}
+		
+		@include respond(xs) {
+			display: none;
+		}
+	}
+
+	&__item {
+
+		
+		@include center;
+		
+		@include respond(pc) {
+			width: 840px;
+			padding: 16px 0 0px;
+			margin-top: 32px;
+		}
+
+		@include respond(tb) {
+			width: 100%;
+			margin-top: 24px;
+		}
+		
+		@include respond(xs) {
+			background: #fff;
+			width: 100%;
+			margin-top: 24px;
+			padding-bottom: 24px;
+			background: $color-gray-f2;
+		}
+
+
+		&__box {
+
+			@include respond(pc) {
+				transition: all 0.3s;
+				@include css3(box-shadow, 0px 10px 0px 0px #ccc);
+				margin-top: 56px;
+				background: #fff;
+			}
+
+			a {
+				display: inline-block;
+			}
+
+			&:first-child {
+				margin-top: 0px;
+			}
+
+			
+			
+			&:hover {
+				@include css3(box-shadow, 0px 10px 0px 0px #ccc);
+				transition: all 0.3s;
+			}
+		}
+
+		&--secondary {
+			@extend .p-service__item;
+			
+			@include respond(pc) {
+				width: 100%;
+				padding: 0px 0 60px 0;
+				margin-top: 60px;
+				
+			}
+		}
+
+		&__text {
+
+			@include respond(pc) {
+				margin-top: 40px;
+			}
+			
+		}
+
+
+		&__img {
+			@include respond(pc) {
+				text-align: center;
+				width: 100%;
+				overflow: hidden;
+				@include center;
+			}
+			
+			img {
+				width: 100%;
+				
+			}
+		}
+		
+
+	}
+
+	&__ttl {
+		@include respond(xs){
+			@include center;
+		}
+
+		@include respond(tb){
+			@include center;
+		}
+	}
+
+}
