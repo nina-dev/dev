@@ -1,7 +1,6 @@
 <?php 
 defined('C5_EXECUTE') or die(_("Access Denied."));
 $this->inc('elements/header.php');
-echo 'home';
 ?>
 <div class="l-main">
  <h2 class="l-main__item--ttl"><svg class="start" id="a-animation--mainTxt" version="1.1" viewbox="0 0 1035 204" xmlns="http://www.w3.org/2000/svg">
