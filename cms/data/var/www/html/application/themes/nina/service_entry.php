@@ -1,7 +1,6 @@
 <?php
 defined('C5_EXECUTE') or die(_("Access Denied."));
 $this->inc('elements/header.php');
-echo "service_entry";
 ?>
 <div class="l-content--lower">
 
