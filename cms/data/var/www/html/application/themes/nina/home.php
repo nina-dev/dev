@@ -1,7 +1,8 @@
-<?php 
+<?php
 defined('C5_EXECUTE') or die(_("Access Denied."));
 $this->inc('elements/header.php');
 ?>
+
 <div class="l-main">
  <h2 class="l-main__item--ttl"><svg class="start" id="a-animation--mainTxt" version="1.1" viewbox="0 0 1035 204" xmlns="http://www.w3.org/2000/svg">
   <g fill-rule="evenodd" id="Page-1" stroke="none" stroke-width="1">
@@ -156,6 +157,7 @@ $this->inc('elements/header.php');
 
 </div>
 </div>
+
 <?php
-$this->inc('elements/footer_home.php');
+$this->inc('elements/footer.php'); 
 ?>
