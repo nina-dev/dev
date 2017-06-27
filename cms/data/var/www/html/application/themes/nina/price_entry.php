@@ -8,39 +8,109 @@ $this->inc('elements/header.php');
   <span class="p-bg--item--primary--under c-square--primary"></span> <span class="p-bg--item--secondary--under c-square--tertiary"></span>
 
 
-  <div class="l-article">
+  <div class="l-price">
 
-    <p class="l-article__ttl c-contentTtl--secondary">サービス</p>
+    <p class="l-price__ttl c-contentTtl--secondary">料金について</p>
 
-    <h2 class="l-article__cache">関わるすべてに誠実に。丁寧に対応します</h2>
+    <h2 class="l-price__cache">プロジェクトの形態や規模・期間に応じて柔軟にご提案します</h2>
+    <p class="l-price__text--primary">プロジェクトの形態や規模、期間に応じて柔軟にご提案させていただきます。</p>
 
-    <ul class="l-article__item c-tab">
-      <li><a href="#">お仕事の流れ</a></li>
+    <ul class="l-price__nav">
+      <li><a href="#ui">UIデザイン</a></li>
+      <li><a href="#respon">レスポンシブデザイン</a></li>
+      <li><a href="#web">ウェブコンサルティング</a></li>
     </ul>
+    <p class="l-price__text--secondary">お見積やご相談は無料です。お気軽にどうぞ。 </p>
 
 
-    <div class="l-article__inner">
 
-      <p>デザインという言葉の連想で浮かぶキーワードは、絵を描くとか、アートのような自己表現といった意味でイメージする人も多いと思います。実際にWeb制作の現場においての「デザインのつくる」という認識も会社によってまちまちです。</p>
+    <div class="l-price__inner">
 
-      <p>ニナ・アーキタイプのいうUIデザインとは、<b>お客様やコンテンツ自体がどうおもわれたいか。ユーザーにどう思ってもらいたいかの具体化</b>。それをインターフェイス上で結ぶ手法のことをいいます。</p>
+      <h3 id="ui" class="l-price__inner__ttl">UIデザイン</h3>
+      <p class="l-price__inner__text">サービスへの理解を深め、UX設計や事業戦略から運用まで一緒に考えていきます。クライアントがコンテンツを通して実現したいこと・目的に対してユーザーを誘導する手段としてのデザインを提案します。</p>
+      <p class="l-price__inner__text">デザインツールはPHOTOSHOPの他、SKETCHアプリの対応も可能です。</p>
 
-      <h3>ユーザー主義で練られた優れたUIデザイン構築によるメリット</h3>
-      <p>優れたUIデザインは<b>お客様のコンテンツの良さを、少ない言葉で説明する力</b>があります。この視覚的・直感的なアプローチこそがコンテンツやお客様のブランド価値となり、ビジネスの成功を促進します。</p>
+      <div class="l-price__inner__table">
+        <dl class="l-price__inner__table__col">
+          <dt>期間</dt>
+          <dd>要相談</dd>
+        </dl>
+        <dl class="l-price__inner__table__col">
+          <dt>費用</dt>
+          <dd>1プロジェクト&nbsp;:&nbsp;60万円〜</dd>
+        </dl>    
+      </div>
+      <p class="l-price__inner__text--secondary">東京23区近郊の常駐もお受けいたします。</p>
+      <div class="l-price__inner__btn">
+        <p class="c-btn--secondary">
+          <a href="/service/design" title="">UIデザインの詳細はこちら</a>
+        </p>
+        
+      </div>
 
-      <ul>
-        <li>使いやすさやアクセス性アップによるユーザー満足の向上</li>
-        <li>売り上げに関係のない問い合わせの減少</li>
-        <li>クライアントにもノウハウが蓄積</li>
-      </ul>
+      
 
-      <h3>見栄えと使いやすさ。クライアントに似合うUIデザインを提供します</h3>
-      <p>UIデザインとは、何よりもクライアントのコンテンツとそれを使うユーザーありきです。<b>ユーザーにどう感じてほしいか、どう使って欲しいか。</b>そのために必要なもてなしこそが、中身を作り、クライアントやコンテンツ自体の見栄えをつくるものだと、これまで手がけた案件の経験から確信しています。</p>
-      <p>ニナ・アーキタイプは優れたUIデザインをお客様に提供することで、クライアントとユーザーとの関係づくりのサポートに貢献します。</p>
+
     </div>
 
+    <div class="l-price__inner">
 
-    <div class="l-article__item--cta c-cta">
+      <h3 id="respon" class="l-price__inner__ttl">レスポンシブWebデザインサイト</h3>
+      <p class="l-price__inner__text">ご依頼をいただき次第、実現したい目的やご要望のヒアリングを基にデザインとコーディングファイルの納品まで対応します。</p>
+      <p class="l-price__inner__text">CSSアニメーションを利用し、パフォーマンスと見栄えに優れた、モバイル環境でも読み込み速度が速いWebサイトを納品。</p>
+      <div class="l-price__inner__table">
+        <dl class="l-price__inner__table__col">
+          <dt>期間</dt>
+          <dd>10営業日〜</dd>
+        </dl>
+        <dl class="l-price__inner__table__col">
+          <dt>費用</dt>
+          <dd>10ページ&nbsp;:&nbsp;50万円〜</dd>
+        </dl>    
+      </div>
+      <p class="l-price__inner__text--secondary">ご依頼後、サイト診断・コンセプトに沿いサイト公開時に必要なサポートをお任せください。</p>
+      <div class="l-price__inner__btn">
+        <p class="c-btn--secondary">
+          <a href="/service/responsive" title="">レスポンシブWebデザインの詳細はこちら</a>
+        </p>
+        
+      </div>
+
+      
+
+
+    </div>
+
+    <div class="l-price__inner">
+
+      <h3 id="web" class="l-price__inner__ttl">ウェブコンサルティング</h3>
+      <p class="l-price__inner__text">アクセス解析や競合分析による自社・他社を含むサイト内外の「現状分析」を診断します。</p>
+
+      <p class="l-price__inner__text">そこから問題点を洗い出し、プロトタイプやカスタマージャーニーマップといったデザイン的な戦略手法を使いマーケティング活動をサポートします。</p>
+      <div class="l-price__inner__table">
+        <dl class="l-price__inner__table__col">
+          <dt>期間</dt>
+          <dd>3ヶ月以上〜</dd>
+        </dl>
+        <dl class="l-price__inner__table__col">
+          <dt>費用</dt>
+          <dd>1ヶ月&nbsp;:&nbsp;10万円から〜</dd>
+        </dl>    
+      </div>
+      <p class="l-price__inner__text--secondary">ご依頼後、サイト診断・コンセプトに沿いサイト公開時に必要なサポートをお任せください。</p>
+      <div class="l-price__inner__btn">
+        <p class="c-btn--secondary">
+          <a href="/service/support" title="">ウェブコンサルティングの詳細はこちら</a>
+        </p>
+        
+      </div>
+
+      
+
+
+    </div>
+
+    <div class="l-price__item--cta c-cta">
 
       <p class="c-cta__ttl">お仕事のご依頼はこちらでお受けします</p>
 
@@ -51,8 +121,16 @@ $this->inc('elements/header.php');
       </div>
 
     </div>
-    
+
+
+
+
   </div>
+
+
+  
+  
+</div>
 </div>
 
 <div class="l-content--secondary">
