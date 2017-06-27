@@ -1,16 +1,22 @@
-<?php defined('C5_EXECUTE') or die("Access Denied.");
-$this->inc('elements/header_top.php');
-$as = new GlobalArea('Header Search');
-$blocks = $as->getTotalBlocksInArea();
-$displayThirdColumn = $blocks > 0 || $c->isEditMode();
-?>
+<?php defined('C5_EXECUTE') or die(_("Access Denied.")); ?>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <meta content="all" name="robots">
+  <title>ニナ・アーキタイプ | フリーランスのUIデザイナー</title>
 
-<div class="<?php if ($displayThirdColumn) { ?>col-sm-5 col-xs-6<?php } else { ?>col-sm-8 col-xs-6<?php } ?>">
-	<?php
-	$a = new GlobalArea('Header Navigation');
-	$a->display();
-	?>
-</div>
+  <link href="<?php echo $this->getThemePath()?>/css/index.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+
+
+<?php $this->requireAsset('javascript', 'jquery'); ?>
+<?php Loader::element('header_required'); ?>
+
+</head>
+<body>
 
 <!-- 	<div class="l-loading">
 		<div class="c-loading">
