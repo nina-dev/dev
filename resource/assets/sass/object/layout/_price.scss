@@ -271,7 +271,7 @@
 		color: $color-gray-a1;
 		
 		@include respond(pc) {
-			margin-top: 16px;
+			margin-top: 24px;
 			@include font-size(14);
 		}
 
@@ -315,7 +315,7 @@
 .l-price__inner__btn {
 
 	@include respond(pc) {
-		margin-top: 40px;
+		margin-top: 48px;
 		width: 40%;
 	}
 
