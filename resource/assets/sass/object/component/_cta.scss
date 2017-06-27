@@ -46,7 +46,7 @@
 	@include respond(xs) {
 		margin-top: 16px;
 		padding: 16px 4.125%;
-		background: #AAF2E2;
+		@include gradient(#D9FCF4, $color-accent--s-green, vertical);
 	}
 }
 

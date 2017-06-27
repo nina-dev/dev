@@ -38,12 +38,29 @@
 	&--primary {
 		@extend .l-price__text;
 		line-height: 2;
+		
+		@include respond(xs) {
+			line-height: 1.6;
+			padding: 0 3.125%;
+		}
+
 	}
 	&--secondary {
 		@extend .l-price__text;
-		margin-top: 60px;
+		
+		@include respond(pc) {
+			margin-top: 60px;
+			text-align: right;
+		}
+
+		@include respond(xs) {
+			margin-top: 24px;
+			text-align: center;
+			padding: 0 16.125%;
+			@include font-size(18);
+		}
+
 		font-weight: bold;
-		text-align: right;
 		color: $color-accent--orange;
 	}
 }
@@ -71,7 +88,7 @@
 	@include respond(xs) {
 		line-height: 1.5;
 		@include font-size(18);
-		padding: 0 8.125% 0;
+		padding: 0 3.125% 0;
 	}
 }
 
@@ -101,20 +118,55 @@
 		border-bottom: 1px solid $color-gray-f2;
 	}
 
+	@include respond(xs) {
+		@include css3(display, flex);
+		@include css3(flex-wrap, nowrap);
+		box-shadow: 0 2px 0 0 rgba(167,167,167,0.20);
+		
+	}
+
 	li {
-		width: 27%;
-		display: inline-block;
+
+		@include respond(pc) {
+			width: 27%;
+			display: inline-block;
+		}
+
+		@include respond(xs) {
+			width: 33%;
+			background: $color-gray-f5;
+		}
+		
 		
 		a {
-			display: block;
-			padding: 32px 8px;
 			font-weight: bold;
-			@include font-size(14);
-			border-bottom: 4px solid #fff;
+
+			@include respond(pc) {
+				display: block;
+				padding: 32px 8px;
+				border-bottom: 4px solid #fff;
+				
+			}
+
+			@include respond(xs) {
+				padding: 16px 3.125%;
+				@include font-size(14);
+				@include gradient(#fff, $color-gray-f5, vertical);
+				display: block;
+				border-top: 2px solid $color-main;
+				border-left: 2px solid #fff;
+				line-height: 1.4;
+				
+				
+			}
+			
 			
 			&:hover {
-				color: $color-main;
-				border-bottom: 4px solid $color-main;
+				@include respond(pc) {
+					color: $color-main;
+					border-bottom: 4px solid $color-main;
+				}
+				
 			}
 		}
 	}
@@ -136,36 +188,71 @@
 
 .l-price__inner__table {
 	margin-top: 16px;
-	@include css3(display, flex);
-	@include css3(flex-wrap, wrap);
 	
+	@include respond(pc) {
+		@include css3(display, flex);
+		@include css3(flex-wrap, wrap);
+	}
 }
 
 .l-price__inner__table__col {
-	width: 50%;
+
 	display: table;
-	padding-right: 16px;
-	padding-top: 16px;
+
+	@include respond(pc) {
+		width: 50%;
+		padding-right: 16px;
+		padding-top: 16px;
+	}
+
+	@include respond(xs) {
+		margin-top: 8px;
+	}
+
+	
 	
 	dt,dd {
 		display: table-cell;
-		padding: 4px 16px;
-		@include font-size(16);
-		
+
+		@include respond(pc) {
+			padding: 4px 16px;
+			@include font-size(16);
+		}
+
+		@include respond(xs) {
+			@include font-size(16);
+		}
 	}
 
 	dt {
-		background: $color-gray-f2;
 		font-weight: bold;
-		width: 8em;
-		border-left: 3px solid $color-main;
+
+		@include respond(pc) {
+			background: $color-gray-f2;
+			width: 8em;
+			border-left: 3px solid $color-main;
+		}
+
+		@include respond(xs) {
+			width: 3em;
+			color: $color-cache;
+			
+		}
+		
 	}
 }
 
 .l-price__inner__text {
 	@include font-size(16);
-	margin-top: 24px;
-	//padding: 0 16px;
+	
+
+	@include respond(pc) {
+		margin-top: 24px;
+	}
+
+	@include respond(xs) {
+		margin-top: 16px;
+	}
 	
 	&--primary {
 		@extend .l-price__inner__text;
@@ -176,53 +263,76 @@
 		@include font-size(16);
 		color: $color-gray-a1;
 		
+		@include respond(xs) {
+			@include font-size(12);
+		}
+		
+
+		
 	}
 }
 
 .l-price__inner__ttl {
 
 	@include respond(pc) {
-
 		@include font-size(22);
 		font-weight: bold;
 		color: $color-cache;
 	}
 
 	@include respond(tb) {
-	
-			@include font-size(24);
-			font-weight: bold;
-			margin-top: 40px;
-			padding: 0px 8px 4px 0;
-			border-bottom: 3px solid $color-main;
-	
+		@include font-size(24);
+		font-weight: bold;
+		margin-top: 40px;
+		padding: 0px 8px 4px 0;
+		border-bottom: 3px solid $color-main;
 	}
 
 	@include respond(xs) {
-	
-			@include font-size(18);
-			line-height: 1.5;
-			font-weight: bold;
-			margin-top: 24px;
-			padding: 24px 3.125%;
-			border-radius: 2px;
-			background: $color-gray-f2;
-	
+		@include font-size(16);
+		line-height: 1.5;
+		font-weight: bold;
+		margin-top: 24px;
+		padding: 16px 3.125%;
+		border-radius: 2px;
+		background: $color-gray-f2;
 	}
 }
 
 .l-price__inner__btn {
-	margin-top: 40px;
-	width: 40%;
+
+	@include respond(pc) {
+		margin-top: 40px;
+		width: 40%;
+	}
+
+	@include respond(xs) {
+		margin-top: 24px;
+		width: 90%;
+	}
+	
+	
 	@include center;
+	
+
 }
 	
 
 .l-price__inner {
 
 	text-align: left;
-	padding: 40px 8px 40px 8px;
-	border-top: 1px solid $color-gray-f2;
 	margin-top: 20px;
+	
+	@include respond(pc) {
+		padding: 40px 8px 40px 8px;
+		border-top: 1px solid $color-gray-f2;
+	}
+
+	@include respond(xs) {
+		margin-top: 24px;
+		padding-bottom: 16px;
+	}
+	
+
 		
 }
