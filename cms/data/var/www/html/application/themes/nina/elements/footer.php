@@ -1,11 +1,5 @@
 <?php
-defined('C5_EXECUTE') or die(_("Access Denied."));
-$footerSiteTitle = new GlobalArea('Footer Site Title');
-$footerSocial = new GlobalArea('Footer Social');
-$footerSiteTitleBlocks = $footerSiteTitle->getTotalBlocksInArea();
-$footerSocialBlocks = $footerSocial->getTotalBlocksInArea();
-$displayFirstSection = $footerSiteTitleBlocks > 0 || $footerSocialBlocks > 0 || $c->isEditMode();
-?>
+defined('C5_EXECUTE') or die(_("Access Denied."));?>
 
 <footer class="l-footer">
   <p class="l-footer__item--left">COPYRIGHT nina&nbsp;archetype.com</p>
