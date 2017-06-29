@@ -16,7 +16,7 @@
 		border-bottom: 1px solid $color-gray-f2;
 	}
 
-	@include respond(xs) {	
+	@include respond(xs) {
 		width: 100%;
 		padding: 0 4.125% 24px 4.125%;
 		margin-top: 50px;
@@ -72,6 +72,7 @@
 }
 
 .l-article__item {
+
 	margin-top: 24px;
 	
 	&--tag {
@@ -103,13 +104,10 @@
 
 }
 
-
-	
-
 .l-article__inner {
 
 	text-align: left;
-		
+	
 	h3 {
 		@include respond(pc) {
 			@include font-size(24);
@@ -130,17 +128,18 @@
 
 		@include respond(xs) {
 			@include font-size(18);
-			line-height: 1.5;
+			line-height: 1.4;
 			font-weight: bold;
 			margin-top: 24px;
-			padding: 24px 3.125%;
+			padding: 16px 3.125%;
 			border-radius: 2px;
+			//color: #fff;
 			background: $color-gray-f2;
 		}
 	}
 
 
-	p, ul, h2, ul, blockquote, table {
+	p, ul, h2, ul, div, blockquote, table {
 		@include respond(pc) {
 			margin-top: 32px;
 		}
