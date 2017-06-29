@@ -28,7 +28,6 @@
 
 
 .l-price__ttl {
-
 	@include center;
 }
 
@@ -51,6 +50,12 @@
 		@include respond(pc) {
 			margin-top: 60px;
 			text-align: right;
+		}
+
+		@include respond(tb) {
+			margin-top: 40px;
+			text-align: center;
+			@include font-size(18);
 		}
 
 		@include respond(xs) {
@@ -116,17 +121,20 @@
 		text-align: center;
 	}
 
+	@include respond(tb) {
+		@include css3(display, flex);
+		@include css3(flex-wrap, nowrap);
+	}
+
 	@include respond(xs) {
 		@include css3(display, flex);
 		@include css3(flex-wrap, nowrap);
-		box-shadow: 0 2px 0 0 rgba(167,167,167,0.20);
-		
 	}
 
 	li {
 
 		@include respond(pc) {
-			width: 23%	;
+			width: 32%;
 			display: inline-block;
 			border-right: 1px solid $color-gray-c;
 			
@@ -135,8 +143,13 @@
 			}
 		}
 
+		width: 33%;
+		
+		@include respond(tb) {
+			background: $color-gray-f5;
+		}
+
 		@include respond(xs) {
-			width: 33%;
 			background: $color-gray-f5;
 		}
 		
@@ -153,6 +166,17 @@
 				
 			}
 
+			@include respond(tb) {
+				padding: 24px 3.125%;
+				@include font-size(14);
+				@include gradient(#fff, $color-gray-f5, vertical);
+				display: block;
+				border-top: 2px solid $color-main;
+				border-left: 2px solid #fff;
+				line-height: 1.4;	
+				
+			}
+
 			@include respond(xs) {
 				padding: 16px 3.125%;
 				@include font-size(14);
@@ -160,8 +184,7 @@
 				display: block;
 				border-top: 2px solid $color-main;
 				border-left: 2px solid #fff;
-				line-height: 1.4;
-				
+				line-height: 1.4;	
 				
 			}
 			
@@ -209,6 +232,10 @@
 		padding-top: 16px;
 	}
 
+	@include respond(tb) {
+		margin-top: 8px;
+	}
+
 	@include respond(xs) {
 		margin-top: 8px;
 	}
@@ -217,15 +244,10 @@
 	
 	dt,dd {
 		display: table-cell;
+		@include font-size(16);
 
 		@include respond(pc) {
 			padding: 4px 16px;
-			@include font-size(16);
-			
-		}
-
-		@include respond(xs) {
-			@include font-size(16);
 		}
 	}
 
@@ -240,10 +262,14 @@
 			text-align: center;
 		}
 
+		@include respond(tb) {
+			width: 3em;
+			color: $color-cache;
+		}
+
 		@include respond(xs) {
 			width: 3em;
 			color: $color-cache;
-			
 		}
 		
 	}
@@ -255,6 +281,11 @@
 
 	@include respond(pc) {
 		margin-top: 24px;
+		line-height: 2;
+	}
+
+	@include respond(tb) {
+		margin-top: 16px;
 	}
 
 	@include respond(xs) {
@@ -294,11 +325,13 @@
 	}
 
 	@include respond(tb) {
-		@include font-size(24);
+		@include font-size(18);
+		line-height: 1.5;
 		font-weight: bold;
-		margin-top: 40px;
-		padding: 0px 8px 4px 0;
-		border-bottom: 3px solid $color-main;
+		margin-top: 24px;
+		padding: 16px 3.125%;
+		border-radius: 2px;
+		background: $color-gray-f2;
 	}
 
 	@include respond(xs) {
@@ -317,6 +350,11 @@
 	@include respond(pc) {
 		margin-top: 48px;
 		width: 40%;
+	}
+
+	@include respond(tb) {
+		margin-top: 24px;
+		width: 70%;
 	}
 
 	@include respond(xs) {
@@ -339,6 +377,10 @@
 	@include respond(pc) {
 		padding: 40px 8px 40px 8px;
 		border-top: 1px solid $color-gray-f2;
+	}
+
+	@include respond(tb) {
+		margin-top: 32px;
 	}
 
 	@include respond(xs) {

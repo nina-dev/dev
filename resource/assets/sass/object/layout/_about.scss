@@ -87,7 +87,7 @@
 
 	@include respond(xs) {
 		margin-top: 24px;
-		border-top: 1px solid $color-gray-c;
+		border-top: 1px solid $color-gray-f2;
 		padding-top: 16px;
 	}
 
@@ -160,7 +160,7 @@
 			line-height: 1.5;
 			font-weight: bold;
 			margin-top: 24px;
-			padding: 24px 3.125%;
+			padding: 16px 3.125%;
 			border-radius: 2px;
 			background: $color-gray-f2;
 		}
