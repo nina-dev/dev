@@ -36,7 +36,7 @@ $this->inc('elements/header.php');
         <p class="c-thumbnail--large__item--img"><img src="<?php echo $this->getThemePath(); ?>/img/article/03.jpg"></p>
         <p class="c-thumbnail--large__item--ttl--related">いまWebディレクターに求められる「解析提案力」</p>
       </li>
-    </ul>
+    </ul> 
   </div>
 
 </div>
