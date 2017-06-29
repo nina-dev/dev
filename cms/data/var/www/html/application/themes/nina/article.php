@@ -5,26 +5,24 @@ $this->inc('elements/header.php');
 
 <div class="l-content--lower">
 
- <span class="p-bg--item--primary--under c-square--primary"></span> <span class="p-bg--item--secondary--under c-square--tertiary"></span>
+  <span class="p-bg--item--primary--under c-square--primary"></span> <span class="p-bg--item--secondary--under c-square--tertiary"></span>
 
- <div class="l-about">
+  <div class="l-article">
 
-<?php
-$a = new Area('Main');
-$a->enableGridContainer();
-$a->display($c);
-?>
+    <?php
+    $a = new Area('Main');
+    $a->enableGridContainer();
+    $a->display($c);
+    ?>
 
- </div>
+  </div>
 </div>
 
 <div class="l-content--secondary">
 
   <div class="p-related">
-
     <p class="p-related__cache">あなたにオススメの記事</p>
     <p class="p-related__text--attention">当サイトは発信型メディアとして、近日リニューアルします。</p>
-
     <ul class="p-related__item">
       <li class="p-related__item__box c-thumbnail--large">
         <p class="c-thumbnail--large__item--img"><img src="<?php echo $this->getThemePath(); ?>/img/article/01.jpg"></p>
@@ -40,6 +38,7 @@ $a->display($c);
       </li>
     </ul>
   </div>
+
 </div>
 
 <?php
