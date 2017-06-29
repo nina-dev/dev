@@ -10,9 +10,9 @@
 	
 	@include respond(pc) {
 		@include font-size(24);
-		border-left: 8px solid $color-main;
-		padding-left: 16px;
-		line-height: 2;
+		border-left: 6px solid $color-main;
+		line-height: 1.6;
+		padding-left: 20px;
 	}
 
 	@include respond(tb) {
@@ -24,8 +24,9 @@
 
 	@include respond(xs) {
 		@include font-size(18);
-		border-top: 3px solid $color-main;
+		border-top: 1px solid $color-gray-f2;
 		padding-top: 16px;
+		color: $color-accent--orange;
 	}
 }
 
@@ -45,8 +46,9 @@
 
 	@include respond(xs) {
 		margin-top: 16px;
-		padding: 16px 4.125%;
-		@include gradient(#D9FCF4, $color-accent--s-green, vertical);
+		//padding: 16px 4.125%;
+		//background: #effae6;
+		//@include gradient(#D9FCF4, $color-accent--s-green, vertical);
 	}
 }
 
@@ -74,6 +76,8 @@
 	
 	@include respond(xs) {
 		margin-top: 16px;
+		padding: 16px 4.125%;
+		background: $color-gray-f2;
 		
 		@include font-size(16);
 	}
