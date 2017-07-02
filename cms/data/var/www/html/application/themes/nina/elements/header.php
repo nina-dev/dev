@@ -23,48 +23,11 @@ if($u->isRegistered()) { ?>
 <div style="height: 47px;"></div>
 <?php } ?>
 
-	<div class="p-menu">
-		<nav>
-			<ul class="p-menu__item--primary">
-
-				<?php
-				// $a = new GlobalArea('Header Navigation');
-				// $a->display();
-				?>
-
-				<li>
-					<a href="/">ホーム</a>
-				</li>
-				<li>
-					<a href="/about">ニナ・アーキタイプとは</a>
-				</li>
-
-				<li>
-					<a href="/service">得意なこと</a>
-					<ul class="p-menu__item--secondary">
-						<li><a href="/service/design">UIデザイン</a></li>
-						<li><a href="/service/responsive">レスポンシブデザイン</a></li>
-						<li><a href="/service/support">ウェブコンサルティング</a></li>
-						<li></li>
-					</ul>
-				</li>
-
-				<li>
-					<a href="/flow">仕事の流れ</a>
-				</li>
-
-				<li>
-					<a href="/price">料金について</a>
-				</li>
-			</ul>
-			<p class="p-menu__cta c-btn--secondary--orange">
-				<a href="#">COMMING SOON</a>
-			</p>
-		</nav>
-	</div>
-
+<?php
+$this->inc('elements/header_navi.php');
+?>
 	<div class="l-container">
-		<header class="l-header">
+		<div class="l-header">
 			<div class="l-header__ttl">
 				<div class="l-header__ttl__inner">
 					<h1>
@@ -89,6 +52,7 @@ if($u->isRegistered()) { ?>
 					<span class="bottom"></span>
 				</div>
 			</div>
+		</div>
 
 			<div class="l-header__info--primary">
 				<div class="l-header__info__item--left--fixed">
@@ -102,4 +66,3 @@ if($u->isRegistered()) { ?>
 					<span class="bottom"></span>
 				</div>
 			</div>
-		</header>
