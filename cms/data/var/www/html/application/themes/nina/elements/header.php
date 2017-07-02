@@ -2,11 +2,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
   <meta content="all" name="robots">
-  <title>ニナ・アーキタイプ | フリーランスのUIデザイナー</title>
 
   <link href="<?php echo $this->getThemePath()?>/css/index.min.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
@@ -18,7 +16,14 @@
 </head>
 <body>
 
-<!-- 	<div class="l-loading">
+<?php
+$u = new User();
+if($u->isRegistered()) { ?>
+<!-- ログイン時表示 -->
+<div style="height: 47px;"></div>
+<?php } ?>
+
+	<div class="l-loading">
 		<div class="c-loading">
 			<div class="c-loading__item--1"></div>
 			<div class="c-loading__item--2"></div>
@@ -26,7 +31,7 @@
 			<div class="c-loading__item--4"></div>
 			<div class="c-loading__item--5"></div>
 		</div>
-	</div> -->
+	</div>
 
 	<div class="p-menu">
 		<nav>
@@ -66,7 +71,13 @@
 		<header class="l-header">
 			<div class="l-header__ttl">
 				<div class="l-header__ttl__inner">
-					<h1>ニナ・アーキタイプはWeb / iOS / Androidに対するユーザーインターフェイスを提供するフリーランスのUIデザイナーです</h1>
+					<h1>
+						<?php
+						$a = new Area('Headline');
+						$a->enableGridContainer();
+						$a->display($c);
+						?>
+					</h1>
 				</div>
 			</div>
 

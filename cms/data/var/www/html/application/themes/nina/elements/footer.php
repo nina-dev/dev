@@ -15,16 +15,16 @@ defined('C5_EXECUTE') or die(_("Access Denied."));?>
 
 <script type="text/javascript">
 
-    // jQuery(window).load(function() {
-    //  $(".l-loading").addClass('is-anime');
-    //  $(".l-container").hide();
+    jQuery(window).load(function() {
+     $(".l-loading").addClass('is-anime');
+     $(".l-container").hide();
 
-    //  setTimeout(function(){
-    //      $(".l-container").addClass('is-open');
-    //      $(".l-loading").hide();
+     setTimeout(function(){
+         $(".l-container").addClass('is-open');
+         $(".l-loading").hide();
 
-    //  },2400);
-    // });
+     },2400);
+    });
   </script>
 
 
