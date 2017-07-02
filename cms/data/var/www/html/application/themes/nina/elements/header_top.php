@@ -23,6 +23,16 @@ if($u->isRegistered()) { ?>
 <div style="height: 47px;"></div>
 <?php } ?>
 
+	<div class="l-loading">
+		<div class="c-loading">
+			<div class="c-loading__item--1"></div>
+			<div class="c-loading__item--2"></div>
+			<div class="c-loading__item--3"></div>
+			<div class="c-loading__item--4"></div>
+			<div class="c-loading__item--5"></div>
+		</div>
+	</div>
+
 	<div class="p-menu">
 		<nav>
 			<ul class="p-menu__item--primary">

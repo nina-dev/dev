@@ -13,6 +13,21 @@ defined('C5_EXECUTE') or die(_("Access Denied."));?>
 
   <script type="text/javascript" src="<?php echo $this->getThemePath()?>/js/script.js"></script>
 
+<script type="text/javascript">
+
+    jQuery(window).load(function() {
+     $(".l-loading").addClass('is-anime');
+     $(".l-container").hide();
+
+     setTimeout(function(){
+         $(".l-container").addClass('is-open');
+         $(".l-loading").hide();
+
+     },2400);
+    });
+  </script>
+
+
 <?php  Loader::element('footer_required'); ?>
 
 </body>
