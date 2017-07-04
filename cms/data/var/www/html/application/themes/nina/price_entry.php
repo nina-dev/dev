@@ -15,6 +15,19 @@ $this->inc('elements/header.php');
     $a->display($c);
     ?>
 
+    <?php
+    $a = new Area('Content');
+    $a->enableGridContainer();
+    $a->display($c);
+    ?>
+
+    <?php
+    $a = new GlobalArea('Price CTA');
+    if ($c->isEditMode() || $a->getTotalBlocksInArea() > 0) {
+     $a->display();
+   }
+   ?>
+
   </div>
 </div>
 </div>
