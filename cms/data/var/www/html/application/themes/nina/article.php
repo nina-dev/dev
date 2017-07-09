@@ -15,6 +15,32 @@ $this->inc('elements/header.php');
     $a->display($c);
     ?>
 
+    <div class="l-article__inner">
+
+    <?php
+    $a = new Area('Content');
+    $a->enableGridContainer();
+    $a->display($c);
+    ?>
+
+    </div>
+
+    <?php
+    $a = new Area('Content Secondary');
+    if ($c->isEditMode() || $a->getTotalBlocksInArea($c) > 0) {
+      echo '<div class="l-article__item c-serviceArea">';
+      $a->display($c);
+      echo '</div>';
+    }
+    ?>
+
+    <?php
+    $a = new GlobalArea('Article CTA');
+    if ($c->isEditMode() || $a->getTotalBlocksInArea() > 0) {
+     $a->display();
+   }
+   ?>
+
   </div>
 </div>
 

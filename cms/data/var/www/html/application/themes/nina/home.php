@@ -1,6 +1,6 @@
 <?php
 defined('C5_EXECUTE') or die(_("Access Denied."));
-$this->inc('elements/header.php');
+$this->inc('elements/header_top.php');
 ?>
 
 <div class="l-main">
@@ -159,5 +159,5 @@ $this->inc('elements/header.php');
 </div>
 
 <?php
-$this->inc('elements/footer.php'); 
+$this->inc('elements/footer_top.php');
 ?>
