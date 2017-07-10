@@ -1,2 +1,4 @@
 .DS_Store
 html/.vagrant/
+node_modules/
+html/css/
