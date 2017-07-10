@@ -17,10 +17,20 @@ var svgstore = require('gulp-svgstore');
 var svgmin = require('gulp-svgmin');
 var svg2png = require('gulp-svg2png');
 var cheerio = require('gulp-cheerio');
-var destDir = 'css'; // 出力用ディレクトリ
+var destDir = 'html/css'; // 出力用ディレクトリ
 var srcSass = 'resource/assets/sass/**/*.scss';
+var cmsDir = 'cms/data/var/www/html/application/themes/nina';
 
 var cleanCSS = require('gulp-clean-css');
+
+gulp.task( 'copy', function() {
+    return gulp.src(
+        [ 'html/css/**', 'html/js/*.js' ],
+        { base: 'html' }
+    )
+    .pipe( gulp.dest(cmsDir) );
+} );
+
 
 
 gulp.task('sass', function () {
@@ -42,7 +52,7 @@ gulp.task('sass', function () {
 gulp.task('minify-js', function() {
     return gulp.src("resource/assets/js/*.js")
         .pipe(uglify())
-        .pipe(gulp.dest('js/'));
+        .pipe(gulp.dest('html/js/'));
         //.pipe(gulp.dest('js')); 上書きする場合
 });
 
@@ -57,7 +67,7 @@ gulp.task('svg', function () {
       },
       parserOptions: { xmlMode: true }
     }))
-    .pipe(gulp.dest('img/svg/'))
+    .pipe(gulp.dest('html/img/svg/'))
 });
 
 
@@ -66,7 +76,7 @@ gulp.task('watch', function(){
     gulp.watch(srcSass, ['sass']);
 });
 
-gulp.task('default',['sass','minify-js'],function(){
+gulp.task('default',['sass','minify-js','copy'],function(){
     watch(['resource/**/*.scss'], function(event){
         gulp.start(['sass']); // sassに変更があったら実行。cssを吐き出すので下のwatchが動く。
     });
