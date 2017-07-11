@@ -1,0 +1,2140 @@
+<?xml version="1.0"?>
+<concrete5-cif version="1.0">
+  <pages>
+    <page name="&#x30C8;&#x30C3;&#x30D7;&#x30DA;&#x30FC;&#x30B8;" path="" filename="" pagetype="" template="home" user="admin" description="&#x8AAC;&#x660E;&#x6587;" package="">
+      <attributes>
+        <attributekey handle="meta_title">
+          <value><![CDATA[トップページ：Metaタグタイトル]]></value>
+        </attributekey>
+        <attributekey handle="meta_description">
+          <value><![CDATA[トップページ：Metaタグ説明]]></value>
+        </attributekey>
+        <attributekey handle="exclude_nav">
+          <value><![CDATA[0]]></value>
+        </attributekey>
+        <attributekey handle="header_extra_content">
+          <value><![CDATA[]]></value>
+        </attributekey>
+        <attributekey handle="tags">
+          <value>
+            <option>cms</option>
+            <option>&#x30EC;&#x30B9;&#x30DD;&#x30F3;&#x30B7;&#x30D6;</option>
+          </value>
+        </attributekey>
+        <attributekey handle="is_featured">
+          <value><![CDATA[0]]></value>
+        </attributekey>
+        <attributekey handle="exclude_sitemapxml">
+          <value><![CDATA[0]]></value>
+        </attributekey>
+        <attributekey handle="thumbnail">
+          <value>
+            <fID>{ccm:export:file:plants.jpg}</fID>
+          </value>
+        </attributekey>
+      </attributes>
+      <area name="Main">
+        <blocks>
+          <block type="image_slider" name="">
+            <data table="btImageSlider">
+              <record>
+                <navigationType><![CDATA[1]]></navigationType>
+              </record>
+            </data>
+            <data table="btImageSliderEntries">
+              <record>
+                <id><![CDATA[1]]></id>
+                <cID><![CDATA[0]]></cID>
+                <fID>{ccm:export:file:slider1.png}</fID>
+                <linkURL><![CDATA[]]></linkURL>
+                <internalLinkCID><![CDATA[0]]></internalLinkCID>
+                <title><![CDATA[Stand Out on the Web]]></title>
+                <description><![CDATA[<p>Share your business with an impressive, yet minimal presentation. Let your customers understand your web presence through elegance and clarity.</p>]]></description>
+                <sortOrder><![CDATA[0]]></sortOrder>
+              </record>
+              <record>
+                <id><![CDATA[2]]></id>
+                <cID><![CDATA[0]]></cID>
+                <fID>{ccm:export:file:slider2.png}</fID>
+                <linkURL><![CDATA[]]></linkURL>
+                <internalLinkCID><![CDATA[0]]></internalLinkCID>
+                <title><![CDATA[A Simple Image Slider]]></title>
+                <description><![CDATA[<p>This image slider can have any content that you want in it.</p>]]></description>
+                <sortOrder><![CDATA[1]]></sortOrder>
+              </record>
+            </data>
+          </block>
+          <block type="core_area_layout" name="">
+            <arealayout type="theme-grid" columns="12">
+              <columns>
+                <column span="4" offset="0">
+                  <block type="feature" name="">
+                    <style>
+                      <backgroundColor/>
+                      <backgroundRepeat/>
+                      <borderWidth/>
+                      <borderColor/>
+                      <borderStyle/>
+                      <borderRadius/>
+                      <baseFontSize/>
+                      <alignment/>
+                      <textColor/>
+                      <linkColor/>
+                      <paddingTop/>
+                      <paddingBottom/>
+                      <paddingLeft/>
+                      <paddingRight/>
+                      <marginTop/>
+                      <marginBottom/>
+                      <marginLeft/>
+                      <marginRight/>
+                      <rotate/>
+                      <boxShadowHorizontal/>
+                      <boxShadowVertical/>
+                      <boxShadowBlur/>
+                      <boxShadowSpread/>
+                      <boxShadowColor/>
+                      <customClass>feature-home-page</customClass>
+                      <hideOnExtraSmallDevice/>
+                      <hideOnSmallDevice/>
+                      <hideOnMediumDevice/>
+                      <hideOnLargeDevice/>
+                    </style>
+                    <data table="btFeature">
+                      <record>
+                        <icon><![CDATA[pencil]]></icon>
+                        <title><![CDATA[Easy to Edit]]></title>
+                        <paragraph><![CDATA[Pellentesque ultricies ligula vel neque dictum, eu mollis tortor adipiscing. Etiam congue, est vel tincidunt vestibulum, nunc nunc porta nulla, at adipiscing neque tellus quis urna.]]></paragraph>
+                        <externalLink><![CDATA[]]></externalLink>
+                        <internalLinkCID/>
+                      </record>
+                    </data>
+                  </block>
+                </column>
+                <column span="4" offset="0">
+                  <block type="feature" name="">
+                    <style>
+                      <backgroundColor/>
+                      <backgroundRepeat/>
+                      <borderWidth/>
+                      <borderColor/>
+                      <borderStyle/>
+                      <borderRadius/>
+                      <baseFontSize/>
+                      <alignment/>
+                      <textColor/>
+                      <linkColor/>
+                      <paddingTop/>
+                      <paddingBottom/>
+                      <paddingLeft/>
+                      <paddingRight/>
+                      <marginTop/>
+                      <marginBottom/>
+                      <marginLeft/>
+                      <marginRight/>
+                      <rotate/>
+                      <boxShadowHorizontal/>
+                      <boxShadowVertical/>
+                      <boxShadowBlur/>
+                      <boxShadowSpread/>
+                      <boxShadowColor/>
+                      <customClass>feature-home-page</customClass>
+                      <hideOnExtraSmallDevice/>
+                      <hideOnSmallDevice/>
+                      <hideOnMediumDevice/>
+                      <hideOnLargeDevice/>
+                    </style>
+                    <data table="btFeature">
+                      <record>
+                        <icon><![CDATA[eye]]></icon>
+                        <title><![CDATA[Pixel Perfect]]></title>
+                        <paragraph><![CDATA[Pellentesque ultricies ligula vel neque dictum, eu mollis tortor adipiscing. Etiam congue, est vel tincidunt vestibulum, nunc nunc porta nulla, at adipiscing neque tellus quis urna.]]></paragraph>
+                        <externalLink><![CDATA[]]></externalLink>
+                        <internalLinkCID/>
+                      </record>
+                    </data>
+                  </block>
+                </column>
+                <column span="4" offset="0">
+                  <block type="feature" name="">
+                    <style>
+                      <backgroundColor/>
+                      <backgroundRepeat/>
+                      <borderWidth/>
+                      <borderColor/>
+                      <borderStyle/>
+                      <borderRadius/>
+                      <baseFontSize/>
+                      <alignment/>
+                      <textColor/>
+                      <linkColor/>
+                      <paddingTop/>
+                      <paddingBottom/>
+                      <paddingLeft/>
+                      <paddingRight/>
+                      <marginTop/>
+                      <marginBottom/>
+                      <marginLeft/>
+                      <marginRight/>
+                      <rotate/>
+                      <boxShadowHorizontal/>
+                      <boxShadowVertical/>
+                      <boxShadowBlur/>
+                      <boxShadowSpread/>
+                      <boxShadowColor/>
+                      <customClass>feature-home-page</customClass>
+                      <hideOnExtraSmallDevice/>
+                      <hideOnSmallDevice/>
+                      <hideOnMediumDevice/>
+                      <hideOnLargeDevice/>
+                    </style>
+                    <data table="btFeature">
+                      <record>
+                        <icon><![CDATA[youtube-play]]></icon>
+                        <title><![CDATA[Media Rich]]></title>
+                        <paragraph><![CDATA[Pellentesque ultricies ligula vel neque dictum, eu mollis tortor adipiscing. Etiam congue, est vel tincidunt vestibulum, nunc nunc porta nulla, at adipiscing neque tellus quis urna.]]></paragraph>
+                        <externalLink><![CDATA[]]></externalLink>
+                        <internalLinkCID/>
+                      </record>
+                    </data>
+                  </block>
+                </column>
+              </columns>
+            </arealayout>
+          </block>
+          <block type="horizontal_rule" name=""/>
+          <block type="content" name="">
+            <style>
+              <backgroundColor/>
+              <backgroundRepeat/>
+              <borderWidth/>
+              <borderColor/>
+              <borderStyle/>
+              <borderRadius/>
+              <baseFontSize/>
+              <alignment/>
+              <textColor/>
+              <linkColor/>
+              <paddingTop/>
+              <paddingBottom/>
+              <paddingLeft/>
+              <paddingRight/>
+              <marginTop/>
+              <marginBottom>80px</marginBottom>
+              <marginLeft/>
+              <marginRight/>
+              <rotate/>
+              <boxShadowHorizontal/>
+              <boxShadowVertical/>
+              <boxShadowBlur/>
+              <boxShadowSpread/>
+              <boxShadowColor/>
+              <customClass/>
+              <hideOnExtraSmallDevice/>
+              <hideOnSmallDevice/>
+              <hideOnMediumDevice/>
+              <hideOnLargeDevice/>
+            </style>
+            <data table="btContentLocal">
+              <record>
+                <content><![CDATA[<p style="text-align: center"><span class="title-caps-bold">Presenting your Business has never been so easy</span></p><p style="text-align: center;">Pellentesque ultricies ligula vel neque dictum, eu mollis tortor adipiscing.</p><p style="text-align: center;">Etiam congue, est vel tincidunt vestibulum, nunc nunc porta nulla, at adipiscing neque tellus quis urna. </p>]]></content>
+              </record>
+            </data>
+          </block>
+          <block type="page_list" name="" custom-template="thumbnail_grid">
+            <data table="btPageList">
+              <record>
+                <num><![CDATA[3]]></num>
+                <orderBy><![CDATA[chrono_desc]]></orderBy>
+                <cParentID/>
+                <cThis><![CDATA[0]]></cThis>
+                <useButtonForLink><![CDATA[1]]></useButtonForLink>
+                <buttonLinkText><![CDATA[View Project]]></buttonLinkText>
+                <pageListTitle><![CDATA[]]></pageListTitle>
+                <filterByRelated><![CDATA[0]]></filterByRelated>
+                <filterByCustomTopic><![CDATA[0]]></filterByCustomTopic>
+                <filterDateOption><![CDATA[]]></filterDateOption>
+                <filterDateDays><![CDATA[0]]></filterDateDays>
+                <filterDateStart><![CDATA[]]></filterDateStart>
+                <filterDateEnd><![CDATA[]]></filterDateEnd>
+                <relatedTopicAttributeKeyHandle><![CDATA[]]></relatedTopicAttributeKeyHandle>
+                <customTopicAttributeKeyHandle><![CDATA[]]></customTopicAttributeKeyHandle>
+                <customTopicTreeNodeID><![CDATA[0]]></customTopicTreeNodeID>
+                <includeName><![CDATA[1]]></includeName>
+                <includeDescription><![CDATA[1]]></includeDescription>
+                <includeDate><![CDATA[0]]></includeDate>
+                <includeAllDescendents><![CDATA[0]]></includeAllDescendents>
+                <paginate><![CDATA[0]]></paginate>
+                <displayAliases><![CDATA[0]]></displayAliases>
+                <enableExternalFiltering><![CDATA[0]]></enableExternalFiltering>
+                <ptID>{ccm:export:pagetype:portfolio_project}</ptID>
+                <pfID/>
+                <truncateSummaries><![CDATA[0]]></truncateSummaries>
+                <displayFeaturedOnly><![CDATA[1]]></displayFeaturedOnly>
+                <noResultsMessage><![CDATA[]]></noResultsMessage>
+                <displayThumbnail><![CDATA[1]]></displayThumbnail>
+                <truncateChars><![CDATA[0]]></truncateChars>
+              </record>
+            </data>
+          </block>
+          <block type="horizontal_rule" name=""/>
+          <block type="core_area_layout" name="">
+            <arealayout type="theme-grid" columns="12">
+              <columns>
+                <column span="6" offset="0">
+                  <block type="content" name="">
+                    <data table="btContentLocal">
+                      <record>
+                        <content><![CDATA[<h5>Latest Blog Post</h5>]]></content>
+                      </record>
+                    </data>
+                  </block>
+                </column>
+                <column span="6" offset="0">
+                  <block type="content" name="">
+                    <data table="btContentLocal">
+                      <record>
+                        <content><![CDATA[<h5>Now Open For Business</h5>]]></content>
+                      </record>
+                    </data>
+                  </block>
+                </column>
+              </columns>
+            </arealayout>
+          </block>
+          <block type="core_area_layout" name="">
+            <arealayout type="theme-grid" columns="12">
+              <columns>
+                <column span="2" offset="0">
+                  <block type="page_list" name="">
+                    <style>
+                      <backgroundColor/>
+                      <backgroundRepeat/>
+                      <borderWidth/>
+                      <borderColor/>
+                      <borderStyle/>
+                      <borderRadius/>
+                      <baseFontSize/>
+                      <alignment/>
+                      <textColor/>
+                      <linkColor/>
+                      <paddingTop/>
+                      <paddingBottom/>
+                      <paddingLeft/>
+                      <paddingRight/>
+                      <marginTop/>
+                      <marginBottom/>
+                      <marginLeft/>
+                      <marginRight/>
+                      <rotate/>
+                      <boxShadowHorizontal/>
+                      <boxShadowVertical/>
+                      <boxShadowBlur/>
+                      <boxShadowSpread/>
+                      <boxShadowColor/>
+                      <customClass>recent-blog-entry</customClass>
+                      <hideOnExtraSmallDevice/>
+                      <hideOnSmallDevice/>
+                      <hideOnMediumDevice/>
+                      <hideOnLargeDevice/>
+                    </style>
+                    <data table="btPageList">
+                      <record>
+                        <num><![CDATA[1]]></num>
+                        <orderBy><![CDATA[chrono_desc]]></orderBy>
+                        <cParentID/>
+                        <cThis><![CDATA[0]]></cThis>
+                        <useButtonForLink><![CDATA[0]]></useButtonForLink>
+                        <buttonLinkText><![CDATA[]]></buttonLinkText>
+                        <pageListTitle><![CDATA[]]></pageListTitle>
+                        <filterByRelated><![CDATA[0]]></filterByRelated>
+                        <filterByCustomTopic><![CDATA[0]]></filterByCustomTopic>
+                        <filterDateOption><![CDATA[]]></filterDateOption>
+                        <filterDateDays><![CDATA[0]]></filterDateDays>
+                        <filterDateStart><![CDATA[]]></filterDateStart>
+                        <filterDateEnd><![CDATA[]]></filterDateEnd>
+                        <relatedTopicAttributeKeyHandle><![CDATA[]]></relatedTopicAttributeKeyHandle>
+                        <customTopicAttributeKeyHandle><![CDATA[]]></customTopicAttributeKeyHandle>
+                        <customTopicTreeNodeID><![CDATA[0]]></customTopicTreeNodeID>
+                        <includeName><![CDATA[0]]></includeName>
+                        <includeDescription><![CDATA[0]]></includeDescription>
+                        <includeDate><![CDATA[0]]></includeDate>
+                        <includeAllDescendents><![CDATA[0]]></includeAllDescendents>
+                        <paginate><![CDATA[0]]></paginate>
+                        <displayAliases><![CDATA[0]]></displayAliases>
+                        <enableExternalFiltering><![CDATA[0]]></enableExternalFiltering>
+                        <ptID>{ccm:export:pagetype:blog_entry}</ptID>
+                        <pfID/>
+                        <truncateSummaries><![CDATA[0]]></truncateSummaries>
+                        <displayFeaturedOnly><![CDATA[0]]></displayFeaturedOnly>
+                        <noResultsMessage><![CDATA[]]></noResultsMessage>
+                        <displayThumbnail><![CDATA[1]]></displayThumbnail>
+                        <truncateChars><![CDATA[0]]></truncateChars>
+                      </record>
+                    </data>
+                  </block>
+                </column>
+                <column span="3" offset="0">
+                  <block type="page_list" name="">
+                    <style>
+                      <backgroundColor/>
+                      <backgroundRepeat/>
+                      <borderWidth/>
+                      <borderColor/>
+                      <borderStyle/>
+                      <borderRadius/>
+                      <baseFontSize/>
+                      <alignment/>
+                      <textColor/>
+                      <linkColor/>
+                      <paddingTop/>
+                      <paddingBottom/>
+                      <paddingLeft/>
+                      <paddingRight/>
+                      <marginTop/>
+                      <marginBottom/>
+                      <marginLeft/>
+                      <marginRight/>
+                      <rotate/>
+                      <boxShadowHorizontal/>
+                      <boxShadowVertical/>
+                      <boxShadowBlur/>
+                      <boxShadowSpread/>
+                      <boxShadowColor/>
+                      <customClass>recent-blog-entry</customClass>
+                      <hideOnExtraSmallDevice/>
+                      <hideOnSmallDevice/>
+                      <hideOnMediumDevice/>
+                      <hideOnLargeDevice/>
+                    </style>
+                    <data table="btPageList">
+                      <record>
+                        <num><![CDATA[1]]></num>
+                        <orderBy><![CDATA[display_asc]]></orderBy>
+                        <cParentID/>
+                        <cThis><![CDATA[0]]></cThis>
+                        <useButtonForLink><![CDATA[0]]></useButtonForLink>
+                        <buttonLinkText><![CDATA[]]></buttonLinkText>
+                        <pageListTitle><![CDATA[]]></pageListTitle>
+                        <filterByRelated><![CDATA[0]]></filterByRelated>
+                        <filterByCustomTopic><![CDATA[0]]></filterByCustomTopic>
+                        <filterDateOption><![CDATA[]]></filterDateOption>
+                        <filterDateDays><![CDATA[0]]></filterDateDays>
+                        <filterDateStart><![CDATA[]]></filterDateStart>
+                        <filterDateEnd><![CDATA[]]></filterDateEnd>
+                        <relatedTopicAttributeKeyHandle><![CDATA[]]></relatedTopicAttributeKeyHandle>
+                        <customTopicAttributeKeyHandle><![CDATA[]]></customTopicAttributeKeyHandle>
+                        <customTopicTreeNodeID><![CDATA[0]]></customTopicTreeNodeID>
+                        <includeName><![CDATA[1]]></includeName>
+                        <includeDescription><![CDATA[1]]></includeDescription>
+                        <includeDate><![CDATA[0]]></includeDate>
+                        <includeAllDescendents><![CDATA[0]]></includeAllDescendents>
+                        <paginate><![CDATA[0]]></paginate>
+                        <displayAliases><![CDATA[0]]></displayAliases>
+                        <enableExternalFiltering><![CDATA[0]]></enableExternalFiltering>
+                        <ptID>{ccm:export:pagetype:blog_entry}</ptID>
+                        <pfID/>
+                        <truncateSummaries><![CDATA[0]]></truncateSummaries>
+                        <displayFeaturedOnly><![CDATA[0]]></displayFeaturedOnly>
+                        <noResultsMessage><![CDATA[]]></noResultsMessage>
+                        <displayThumbnail><![CDATA[0]]></displayThumbnail>
+                        <truncateChars><![CDATA[0]]></truncateChars>
+                      </record>
+                    </data>
+                  </block>
+                </column>
+                <column span="6" offset="1">
+                  <block type="content" name="">
+                    <data table="btContentLocal">
+                      <record>
+                        <content><![CDATA[<p>  <span class="title-thin">We specialize in making your concepts a reality.</span>  </p>  <p>    Sed cursus facilisis dignissim. Aliquam rhoncus enim et pellentesque varius. Nulla sodales nibh lorem, sit amet imperdiet arcu commodo sit amet. Mauris sed scelerisque nisl. Ut auctor ipsum tellus, vel viverra massa elementum sit amet.  </p>  <p>    Sed adipiscing tempus sem eu molestie. Aenean laoreet pretium ante vitae ultrices. Aenean eu gravida magna, vel aliquet magna. In auctor convallis gravida.<br>  </p>  <br/>  <p>  <a href="{ccm:export:page:/contact}"><span class="btn btn-success">Contact Us Today</span></a>  </p>]]></content>
+                      </record>
+                    </data>
+                  </block>
+                </column>
+              </columns>
+            </arealayout>
+          </block>
+        </blocks>
+      </area>
+      <area name="Page Footer">
+        <style>
+          <backgroundColor/>
+          <backgroundRepeat/>
+          <borderWidth/>
+          <borderColor/>
+          <borderStyle/>
+          <borderRadius/>
+          <baseFontSize/>
+          <alignment/>
+          <textColor/>
+          <linkColor/>
+          <paddingTop/>
+          <paddingBottom/>
+          <paddingLeft/>
+          <paddingRight/>
+          <marginTop/>
+          <marginBottom/>
+          <marginLeft/>
+          <marginRight/>
+          <rotate/>
+          <boxShadowHorizontal/>
+          <boxShadowVertical/>
+          <boxShadowBlur/>
+          <boxShadowSpread/>
+          <boxShadowColor/>
+          <customClass>area-content-accent</customClass>
+          <hideOnExtraSmallDevice/>
+          <hideOnSmallDevice/>
+          <hideOnMediumDevice/>
+          <hideOnLargeDevice/>
+        </style>
+        <blocks>
+          <block type="content" name="">
+            <data table="btContentLocal">
+              <record>
+                <content><![CDATA[<p style="text-align: center"><span class="title-caps">Customizable footer area with accent class.</span></p>]]></content>
+              </record>
+            </data>
+          </block>
+        </blocks>
+      </area>
+      <area name="Headline">
+        <blocks>
+          <block type="html" name="">
+            <data table="btContentLocal">
+              <record>
+                <content><![CDATA[ニナ・アーキタイプはWeb / iOS / Androidに対するユーザーインターフェイスを提供するフリーランスのUIデザイナーです]]></content>
+              </record>
+            </data>
+          </block>
+        </blocks>
+      </area>
+    </page>
+    <page name="&#x30CB;&#x30CA;&#x30FB;&#x30A2;&#x30FC;&#x30AD;&#x30BF;&#x30A4;&#x30D7;&#x306B;&#x3064;&#x3044;&#x3066;" path="/about" filename="" pagetype="page" template="details" user="admin" description="" package="">
+      <attributes>
+        <attributekey handle="meta_title">
+          <value><![CDATA[]]></value>
+        </attributekey>
+        <attributekey handle="meta_description">
+          <value><![CDATA[]]></value>
+        </attributekey>
+        <attributekey handle="header_extra_content">
+          <value><![CDATA[]]></value>
+        </attributekey>
+        <attributekey handle="exclude_sitemapxml">
+          <value><![CDATA[0]]></value>
+        </attributekey>
+      </attributes>
+      <area name="Main">
+        <blocks>
+          <block type="core_area_layout" name="">
+            <arealayout type="theme-grid" columns="12">
+              <columns>
+                <column span="6" offset="0">
+                  <block type="html" name="">
+                    <data table="btContentLocal">
+                      <record>
+                        <content><![CDATA[  <p class="l-about__ttl c-contentTtl--secondary">ニナ・アーキタイプについて</p>
+  <h2 class="l-about__cache">制作プロダクションを経てフリーランスとして独立しました</h2>
+   ]]></content>
+                      </record>
+                    </data>
+                  </block>
+                </column>
+                <column span="6" offset="0">
+                  <block type="html" name="">
+                    <data table="btContentLocal">
+                      <record>
+                        <content><![CDATA[<p class="l-about__img"><img src="/application/themes/nina/img/about/01.png" alt=""></p>]]></content>
+                      </record>
+                    </data>
+                  </block>
+                  <block type="html" name="">
+                    <style>
+                      <backgroundColor/>
+                      <backgroundRepeat>no-repeat</backgroundRepeat>
+                      <borderWidth/>
+                      <borderColor/>
+                      <borderStyle/>
+                      <borderRadius/>
+                      <baseFontSize/>
+                      <alignment/>
+                      <textColor/>
+                      <linkColor/>
+                      <paddingTop/>
+                      <paddingBottom/>
+                      <paddingLeft/>
+                      <paddingRight/>
+                      <marginTop/>
+                      <marginBottom/>
+                      <marginLeft/>
+                      <marginRight/>
+                      <rotate/>
+                      <boxShadowHorizontal/>
+                      <boxShadowVertical/>
+                      <boxShadowBlur/>
+                      <boxShadowSpread/>
+                      <boxShadowColor/>
+                      <customClass>l-about__inner</customClass>
+                      <hideOnExtraSmallDevice/>
+                      <hideOnSmallDevice/>
+                      <hideOnMediumDevice/>
+                      <hideOnLargeDevice/>
+                    </style>
+                    <data table="btContentLocal">
+                      <record>
+                        <content><![CDATA[     <p>ニナ・アーキタイプは都内の制作プロダクション数社を経て、2016年にフリーランスとして独立したデザインマネジメントを得意とするUIデザイナーです。</p>
+]]></content>
+                      </record>
+                    </data>
+                  </block>
+                </column>
+              </columns>
+            </arealayout>
+          </block>
+          <block type="content" name="">
+            <style>
+              <backgroundColor/>
+              <backgroundRepeat>no-repeat</backgroundRepeat>
+              <borderWidth/>
+              <borderColor/>
+              <borderStyle/>
+              <borderRadius/>
+              <baseFontSize/>
+              <alignment/>
+              <textColor/>
+              <linkColor/>
+              <paddingTop/>
+              <paddingBottom/>
+              <paddingLeft/>
+              <paddingRight/>
+              <marginTop/>
+              <marginBottom/>
+              <marginLeft/>
+              <marginRight/>
+              <rotate/>
+              <boxShadowHorizontal/>
+              <boxShadowVertical/>
+              <boxShadowBlur/>
+              <boxShadowSpread/>
+              <boxShadowColor/>
+              <customClass>l-about__inner</customClass>
+              <hideOnExtraSmallDevice/>
+              <hideOnSmallDevice/>
+              <hideOnMediumDevice/>
+              <hideOnLargeDevice/>
+            </style>
+            <data table="btContentLocal">
+              <record>
+                <content><![CDATA[<h3>目的や課題解決のための手法がデザインです<br></h3>  <p>UIデザイナー。従来のWebデザイナー・ディレクターとの違いって？と思う人もいると思います。僕が考えるUIデザイナーの定義は、従来のデザイナー・ディレクター以上に、使い易さや操作感の設計に力をいれ、<strong>クライアントがコンテンツを通して実現したいこと・目的に対してユーザーを誘導することに特化させたデザイナー</strong>という認識を持っています。</p>  <h3>サービスやコンテンツの目的を理解することに注力します</h3>  <p><strong>デザインはつくることが目的ではなく、あくまで目的解決の為の手段</strong>です。ひらめきで素晴らしいセンスを発揮する見栄えの良い"だけ"のデザインでは、意味も価値もありません。</p>  <p>クライアントのコンテンツへの理解を深めユーザーにとってわかりやすく、使いやすくすること。ユーザーにポジティブな印象を与えること。コンテンツがユーザーに伝わり、結果として繋がりつくる手段としてのデザインをクライアントと一緒に考え、提供します。</p><p>クライアント自身のビジネスの実情を踏まえた上で的確な表現やご提案をいたしますので、ぜひお問い合わせください。</p>]]></content>
+              </record>
+            </data>
+          </block>
+          <block type="html" name="">
+            <style>
+              <backgroundColor/>
+              <backgroundRepeat>no-repeat</backgroundRepeat>
+              <borderWidth/>
+              <borderColor/>
+              <borderStyle/>
+              <borderRadius/>
+              <baseFontSize/>
+              <alignment/>
+              <textColor/>
+              <linkColor/>
+              <paddingTop/>
+              <paddingBottom/>
+              <paddingLeft/>
+              <paddingRight/>
+              <marginTop/>
+              <marginBottom/>
+              <marginLeft/>
+              <marginRight/>
+              <rotate/>
+              <boxShadowHorizontal/>
+              <boxShadowVertical/>
+              <boxShadowBlur/>
+              <boxShadowSpread/>
+              <boxShadowColor/>
+              <customClass>l-about__item</customClass>
+              <hideOnExtraSmallDevice/>
+              <hideOnSmallDevice/>
+              <hideOnMediumDevice/>
+              <hideOnLargeDevice/>
+            </style>
+            <data table="btContentLocal">
+              <record>
+                <content><![CDATA[  <h4 class="l-about__item__ttl">ニナ・アーキタイプ</h4>
+  <ul class="l-about__item__detail">
+    <li>
+      <dl class="c-table">
+        <dt>名称</dt>
+        <dd>nina ARCHETYPE (ニナ・アーキタイプ)</dd>
+      </dl>
+    </li>
+    <li>
+      <dl class="c-table">
+        <dt>代表者名</dt>
+        <dd>藤岡 浩史</dd>
+      </dl>
+    </li>
+
+    <li>
+      <dl class="c-table">
+        <dt>所在地</dt>
+        <dd>東京都世田谷区下馬(※自宅兼用のため請求書等に記載）</dd>
+      </dl>
+    </li>
+    <li>
+      <dl class="c-table">
+        <dt>連絡先</dt>
+        <dd>info@nina-archetype.com</dd>
+      </dl>
+    </li>
+    <li>
+      <dl class="c-table">
+        <dt>業務内容</dt>
+        <dd>
+          ブランディング・コミュニケーションデザイン／総合的なコミュニケーションデザインの企画・デザイン／C.I. / V.I. / ブランディングの企画・デザイン／販促プロモーションの企画・デザイン／Webサイトの企画・デザインおよび制作／アプリケーション・プロモーションツールのデザインおよび制作／ポスター・パンフレット・カタログ・パッケージ／ディスプレイ・媒体広告などのデザインおよび制作</dd>
+        </dl>
+      </li>
+    </ul>]]></content>
+              </record>
+            </data>
+          </block>
+          <block type="html" name="">
+            <style>
+              <backgroundColor/>
+              <backgroundRepeat>no-repeat</backgroundRepeat>
+              <borderWidth/>
+              <borderColor/>
+              <borderStyle/>
+              <borderRadius/>
+              <baseFontSize/>
+              <alignment/>
+              <textColor/>
+              <linkColor/>
+              <paddingTop/>
+              <paddingBottom/>
+              <paddingLeft/>
+              <paddingRight/>
+              <marginTop/>
+              <marginBottom/>
+              <marginLeft/>
+              <marginRight/>
+              <rotate/>
+              <boxShadowHorizontal/>
+              <boxShadowVertical/>
+              <boxShadowBlur/>
+              <boxShadowSpread/>
+              <boxShadowColor/>
+              <customClass>l-about__item c-profile</customClass>
+              <hideOnExtraSmallDevice/>
+              <hideOnSmallDevice/>
+              <hideOnMediumDevice/>
+              <hideOnLargeDevice/>
+            </style>
+            <data table="btContentLocal">
+              <record>
+                <content><![CDATA[     <h4 class="l-about__item__ttl">プロフィール</h4>
+     <div class="l-about__item__detail c-profile__inner">
+       <div class="c-profile__inner__item--img">
+         <img src="/application/themes/nina/img/about/img01.png" alt="">
+       </div>
+       <div class="c-profile__inner__item--detail">
+         <p class="c-profile__inner__item__ttl">藤岡 浩史</p>
+         <p class="c-profile__inner__item__subtext">UIデザイナー・Webデザイナー・Webコンサルタント・UXリサーチャー</p>
+         <p class="c-profile__inner__item__text">
+           東京都世田谷区在住。横浜市出身。
+         </p>
+         <p class="c-profile__inner__item__text">都内数社の制作プロダクションを経て、2016年8月に独立しました。</p>
+         <p class="c-profile__inner__item__text">これまでWebサイトやアプリ上におけるフロントエンド・デザインを現場レベルで数多く経験しています。</p>
+
+         <p class="c-profile__inner__item__text">単純な「つくる」だけでなくユーザー目線から逆算し、クライアントはもちろんコンテンツやブランドに付加価値を与える事ができる仕事を目指しています。</p>
+       </div>
+     </div>
+]]></content>
+              </record>
+            </data>
+          </block>
+          <block type="core_stack_display" name="">
+            <stack><![CDATA[cta]]></stack>
+          </block>
+        </blocks>
+      </area>
+      <area name="Page Footer">
+        <style>
+          <backgroundColor/>
+          <backgroundRepeat/>
+          <borderWidth/>
+          <borderColor/>
+          <borderStyle/>
+          <borderRadius/>
+          <baseFontSize/>
+          <alignment/>
+          <textColor/>
+          <linkColor/>
+          <paddingTop/>
+          <paddingBottom/>
+          <paddingLeft/>
+          <paddingRight/>
+          <marginTop/>
+          <marginBottom/>
+          <marginLeft/>
+          <marginRight/>
+          <rotate/>
+          <boxShadowHorizontal/>
+          <boxShadowVertical/>
+          <boxShadowBlur/>
+          <boxShadowSpread/>
+          <boxShadowColor/>
+          <customClass>area-content-accent</customClass>
+          <hideOnExtraSmallDevice/>
+          <hideOnSmallDevice/>
+          <hideOnMediumDevice/>
+          <hideOnLargeDevice/>
+        </style>
+        <blocks>
+          <block type="content" name="">
+            <data table="btContentLocal">
+              <record>
+                <content><![CDATA[<p style="text-align: center"><span class="title-caps">What Clients Are Saying About Us</span></p>]]></content>
+              </record>
+            </data>
+          </block>
+          <block type="core_area_layout" name="">
+            <arealayout type="theme-grid" columns="12">
+              <columns>
+                <column span="5" offset="0">
+                  <block type="testimonial" name="">
+                    <data table="btTestimonial">
+                      <record>
+                        <fID>{ccm:export:file:avatar_none.png}</fID>
+                        <name><![CDATA[Franz Maruna]]></name>
+                        <position><![CDATA[CEO & Founder]]></position>
+                        <company><![CDATA[concrete5]]></company>
+                        <companyURL><![CDATA[http://concrete5.org]]></companyURL>
+                        <paragraph><![CDATA[Curabitur sagittis elementum felis at sodales. Nullam fermentum at urna quis accumsan. Nam bibendum leo nisi, lacinia molestie arcu consequat quis. Morbi at suscipit risus.]]></paragraph>
+                      </record>
+                    </data>
+                  </block>
+                  <block type="testimonial" name="">
+                    <data table="btTestimonial">
+                      <record>
+                        <fID>{ccm:export:file:avatar_none.png}</fID>
+                        <name><![CDATA[John Doe]]></name>
+                        <position><![CDATA[Marketing Directory]]></position>
+                        <company><![CDATA[CompanyCo]]></company>
+                        <companyURL><![CDATA[]]></companyURL>
+                        <paragraph><![CDATA[Curabitur sagittis elementum felis at sodales. Nullam fermentum at urna quis accumsan. Nam bibendum leo nisi, lacinia molestie arcu consequat quis. Morbi at suscipit risus.]]></paragraph>
+                      </record>
+                    </data>
+                  </block>
+                </column>
+                <column span="5" offset="2">
+                  <block type="testimonial" name="">
+                    <data table="btTestimonial">
+                      <record>
+                        <fID>{ccm:export:file:avatar_none.png}</fID>
+                        <name><![CDATA[Andrew Embler]]></name>
+                        <position><![CDATA[CTO & Founder]]></position>
+                        <company><![CDATA[concrete5]]></company>
+                        <companyURL><![CDATA[http://concrete5.org]]></companyURL>
+                        <paragraph><![CDATA[Curabitur sagittis elementum felis at sodales. Nullam fermentum at urna quis accumsan. Nam bibendum leo nisi, lacinia molestie arcu consequat quis. Morbi at suscipit risus.]]></paragraph>
+                      </record>
+                    </data>
+                  </block>
+                  <block type="testimonial" name="">
+                    <data table="btTestimonial">
+                      <record>
+                        <fID>{ccm:export:file:avatar_none.png}</fID>
+                        <name><![CDATA[Jane Doe]]></name>
+                        <position><![CDATA[IT Manager]]></position>
+                        <company><![CDATA[CompanyCo]]></company>
+                        <companyURL><![CDATA[]]></companyURL>
+                        <paragraph><![CDATA[Curabitur sagittis elementum felis at sodales. Nullam fermentum at urna quis accumsan. Nam bibendum leo nisi, lacinia molestie arcu consequat quis. Morbi at suscipit risus.]]></paragraph>
+                      </record>
+                    </data>
+                  </block>
+                </column>
+              </columns>
+            </arealayout>
+          </block>
+        </blocks>
+      </area>
+      <area name="Sidebar">
+        <blocks/>
+      </area>
+      <area name="Headline">
+        <blocks>
+          <block type="html" name="">
+            <data table="btContentLocal">
+              <record>
+                <content><![CDATA[ニナ・アーキタイプは高品質のUIデザインでクライアントとユーザー間のコミュニケーションをつくります]]></content>
+              </record>
+            </data>
+          </block>
+        </blocks>
+      </area>
+    </page>
+    <page name="&#x30B5;&#x30FC;&#x30D3;&#x30B9;&#x306B;&#x3064;&#x3044;&#x3066;" path="/service" filename="" pagetype="page" template="service_entry" user="admin" description="" package="">
+      <attributes>
+        <attributekey handle="meta_title">
+          <value><![CDATA[]]></value>
+        </attributekey>
+        <attributekey handle="meta_description">
+          <value><![CDATA[]]></value>
+        </attributekey>
+        <attributekey handle="header_extra_content">
+          <value><![CDATA[]]></value>
+        </attributekey>
+        <attributekey handle="exclude_sitemapxml">
+          <value><![CDATA[0]]></value>
+        </attributekey>
+        <attributekey handle="exclude_subpages_from_nav">
+          <value><![CDATA[1]]></value>
+        </attributekey>
+      </attributes>
+      <area name="Main">
+        <blocks>
+          <block type="html" name="">
+            <data table="btContentLocal">
+              <record>
+                <content><![CDATA[<p class="l-service__ttl c-contentTtl--secondary">サービス</p>
+<h2 class="l-service__cache">伝わるUIデザインでオーダーメイドな解決策をつくります</h2>]]></content>
+              </record>
+            </data>
+          </block>
+        </blocks>
+      </area>
+      <area name="Headline">
+        <blocks>
+          <block type="html" name="">
+            <data table="btContentLocal">
+              <record>
+                <content><![CDATA[ニナ・アーキタイプはさまざまなサイト提案・運用に対応します]]></content>
+              </record>
+            </data>
+          </block>
+        </blocks>
+      </area>
+      <area name="Content">
+        <blocks>
+          <block type="html" name="">
+            <data table="btContentLocal">
+              <record>
+                <content><![CDATA[<li class="l-service__inner__item__col">
+<div class="c-thumbnail--table">
+<p class="c-thumbnail--table__item--img">
+<img src="/application/themes/nina/img/service/03.png" alt="">
+</p>
+<div class="c-thumbnail--table__item--detail--right">
+<h2 class="c-thumbnail--table__item__ttl">UIデザイン</h2>
+<p class="c-thumbnail--table__item__text">ユーザーとの繋がりを作る上で重要な、どう感じてほしいか、どう使って欲しいか。サービスやコンテンツを理解した上で、クライアントがコンテンツを通して実現したいこと・目的に対してユーザーを誘導する手段としてのデザインを提案します。</p>
+<div class="c-thumbnail--table__item__btn">
+<p class="c-btn--tertiary"><a href="/service/design" title="">VIEW MORE</a></p>
+</div>
+</div>
+</div>
+</li>]]></content>
+              </record>
+            </data>
+          </block>
+          <block type="html" name="">
+            <data table="btContentLocal">
+              <record>
+                <content><![CDATA[<li class="l-service__inner__item__col">
+<div class="c-thumbnail--table">
+<p class="c-thumbnail--table__item--img">
+<img src="/application/themes/nina/img/service/02.png" alt="">
+</p>
+<div class="c-thumbnail--table__item--detail--right">
+<h2 class="c-thumbnail--table__item__ttl">レスポンシブデザイン</h2>
+<p class="c-thumbnail--table__item__text">多数の案件の経験を基に、お客様との密なコミュニケーションを大事に、デザインとパフォーマンスを両立したレスポンシブWebデザインで、ユーザーにとっての「見やすい」「使いやすい」をサイト上で展開し、コンテンツ訴求をサポートします。 </p>
+<div class="c-thumbnail--table__item__btn">
+<p class="c-btn--tertiary"><a href="/service/responsive" title="">VIEW MORE</a></p>
+</div>
+</div>
+</div>
+</li>
+]]></content>
+              </record>
+            </data>
+          </block>
+          <block type="html" name="">
+            <data table="btContentLocal">
+              <record>
+                <content><![CDATA[<li class="l-service__inner__item__col">
+<div class="c-thumbnail--table">
+<p class="c-thumbnail--table__item--img">
+<img src="/application/themes/nina/img/service/01.png" alt="">
+</p>
+<div class="c-thumbnail--table__item--detail--right">
+<h2 class="c-thumbnail--table__item__ttl">ウェブコンサルティング</h2>
+<p class="c-thumbnail--table__item__text">アクセス解析や競合分析による自社・他社を含むサイト内外の「現状分析」、サイトを戦略レベルから見直し、クライアントにとっての理想的なユーザー獲得のための、ウェブプロモーション・Web活用の改善プロセスのコンサルティングサービスを提供しています。</p>
+<div class="c-thumbnail--table__item__btn">
+<p class="c-btn--tertiary"><a href="/service/support" title="">VIEW MORE</a></p>
+</div>
+</div>
+</div>
+</li>
+]]></content>
+              </record>
+            </data>
+          </block>
+        </blocks>
+      </area>
+    </page>
+    <page name="&#x30A6;&#x30A7;&#x30D6;&#x30B3;&#x30F3;&#x30B5;&#x30EB;&#x30C6;&#x30A3;&#x30F3;&#x30B0;" path="/service/support" filename="" pagetype="page" template="article" user="admin" description="support&#x306E;&#x8AAC;&#x660E;&#x6587;&#x3092;&#x500B;&#x5225;&#x3067;&#x6307;&#x5B9A;&#x3002;" package="">
+      <attributes>
+        <attributekey handle="meta_title">
+          <value><![CDATA[]]></value>
+        </attributekey>
+        <attributekey handle="meta_description">
+          <value><![CDATA[]]></value>
+        </attributekey>
+        <attributekey handle="meta_keywords">
+          <value><![CDATA[]]></value>
+        </attributekey>
+        <attributekey handle="header_extra_content">
+          <value><![CDATA[]]></value>
+        </attributekey>
+        <attributekey handle="exclude_sitemapxml">
+          <value><![CDATA[0]]></value>
+        </attributekey>
+        <attributekey handle="thumbnail">
+          <value>
+            <fID>{ccm:export:file:01.png}</fID>
+          </value>
+        </attributekey>
+      </attributes>
+      <area name="Page Footer">
+        <blocks>
+          <block type="horizontal_rule" name=""/>
+          <block type="core_conversation" name="">
+            <data table="btCoreConversation">
+              <record>
+                <cnvID><![CDATA[2]]></cnvID>
+                <enablePosting><![CDATA[1]]></enablePosting>
+                <paginate><![CDATA[1]]></paginate>
+                <itemsPerPage><![CDATA[50]]></itemsPerPage>
+                <displayMode><![CDATA[threaded]]></displayMode>
+                <orderBy><![CDATA[date_asc]]></orderBy>
+                <enableOrdering><![CDATA[0]]></enableOrdering>
+                <enableCommentRating><![CDATA[1]]></enableCommentRating>
+                <displayPostingForm><![CDATA[top]]></displayPostingForm>
+                <addMessageLabel><![CDATA[Add Message]]></addMessageLabel>
+                <dateFormat><![CDATA[default]]></dateFormat>
+                <customDateFormat><![CDATA[]]></customDateFormat>
+              </record>
+            </data>
+          </block>
+        </blocks>
+      </area>
+      <area name="Main">
+        <blocks>
+          <block type="html" name="">
+            <data table="btContentLocal">
+              <record>
+                <content><![CDATA[<p class="l-article__ttl c-contentTtl--secondary">サービス</p>
+<h2 class="l-article__cache">ユーザに届いて伝わる。そんなサイトに育てませんか？</h2>
+<ul class="l-article__item--tag c-tab">
+<li><a href="#">ウェブコンサルティング</a></li>
+</ul>]]></content>
+              </record>
+            </data>
+          </block>
+          <block type="html" name="">
+            <data table="btContentLocal">
+              <record>
+                <content><![CDATA[<p class="l-article__img"><img src="/application/themes/nina/img/service/01.png" alt=""></p>]]></content>
+              </record>
+            </data>
+          </block>
+        </blocks>
+      </area>
+      <area name="Sidebar">
+        <blocks>
+          <block type="next_previous" name="">
+            <style>
+              <backgroundColor/>
+              <backgroundRepeat/>
+              <borderWidth/>
+              <borderColor/>
+              <borderStyle/>
+              <borderRadius/>
+              <baseFontSize/>
+              <alignment/>
+              <textColor/>
+              <linkColor/>
+              <paddingTop/>
+              <paddingBottom/>
+              <paddingLeft/>
+              <paddingRight/>
+              <marginTop/>
+              <marginBottom/>
+              <marginLeft/>
+              <marginRight/>
+              <rotate/>
+              <boxShadowHorizontal/>
+              <boxShadowVertical/>
+              <boxShadowBlur/>
+              <boxShadowSpread/>
+              <boxShadowColor/>
+              <customClass>block-sidebar-wrapped</customClass>
+              <hideOnExtraSmallDevice/>
+              <hideOnSmallDevice/>
+              <hideOnMediumDevice/>
+              <hideOnLargeDevice/>
+            </style>
+            <data table="btNextPrevious">
+              <record>
+                <nextLabel><![CDATA[Next Post]]></nextLabel>
+                <previousLabel><![CDATA[Last Post]]></previousLabel>
+                <parentLabel><![CDATA[]]></parentLabel>
+                <loopSequence><![CDATA[0]]></loopSequence>
+                <excludeSystemPages><![CDATA[1]]></excludeSystemPages>
+                <orderBy><![CDATA[chrono_desc]]></orderBy>
+              </record>
+            </data>
+          </block>
+          <block type="share_this_page" name="">
+            <style>
+              <backgroundColor/>
+              <backgroundRepeat/>
+              <borderWidth/>
+              <borderColor/>
+              <borderStyle/>
+              <borderRadius/>
+              <baseFontSize/>
+              <alignment/>
+              <textColor/>
+              <linkColor/>
+              <paddingTop/>
+              <paddingBottom/>
+              <paddingLeft/>
+              <paddingRight/>
+              <marginTop/>
+              <marginBottom/>
+              <marginLeft/>
+              <marginRight/>
+              <rotate/>
+              <boxShadowHorizontal/>
+              <boxShadowVertical/>
+              <boxShadowBlur/>
+              <boxShadowSpread/>
+              <boxShadowColor/>
+              <customClass>block-sidebar-wrapped</customClass>
+              <hideOnExtraSmallDevice/>
+              <hideOnSmallDevice/>
+              <hideOnMediumDevice/>
+              <hideOnLargeDevice/>
+            </style>
+            <data>
+              <service>facebook</service>
+              <service>twitter</service>
+              <service>linkedin</service>
+              <service>email</service>
+            </data>
+          </block>
+          <block type="topic_list" name="">
+            <data>
+              <mode>P</mode>
+              <title>Topics</title>
+              <topicAttributeKeyHandle>blog_entry_topics</topicAttributeKeyHandle>
+              <tree>Blog Entries</tree>
+              <cParentID>{ccm:export:page:/service}</cParentID>
+            </data>
+          </block>
+          <block type="page_list" name="">
+            <data table="btPageList">
+              <record>
+                <num><![CDATA[3]]></num>
+                <orderBy><![CDATA[random]]></orderBy>
+                <cParentID>{ccm:export:page:/service}</cParentID>
+                <cThis><![CDATA[0]]></cThis>
+                <useButtonForLink><![CDATA[0]]></useButtonForLink>
+                <buttonLinkText><![CDATA[]]></buttonLinkText>
+                <pageListTitle><![CDATA[Related Posts]]></pageListTitle>
+                <filterByRelated><![CDATA[0]]></filterByRelated>
+                <filterByCustomTopic><![CDATA[0]]></filterByCustomTopic>
+                <filterDateOption><![CDATA[]]></filterDateOption>
+                <filterDateDays><![CDATA[0]]></filterDateDays>
+                <filterDateStart><![CDATA[]]></filterDateStart>
+                <filterDateEnd><![CDATA[]]></filterDateEnd>
+                <relatedTopicAttributeKeyHandle><![CDATA[]]></relatedTopicAttributeKeyHandle>
+                <customTopicAttributeKeyHandle><![CDATA[]]></customTopicAttributeKeyHandle>
+                <customTopicTreeNodeID><![CDATA[0]]></customTopicTreeNodeID>
+                <includeName><![CDATA[1]]></includeName>
+                <includeDescription><![CDATA[0]]></includeDescription>
+                <includeDate><![CDATA[0]]></includeDate>
+                <includeAllDescendents><![CDATA[0]]></includeAllDescendents>
+                <paginate><![CDATA[0]]></paginate>
+                <displayAliases><![CDATA[0]]></displayAliases>
+                <enableExternalFiltering><![CDATA[0]]></enableExternalFiltering>
+                <ptID>{ccm:export:pagetype:blog_entry}</ptID>
+                <pfID/>
+                <truncateSummaries><![CDATA[0]]></truncateSummaries>
+                <displayFeaturedOnly><![CDATA[0]]></displayFeaturedOnly>
+                <noResultsMessage><![CDATA[]]></noResultsMessage>
+                <displayThumbnail><![CDATA[0]]></displayThumbnail>
+                <truncateChars><![CDATA[0]]></truncateChars>
+              </record>
+            </data>
+          </block>
+        </blocks>
+      </area>
+      <area name="Headline">
+        <blocks>
+          <block type="html" name="">
+            <data table="btContentLocal">
+              <record>
+                <content><![CDATA[ユーザーの使用するデバイスにあわせレイアウト調整するレスポンシブデザインでターゲット とのリーチをつくります。]]></content>
+              </record>
+            </data>
+          </block>
+        </blocks>
+      </area>
+      <area name="Content">
+        <blocks>
+          <block type="html" name="">
+            <data table="btContentLocal">
+              <record>
+                <content><![CDATA[<p>せっかくリニューアルしたWebサイトや更新されたWebページ、そのままにしていませんか？どんなに綺麗で洗練されたサイトでも、勝手に見込みあるユーザーはきてくれません。<b>Webサイトはリニューアルしたからといって、テレビCMのように勝手に告知されるものではない</b>のです。</p>
+<p>ニナ・アーキタイプでは、クライアントにとっての理想的なユーザー獲得のための、ウェブプロモーション・Web活用の改善プロセスのコンサルティングサービスを提供しています。</p>]]></content>
+              </record>
+            </data>
+          </block>
+          <block type="html" name="">
+            <data table="btContentLocal">
+              <record>
+                <content><![CDATA[<div class="c-index">
+    <p class="c-index__ttl">目的を達成するためのPDCAアイディアを提供します</p>
+    <ul class="c-index__list">
+        <li>何のためのWebサイト？を明確にし、目的達成に必要なサイト内の導線づくりをサポートします。</li>
+        <li>ユーザーの特性に注目し、Webだからこそできるターゲットに合わせたPDCAアイディアを提供します。</li>
+        <li>SEO対策やアナリティクスといったユーザー動向の可視化にも勿論、対応します。</li>
+    </ul>
+</div>]]></content>
+              </record>
+            </data>
+          </block>
+          <block type="html" name="">
+            <data table="btContentLocal">
+              <record>
+                <content><![CDATA[<h3>ターゲットがどこにいるか。にも注視します</h3>
+<p>Webサイト改修等のヒアリングの中で、よく耳にするキーワードは「ターゲットについて」。コンテンツをよくしたい想いからターゲットの観察に力を入れるのは勿論間違いではありません。しかし、それだけはWebサイトを通した成果への期待は見込めないのも事実です。</p>
+
+<p><b>理想的なユーザーがどこに。そしてどういうモチベーションでいるか。</b>その仮説立てのプロセスこそが、質の高い戦略や効果のあるPDCAサイクルをつくる歯車になりえます。</p>
+]]></content>
+              </record>
+            </data>
+          </block>
+          <block type="html" name="">
+            <data table="btContentLocal">
+              <record>
+                <content><![CDATA[<h3>クライアントのマーケティング効果を最大限引き出します</h3>
+<p>ニナ・アーキタイプの顧客の半分が、マーケターと言われるクライアントです。<b>数字以上の価値をつくる印象効果に対する提案依頼</b>や<b>サイト内の部分的な改修</b>などもお受けいたします。<br>ぜひ、おまかせください。</p>
+]]></content>
+              </record>
+            </data>
+          </block>
+        </blocks>
+      </area>
+      <area name="Content Secondary">
+        <blocks>
+          <block type="html" name="">
+            <data table="btContentLocal">
+              <record>
+                <content><![CDATA[<h4 class="c-serviceArea__ttl">ウェブコンサルティングサービス内容</h4>
+<ul class="c-serviceArea__list">
+<li>Webサイトヒアリング・ブランディング検証</li>
+<li>現行サイトデザインの改善提案</li>
+<li>ユーザー調査・ペルゾナ設定</li>
+<li>SEO（検索エンジン最適化）</li>
+<li>サイト運用・制作改善提案</li>
+<li>SNS運用支援</li>
+</ul>
+<p class="c-serviceArea__link"><a href="/price">このサービスの料金はこちら</a></p>
+]]></content>
+              </record>
+            </data>
+          </block>
+        </blocks>
+      </area>
+    </page>
+    <page name="&#x6599;&#x91D1;&#x306B;&#x3064;&#x3044;&#x3066;" path="/price" filename="" pagetype="" template="price_entry" user="admin" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet consectetur lacus. Vestibulum neque lectus, egestas non cursus vitae, aliquam at magna." package="">
+      <attributes>
+        <attributekey handle="meta_title">
+          <value><![CDATA[]]></value>
+        </attributekey>
+        <attributekey handle="meta_description">
+          <value><![CDATA[]]></value>
+        </attributekey>
+        <attributekey handle="header_extra_content">
+          <value><![CDATA[]]></value>
+        </attributekey>
+        <attributekey handle="exclude_sitemapxml">
+          <value><![CDATA[0]]></value>
+        </attributekey>
+        <attributekey handle="thumbnail">
+          <value>
+            <fID>{ccm:export:file:chinese_house2.jpg}</fID>
+          </value>
+        </attributekey>
+        <attributekey handle="blog_entry_topics">
+          <topics>
+            <topic>/Humor</topic>
+          </topics>
+        </attributekey>
+      </attributes>
+      <area name="Page Footer">
+        <blocks>
+          <block type="horizontal_rule" name=""/>
+          <block type="core_conversation" name="">
+            <data table="btCoreConversation">
+              <record>
+                <cnvID><![CDATA[3]]></cnvID>
+                <enablePosting><![CDATA[1]]></enablePosting>
+                <paginate><![CDATA[1]]></paginate>
+                <itemsPerPage><![CDATA[50]]></itemsPerPage>
+                <displayMode><![CDATA[threaded]]></displayMode>
+                <orderBy><![CDATA[date_asc]]></orderBy>
+                <enableOrdering><![CDATA[0]]></enableOrdering>
+                <enableCommentRating><![CDATA[1]]></enableCommentRating>
+                <displayPostingForm><![CDATA[top]]></displayPostingForm>
+                <addMessageLabel><![CDATA[Add Message]]></addMessageLabel>
+                <dateFormat><![CDATA[default]]></dateFormat>
+                <customDateFormat><![CDATA[]]></customDateFormat>
+              </record>
+            </data>
+          </block>
+        </blocks>
+      </area>
+      <area name="Main">
+        <blocks>
+          <block type="html" name="">
+            <data table="btContentLocal">
+              <record>
+                <content><![CDATA[<p class="l-price__ttl c-contentTtl--secondary">料金について</p>
+<h2 class="l-price__cache">プロジェクトの形態や規模・期間に応じて柔軟にご提案します</h2>
+<p class="l-price__text--primary">プロジェクトの形態や規模、期間に応じて柔軟にご提案させていただきます。</p>]]></content>
+              </record>
+            </data>
+          </block>
+          <block type="html" name="">
+            <data table="btContentLocal">
+              <record>
+                <content><![CDATA[<ul class="l-price__nav">
+<li><a href="#ui">UIデザイン</a></li>
+<li><a href="#respon">レスポンシブデザイン</a></li>
+<li><a href="#web">ウェブコンサルティング</a></li>
+</ul>
+<p class="l-price__text--secondary">お見積やご相談は無料です。お気軽にどうぞ。 </p>
+]]></content>
+              </record>
+            </data>
+          </block>
+        </blocks>
+      </area>
+      <area name="Sidebar">
+        <blocks>
+          <block type="next_previous" name="">
+            <style>
+              <backgroundColor/>
+              <backgroundRepeat/>
+              <borderWidth/>
+              <borderColor/>
+              <borderStyle/>
+              <borderRadius/>
+              <baseFontSize/>
+              <alignment/>
+              <textColor/>
+              <linkColor/>
+              <paddingTop/>
+              <paddingBottom/>
+              <paddingLeft/>
+              <paddingRight/>
+              <marginTop/>
+              <marginBottom/>
+              <marginLeft/>
+              <marginRight/>
+              <rotate/>
+              <boxShadowHorizontal/>
+              <boxShadowVertical/>
+              <boxShadowBlur/>
+              <boxShadowSpread/>
+              <boxShadowColor/>
+              <customClass>block-sidebar-wrapped</customClass>
+              <hideOnExtraSmallDevice/>
+              <hideOnSmallDevice/>
+              <hideOnMediumDevice/>
+              <hideOnLargeDevice/>
+            </style>
+            <data table="btNextPrevious">
+              <record>
+                <nextLabel><![CDATA[Next Post]]></nextLabel>
+                <previousLabel><![CDATA[Last Post]]></previousLabel>
+                <parentLabel><![CDATA[]]></parentLabel>
+                <loopSequence><![CDATA[0]]></loopSequence>
+                <excludeSystemPages><![CDATA[1]]></excludeSystemPages>
+                <orderBy><![CDATA[chrono_desc]]></orderBy>
+              </record>
+            </data>
+          </block>
+          <block type="share_this_page" name="">
+            <style>
+              <backgroundColor/>
+              <backgroundRepeat/>
+              <borderWidth/>
+              <borderColor/>
+              <borderStyle/>
+              <borderRadius/>
+              <baseFontSize/>
+              <alignment/>
+              <textColor/>
+              <linkColor/>
+              <paddingTop/>
+              <paddingBottom/>
+              <paddingLeft/>
+              <paddingRight/>
+              <marginTop/>
+              <marginBottom/>
+              <marginLeft/>
+              <marginRight/>
+              <rotate/>
+              <boxShadowHorizontal/>
+              <boxShadowVertical/>
+              <boxShadowBlur/>
+              <boxShadowSpread/>
+              <boxShadowColor/>
+              <customClass>block-sidebar-wrapped</customClass>
+              <hideOnExtraSmallDevice/>
+              <hideOnSmallDevice/>
+              <hideOnMediumDevice/>
+              <hideOnLargeDevice/>
+            </style>
+            <data>
+              <service>facebook</service>
+              <service>twitter</service>
+              <service>linkedin</service>
+              <service>email</service>
+            </data>
+          </block>
+          <block type="topic_list" name="">
+            <data>
+              <mode>P</mode>
+              <title>Topics</title>
+              <topicAttributeKeyHandle>blog_entry_topics</topicAttributeKeyHandle>
+              <tree>Blog Entries</tree>
+              <cParentID>{ccm:export:page:/service}</cParentID>
+            </data>
+          </block>
+          <block type="page_list" name="">
+            <data table="btPageList">
+              <record>
+                <num><![CDATA[3]]></num>
+                <orderBy><![CDATA[random]]></orderBy>
+                <cParentID>{ccm:export:page:/service}</cParentID>
+                <cThis><![CDATA[0]]></cThis>
+                <useButtonForLink><![CDATA[0]]></useButtonForLink>
+                <buttonLinkText><![CDATA[]]></buttonLinkText>
+                <pageListTitle><![CDATA[Related Posts]]></pageListTitle>
+                <filterByRelated><![CDATA[0]]></filterByRelated>
+                <filterByCustomTopic><![CDATA[0]]></filterByCustomTopic>
+                <filterDateOption><![CDATA[]]></filterDateOption>
+                <filterDateDays><![CDATA[0]]></filterDateDays>
+                <filterDateStart><![CDATA[]]></filterDateStart>
+                <filterDateEnd><![CDATA[]]></filterDateEnd>
+                <relatedTopicAttributeKeyHandle><![CDATA[]]></relatedTopicAttributeKeyHandle>
+                <customTopicAttributeKeyHandle><![CDATA[]]></customTopicAttributeKeyHandle>
+                <customTopicTreeNodeID><![CDATA[0]]></customTopicTreeNodeID>
+                <includeName><![CDATA[1]]></includeName>
+                <includeDescription><![CDATA[0]]></includeDescription>
+                <includeDate><![CDATA[0]]></includeDate>
+                <includeAllDescendents><![CDATA[0]]></includeAllDescendents>
+                <paginate><![CDATA[0]]></paginate>
+                <displayAliases><![CDATA[0]]></displayAliases>
+                <enableExternalFiltering><![CDATA[0]]></enableExternalFiltering>
+                <ptID>{ccm:export:pagetype:blog_entry}</ptID>
+                <pfID/>
+                <truncateSummaries><![CDATA[0]]></truncateSummaries>
+                <displayFeaturedOnly><![CDATA[0]]></displayFeaturedOnly>
+                <noResultsMessage><![CDATA[]]></noResultsMessage>
+                <displayThumbnail><![CDATA[0]]></displayThumbnail>
+                <truncateChars><![CDATA[0]]></truncateChars>
+              </record>
+            </data>
+          </block>
+        </blocks>
+      </area>
+      <area name="Headline">
+        <blocks>
+          <block type="html" name="">
+            <data table="btContentLocal">
+              <record>
+                <content><![CDATA[料金について | ニナ・アーキタイプはWeb / iOS / Androidに対するユーザーインターフェイスを提供するフリーランスのUIデザイナーです]]></content>
+              </record>
+            </data>
+          </block>
+        </blocks>
+      </area>
+      <area name="Content">
+        <blocks>
+          <block type="html" name="">
+            <style>
+              <backgroundColor/>
+              <backgroundRepeat>no-repeat</backgroundRepeat>
+              <borderWidth/>
+              <borderColor/>
+              <borderStyle/>
+              <borderRadius/>
+              <baseFontSize/>
+              <alignment/>
+              <textColor/>
+              <linkColor/>
+              <paddingTop/>
+              <paddingBottom/>
+              <paddingLeft/>
+              <paddingRight/>
+              <marginTop/>
+              <marginBottom/>
+              <marginLeft/>
+              <marginRight/>
+              <rotate/>
+              <boxShadowHorizontal/>
+              <boxShadowVertical/>
+              <boxShadowBlur/>
+              <boxShadowSpread/>
+              <boxShadowColor/>
+              <customClass>l-price__inner</customClass>
+              <hideOnExtraSmallDevice/>
+              <hideOnSmallDevice/>
+              <hideOnMediumDevice/>
+              <hideOnLargeDevice/>
+            </style>
+            <data table="btContentLocal">
+              <record>
+                <content><![CDATA[<h3 id="ui" class="l-price__inner__ttl">UIデザイン</h3>
+<p class="l-price__inner__text">サービスへの理解を深め、UX設計や事業戦略から運用まで一緒に考えていきます。クライアントがコンテンツを通して実現したいこと・目的に対してユーザーを誘導する手段としてのデザインを提案します。</p>
+<p class="l-price__inner__text">デザインツールはPHOTOSHOPの他、SKETCHアプリの対応も可能です。</p>
+
+<div class="l-price__inner__table">
+<dl class="l-price__inner__table__col">
+<dt>期間</dt>
+<dd>要相談</dd>
+</dl>
+<dl class="l-price__inner__table__col">
+<dt>費用</dt>
+<dd>1プロジェクト&nbsp;:&nbsp;60万円〜</dd>
+</dl>
+</div>
+<p class="l-price__inner__text--secondary">東京23区近郊の常駐もお受けいたします。</p>
+<div class="l-price__inner__btn">
+<p class="c-btn--secondary">
+<a href="/service/design" title="">UIデザインの詳細はこちら</a>
+</p>
+</div>]]></content>
+              </record>
+            </data>
+          </block>
+          <block type="html" name="">
+            <style>
+              <backgroundColor/>
+              <backgroundRepeat>no-repeat</backgroundRepeat>
+              <borderWidth/>
+              <borderColor/>
+              <borderStyle/>
+              <borderRadius/>
+              <baseFontSize/>
+              <alignment/>
+              <textColor/>
+              <linkColor/>
+              <paddingTop/>
+              <paddingBottom/>
+              <paddingLeft/>
+              <paddingRight/>
+              <marginTop/>
+              <marginBottom/>
+              <marginLeft/>
+              <marginRight/>
+              <rotate/>
+              <boxShadowHorizontal/>
+              <boxShadowVertical/>
+              <boxShadowBlur/>
+              <boxShadowSpread/>
+              <boxShadowColor/>
+              <customClass>l-price__inner</customClass>
+              <hideOnExtraSmallDevice/>
+              <hideOnSmallDevice/>
+              <hideOnMediumDevice/>
+              <hideOnLargeDevice/>
+            </style>
+            <data table="btContentLocal">
+              <record>
+                <content><![CDATA[<h3 id="respon" class="l-price__inner__ttl">レスポンシブWebデザインサイト</h3>
+<p class="l-price__inner__text">ご依頼をいただき次第、実現したい目的やご要望のヒアリングを基にデザインとコーディングファイルの納品まで対応します。</p>
+<p class="l-price__inner__text">CSSアニメーションを利用し、パフォーマンスと見栄えに優れた、モバイル環境でも読み込み速度が速いWebサイトを納品します。</p>
+<div class="l-price__inner__table">
+<dl class="l-price__inner__table__col">
+<dt>期間</dt>
+<dd>10営業日〜</dd>
+</dl>
+<dl class="l-price__inner__table__col">
+<dt>費用</dt>
+<dd>10ページ&nbsp;:&nbsp;50万円〜</dd>
+</dl>
+</div>
+<p class="l-price__inner__text--secondary">ご依頼後、サイト診断・コンセプトに沿いサイト公開時に必要なサポートをお任せください。</p>
+
+<div class="l-price__inner__btn">
+<p class="c-btn--secondary">
+<a href="/service/responsive" title="">レスポンシブWebデザインの詳細はこちら</a>
+</p>
+
+</div>
+]]></content>
+              </record>
+            </data>
+          </block>
+          <block type="html" name="">
+            <style>
+              <backgroundColor/>
+              <backgroundRepeat>no-repeat</backgroundRepeat>
+              <borderWidth/>
+              <borderColor/>
+              <borderStyle/>
+              <borderRadius/>
+              <baseFontSize/>
+              <alignment/>
+              <textColor/>
+              <linkColor/>
+              <paddingTop/>
+              <paddingBottom/>
+              <paddingLeft/>
+              <paddingRight/>
+              <marginTop/>
+              <marginBottom/>
+              <marginLeft/>
+              <marginRight/>
+              <rotate/>
+              <boxShadowHorizontal/>
+              <boxShadowVertical/>
+              <boxShadowBlur/>
+              <boxShadowSpread/>
+              <boxShadowColor/>
+              <customClass>l-price__inner</customClass>
+              <hideOnExtraSmallDevice/>
+              <hideOnSmallDevice/>
+              <hideOnMediumDevice/>
+              <hideOnLargeDevice/>
+            </style>
+            <data table="btContentLocal">
+              <record>
+                <content><![CDATA[<h3 id="web" class="l-price__inner__ttl">ウェブコンサルティング</h3>
+<p class="l-price__inner__text">アクセス解析や競合分析による自社・他社を含むサイト内外の「現状分析」を診断します。</p>
+<p class="l-price__inner__text">そこから問題点を洗い出し、プロトタイプやカスタマージャーニーマップといったデザイン的な戦略手法を使いマーケティング活動をサポートします。</p>
+<div class="l-price__inner__table">
+<dl class="l-price__inner__table__col">
+<dt>期間</dt>
+<dd>3ヶ月以上〜</dd>
+</dl>
+<dl class="l-price__inner__table__col">
+<dt>費用</dt>
+<dd>1ヶ月&nbsp;:&nbsp;10万円から〜</dd>
+</dl>
+</div>
+<p class="l-price__inner__text--secondary">サイト解析やユーザー動向調査といったサイト運用に必要なノウハウをご提供します</p>
+<div class="l-price__inner__btn">
+<p class="c-btn--secondary">
+<a href="/service/support" title="">ウェブコンサルティングの詳細はこちら</a>
+</p>
+</div>
+]]></content>
+              </record>
+            </data>
+          </block>
+        </blocks>
+      </area>
+    </page>
+    <page name="&#x304A;&#x4ED5;&#x4E8B;&#x306E;&#x6D41;&#x308C;" path="/flow" filename="" pagetype="" template="article" user="admin" description="Donec blandit lectus nec neque ullamcorper rhoncus. Sed adipiscing tempus sem eu molestie. Aenean laoreet pretium ante vitae ultrices. Aenean eu gravida magna, vel aliquet magna. In auctor convallis gravida. Phasellus est erat." package="">
+      <attributes>
+        <attributekey handle="meta_title">
+          <value><![CDATA[]]></value>
+        </attributekey>
+        <attributekey handle="meta_description">
+          <value><![CDATA[]]></value>
+        </attributekey>
+        <attributekey handle="header_extra_content">
+          <value><![CDATA[]]></value>
+        </attributekey>
+        <attributekey handle="exclude_sitemapxml">
+          <value><![CDATA[0]]></value>
+        </attributekey>
+        <attributekey handle="thumbnail">
+          <value>
+            <fID>{ccm:export:file:plants.jpg}</fID>
+          </value>
+        </attributekey>
+        <attributekey handle="blog_entry_topics">
+          <topics>
+            <topic>/Projects</topic>
+          </topics>
+        </attributekey>
+      </attributes>
+      <area name="Page Footer">
+        <blocks>
+          <block type="horizontal_rule" name=""/>
+          <block type="core_conversation" name="">
+            <data table="btCoreConversation">
+              <record>
+                <cnvID><![CDATA[4]]></cnvID>
+                <enablePosting><![CDATA[1]]></enablePosting>
+                <paginate><![CDATA[1]]></paginate>
+                <itemsPerPage><![CDATA[50]]></itemsPerPage>
+                <displayMode><![CDATA[threaded]]></displayMode>
+                <orderBy><![CDATA[date_asc]]></orderBy>
+                <enableOrdering><![CDATA[0]]></enableOrdering>
+                <enableCommentRating><![CDATA[1]]></enableCommentRating>
+                <displayPostingForm><![CDATA[top]]></displayPostingForm>
+                <addMessageLabel><![CDATA[Add Message]]></addMessageLabel>
+                <dateFormat><![CDATA[default]]></dateFormat>
+                <customDateFormat><![CDATA[]]></customDateFormat>
+              </record>
+            </data>
+          </block>
+        </blocks>
+      </area>
+      <area name="Main">
+        <blocks>
+          <block type="html" name="">
+            <data table="btContentLocal">
+              <record>
+                <content><![CDATA[<p class="l-article__ttl c-contentTtl--secondary">お仕事のながれ</p>
+<h2 class="l-article__cache">Sorry,&nbsp;UnderConstraction</h2>
+]]></content>
+              </record>
+            </data>
+          </block>
+        </blocks>
+      </area>
+      <area name="Sidebar">
+        <blocks>
+          <block type="next_previous" name="">
+            <style>
+              <backgroundColor/>
+              <backgroundRepeat/>
+              <borderWidth/>
+              <borderColor/>
+              <borderStyle/>
+              <borderRadius/>
+              <baseFontSize/>
+              <alignment/>
+              <textColor/>
+              <linkColor/>
+              <paddingTop/>
+              <paddingBottom/>
+              <paddingLeft/>
+              <paddingRight/>
+              <marginTop/>
+              <marginBottom/>
+              <marginLeft/>
+              <marginRight/>
+              <rotate/>
+              <boxShadowHorizontal/>
+              <boxShadowVertical/>
+              <boxShadowBlur/>
+              <boxShadowSpread/>
+              <boxShadowColor/>
+              <customClass>block-sidebar-wrapped</customClass>
+              <hideOnExtraSmallDevice/>
+              <hideOnSmallDevice/>
+              <hideOnMediumDevice/>
+              <hideOnLargeDevice/>
+            </style>
+            <data table="btNextPrevious">
+              <record>
+                <nextLabel><![CDATA[Next Post]]></nextLabel>
+                <previousLabel><![CDATA[Last Post]]></previousLabel>
+                <parentLabel><![CDATA[]]></parentLabel>
+                <loopSequence><![CDATA[0]]></loopSequence>
+                <excludeSystemPages><![CDATA[1]]></excludeSystemPages>
+                <orderBy><![CDATA[chrono_desc]]></orderBy>
+              </record>
+            </data>
+          </block>
+          <block type="share_this_page" name="">
+            <style>
+              <backgroundColor/>
+              <backgroundRepeat/>
+              <borderWidth/>
+              <borderColor/>
+              <borderStyle/>
+              <borderRadius/>
+              <baseFontSize/>
+              <alignment/>
+              <textColor/>
+              <linkColor/>
+              <paddingTop/>
+              <paddingBottom/>
+              <paddingLeft/>
+              <paddingRight/>
+              <marginTop/>
+              <marginBottom/>
+              <marginLeft/>
+              <marginRight/>
+              <rotate/>
+              <boxShadowHorizontal/>
+              <boxShadowVertical/>
+              <boxShadowBlur/>
+              <boxShadowSpread/>
+              <boxShadowColor/>
+              <customClass>block-sidebar-wrapped</customClass>
+              <hideOnExtraSmallDevice/>
+              <hideOnSmallDevice/>
+              <hideOnMediumDevice/>
+              <hideOnLargeDevice/>
+            </style>
+            <data>
+              <service>facebook</service>
+              <service>twitter</service>
+              <service>linkedin</service>
+              <service>email</service>
+            </data>
+          </block>
+          <block type="topic_list" name="">
+            <data>
+              <mode>P</mode>
+              <title>Topics</title>
+              <topicAttributeKeyHandle>blog_entry_topics</topicAttributeKeyHandle>
+              <tree>Blog Entries</tree>
+              <cParentID>{ccm:export:page:/service}</cParentID>
+            </data>
+          </block>
+          <block type="page_list" name="">
+            <data table="btPageList">
+              <record>
+                <num><![CDATA[3]]></num>
+                <orderBy><![CDATA[random]]></orderBy>
+                <cParentID>{ccm:export:page:/service}</cParentID>
+                <cThis><![CDATA[0]]></cThis>
+                <useButtonForLink><![CDATA[0]]></useButtonForLink>
+                <buttonLinkText><![CDATA[]]></buttonLinkText>
+                <pageListTitle><![CDATA[Related Posts]]></pageListTitle>
+                <filterByRelated><![CDATA[0]]></filterByRelated>
+                <filterByCustomTopic><![CDATA[0]]></filterByCustomTopic>
+                <filterDateOption><![CDATA[]]></filterDateOption>
+                <filterDateDays><![CDATA[0]]></filterDateDays>
+                <filterDateStart><![CDATA[]]></filterDateStart>
+                <filterDateEnd><![CDATA[]]></filterDateEnd>
+                <relatedTopicAttributeKeyHandle><![CDATA[]]></relatedTopicAttributeKeyHandle>
+                <customTopicAttributeKeyHandle><![CDATA[]]></customTopicAttributeKeyHandle>
+                <customTopicTreeNodeID><![CDATA[0]]></customTopicTreeNodeID>
+                <includeName><![CDATA[1]]></includeName>
+                <includeDescription><![CDATA[0]]></includeDescription>
+                <includeDate><![CDATA[0]]></includeDate>
+                <includeAllDescendents><![CDATA[0]]></includeAllDescendents>
+                <paginate><![CDATA[0]]></paginate>
+                <displayAliases><![CDATA[0]]></displayAliases>
+                <enableExternalFiltering><![CDATA[0]]></enableExternalFiltering>
+                <ptID>{ccm:export:pagetype:blog_entry}</ptID>
+                <pfID/>
+                <truncateSummaries><![CDATA[0]]></truncateSummaries>
+                <displayFeaturedOnly><![CDATA[0]]></displayFeaturedOnly>
+                <noResultsMessage><![CDATA[]]></noResultsMessage>
+                <displayThumbnail><![CDATA[0]]></displayThumbnail>
+                <truncateChars><![CDATA[0]]></truncateChars>
+              </record>
+            </data>
+          </block>
+        </blocks>
+      </area>
+      <area name="Headline">
+        <blocks>
+          <block type="html" name="">
+            <data table="btContentLocal">
+              <record>
+                <content><![CDATA[お仕事の流れ | ニナ・アーキタイプはWeb / iOS / Androidに対するユーザーインターフェイスを提供するフリーランスのUIデザイナーです]]></content>
+              </record>
+            </data>
+          </block>
+        </blocks>
+      </area>
+      <area name="Content">
+        <blocks/>
+      </area>
+      <area name="Content Secondary">
+        <blocks/>
+      </area>
+    </page>
+    <page name="UI&#x30C7;&#x30B6;&#x30A4;&#x30F3;" path="/service/design" filename="" pagetype="page" template="article" user="admin" description="" package="">
+      <attributes>
+        <attributekey handle="meta_title">
+          <value><![CDATA[]]></value>
+        </attributekey>
+        <attributekey handle="meta_description">
+          <value><![CDATA[]]></value>
+        </attributekey>
+        <attributekey handle="header_extra_content">
+          <value><![CDATA[]]></value>
+        </attributekey>
+        <attributekey handle="exclude_sitemapxml">
+          <value><![CDATA[0]]></value>
+        </attributekey>
+      </attributes>
+      <area name="Headline">
+        <blocks>
+          <block type="html" name="">
+            <data table="btContentLocal">
+              <record>
+                <content><![CDATA[ニナ・アーキタイプはWeb / iOS / Androidに対するユーザーインターフェイスを提供するフリーランスのUIデザイナーです]]></content>
+              </record>
+            </data>
+          </block>
+        </blocks>
+      </area>
+      <area name="Main">
+        <blocks>
+          <block type="html" name="">
+            <data table="btContentLocal">
+              <record>
+                <content><![CDATA[<p class="l-article__ttl c-contentTtl--secondary">サービス</p>
+<h2 class="l-article__cache">コンテンツ力を引き出す、心地よいUIデザインを提供します</h2>
+]]></content>
+              </record>
+            </data>
+          </block>
+          <block type="html" name="">
+            <data table="btContentLocal">
+              <record>
+                <content><![CDATA[<ul class="l-article__item--tag c-tab">
+<li><a href="#">UIデザイン</a></li>
+</ul>
+]]></content>
+              </record>
+            </data>
+          </block>
+          <block type="html" name="">
+            <data table="btContentLocal">
+              <record>
+                <content><![CDATA[<p class="l-article__img"><img src="/application/themes/nina/img/service/03.png" alt=""></p>]]></content>
+              </record>
+            </data>
+          </block>
+        </blocks>
+      </area>
+      <area name="Content">
+        <blocks>
+          <block type="html" name="">
+            <data table="btContentLocal">
+              <record>
+                <content><![CDATA[<p>デザインという言葉の連想で浮かぶキーワードは、絵を描くとか、アートのような自己表現といった意味でイメージする人も多いと思います。実際にWeb制作の現場においての「デザインのつくる」という認識も会社によってまちまちです。</p>
+<p>ニナ・アーキタイプのいうUIデザインとは、<b>お客様やコンテンツ自体がどうおもわれたいか。ユーザーにどう思ってもらいたいかの具体化</b>。それをインターフェイス上で結ぶ手法のことをいいます。</p>]]></content>
+              </record>
+            </data>
+          </block>
+          <block type="html" name="">
+            <data table="btContentLocal">
+              <record>
+                <content><![CDATA[<div class="c-index">
+<p class="c-index__ttl">私たちが提供するUIデザインのポイント</p>
+<ul class="c-index__list">
+<li><b>ユーザーに何を提供するかを明確化</b>させます。「使いやすい」「わかりやすい」をつくる緻密な情報設計と、それを具体化させるデザインでユーザーとの距離を近づけます。</li>
+<li><b>誰かにいいね！と言われる！Webサイト・UIデザイン</b>をクライアントに提供することを目指し、クライアントのブランディング向上させます。</li>
+<li><b>SKETCHアプリとブラウザ</b>で実際のデザインをつくります。</li>
+</ul>
+</div>]]></content>
+              </record>
+            </data>
+          </block>
+          <block type="html" name="">
+            <data table="btContentLocal">
+              <record>
+                <content><![CDATA[<h3>ユーザー主義で練られた優れたUIデザイン構築によるメリット</h3>
+<p>優れたUIデザインは<b>お客様のコンテンツの良さを、少ない言葉で説明する力</b>があります。この視覚的・直感的なアプローチこそがコンテンツやお客様のブランド価値となり、ビジネスの成功を促進します。</p>
+]]></content>
+              </record>
+            </data>
+          </block>
+          <block type="html" name="">
+            <data table="btContentLocal">
+              <record>
+                <content><![CDATA[<ul>
+<li>使いやすさやアクセス性アップによるユーザー満足の向上</li>
+<li>売り上げに関係のない問い合わせの減少</li>
+<li>クライアントにもノウハウが蓄積</li>
+</ul>
+]]></content>
+              </record>
+            </data>
+          </block>
+          <block type="html" name="">
+            <data table="btContentLocal">
+              <record>
+                <content><![CDATA[<h3>見栄えと使いやすさ。クライアントに似合うUIデザインを提供します</h3>
+<p>UIデザインとは、何よりもクライアントのコンテンツとそれを使うユーザーありきです。<b>ユーザーにどう感じてほしいか、どう使って欲しいか。</b>そのために必要なもてなしこそが、中身を作り、クライアントやコンテンツ自体の見栄えをつくるものだと、これまで手がけた案件の経験から確信しています。</p>
+<p>ニナ・アーキタイプは優れたUIデザインをお客様に提供することで、クライアントとユーザーとの関係づくりのサポートに貢献します。</p>
+]]></content>
+              </record>
+            </data>
+          </block>
+        </blocks>
+      </area>
+      <area name="Content Secondary">
+        <blocks>
+          <block type="html" name="">
+            <data table="btContentLocal">
+              <record>
+                <content><![CDATA[<h4 class="c-serviceArea__ttl">UIデザインのサービス内容</h4>
+<ul class="c-serviceArea__list">
+<li>Webサイトヒアリング・ブランディング検証</li>
+<li>現行サイトデザインの改善提案</li>
+<li>情報設計・UX設計</li>
+<li>PHOTOSHOP・sketchでのデザインカンプ制作</li>
+<li>css3でのコーディング実装</li>
+</ul>
+
+<p class="c-serviceArea__link"><a href="/price">このサービスの料金はこちら</a></p>
+]]></content>
+              </record>
+            </data>
+          </block>
+        </blocks>
+      </area>
+    </page>
+    <page name="&#x30EC;&#x30B9;&#x30DD;&#x30F3;&#x30B7;&#x30D6;&#x30C7;&#x30B6;&#x30A4;&#x30F3;" path="/service/responsive" filename="" pagetype="page" template="article" user="admin" description="" package="">
+      <attributes>
+        <attributekey handle="meta_title">
+          <value><![CDATA[]]></value>
+        </attributekey>
+        <attributekey handle="meta_description">
+          <value><![CDATA[]]></value>
+        </attributekey>
+        <attributekey handle="header_extra_content">
+          <value><![CDATA[]]></value>
+        </attributekey>
+        <attributekey handle="exclude_sitemapxml">
+          <value><![CDATA[0]]></value>
+        </attributekey>
+      </attributes>
+      <area name="Headline">
+        <blocks>
+          <block type="html" name="">
+            <data table="btContentLocal">
+              <record>
+                <content><![CDATA[ユーザーの使用するデバイスにあわせレイアウト調整するレスポンシブデザインでターゲット とのリーチをつくります。]]></content>
+              </record>
+            </data>
+          </block>
+        </blocks>
+      </area>
+      <area name="Main">
+        <blocks>
+          <block type="html" name="">
+            <data table="btContentLocal">
+              <record>
+                <content><![CDATA[<p class="l-article__ttl c-contentTtl--secondary">サービス</p>
+<h2 class="l-article__cache">マルチスクリーン対応は、ユーザーとの関係づくりに必須です</h2>
+]]></content>
+              </record>
+            </data>
+          </block>
+          <block type="html" name="">
+            <data table="btContentLocal">
+              <record>
+                <content><![CDATA[<ul class="l-article__item--tag c-tab">
+<li><a href="#">レスポンシブWebデザイン</a></li>
+</ul>]]></content>
+              </record>
+            </data>
+          </block>
+          <block type="html" name="">
+            <data table="btContentLocal">
+              <record>
+                <content><![CDATA[<p class="l-article__img"><img src="/application/themes/nina/img/service/02.png" alt=""></p>]]></content>
+              </record>
+            </data>
+          </block>
+        </blocks>
+      </area>
+      <area name="Content">
+        <blocks>
+          <block type="html" name="">
+            <data table="btContentLocal">
+              <record>
+                <content><![CDATA[<p>レスポンシブWebデザインとは、ユーザーの使用するPC、タブレット、スマートフォンといった複数の異なる画面サイズを。ユーザーが閲覧する画面サイズに応じて（つまり「レスポンシブ」に）表示を変えることを指します。</p>
+<p>モバイルフレンドリーが叫ばれて久しい昨今では多くの企業サイトやメディアサイトでも、このレスポンシブWebデザインを採用しています。</p>
+<p><b>どのデバイスでも同一のファイルを利用でき、管理も非常に簡単</b>になるため、ニナ・アーキタイプではお客様からの特別な要求・複雑なレイアウト及びデザインでない場合は、レスポンシブWebデザインをご提案・ご提供しています。</p>
+]]></content>
+              </record>
+            </data>
+          </block>
+          <block type="html" name="">
+            <data table="btContentLocal">
+              <record>
+                <content><![CDATA[<div class="c-index">
+<p class="c-index__ttl">こんなレスポンシブデザインを提供します</p>
+<ul class="c-index__list">
+<li>更新やカスタムがしずらいフレームワークを使用せず、<b>最適なパフォーマンスと良い見栄え</b>を両立させたデザイン</li>
+<li>CSS3アニメーションを使用し、<b>適度なインタラクション（動き）やアニメーション</b>でクライアントへの印象効果をあげるデザイン</li>
+<li>ユーザーのサイト閲覧環境や端末に合わせ、適切なコンテンツ訴求を促すデザイン</li>
+</ul>
+</div>
+]]></content>
+              </record>
+            </data>
+          </block>
+          <block type="html" name="">
+            <data table="btContentLocal">
+              <record>
+                <content><![CDATA[<h3>レスポンシブWebデザインをすすめる理由</h3>
+<ul>
+<li>素早い納品・修正・リリースが可能。単一のHTMLソースなのでコンテンツメンテナンスが簡単。</li>
+<li>SEOに有効的。PC用のページとモバイル用のページを単一の（同一の） URLとすることができるため、Google のアルゴリズムにとってはコンテンツを適切にインデックスできるようになります。</li>
+
+<li><b>コンテンツがシェアされやすい。</b>PC 用のページとモバイル用のページを単一の（同一の） URL とすることができるため、ユーザーにとってはシェアやリンクが容易になる。</li>
+</ul>
+<p><b>レスポンシブデザインは発信するコンテンツがSNSなどでシェアされやすい。</b>これは、Web上のコミュニケーションをつくるにあたり、大事なメリットになります。</p>
+<p>メンテナンス性に優れたレスポンシブWebデザインは、プロモーションやマーケティング的な観点においても、<b>多くのユーザーに、すばやく届けること</b>ができるため、競合他社よりユーザーとのリーチをつくることができ、多くの付加価値を生み出すことも可能です。</p>
+]]></content>
+              </record>
+            </data>
+          </block>
+          <block type="html" name="">
+            <data table="btContentLocal">
+              <record>
+                <content><![CDATA[<h3>洗練されたスキルで良質なレスポンシブWebデザインを提供します</h3>
+<p>レスポンシブWebデザインは制作のスキルがそれなりに問われる技術です。そのスキルとは<b>お客様がユーザーに訴求したいポイントの整理能力</b>です。これが引き出せない場合は、ただパフォーマンスの悪い、ユーザーにとって使いにくいサイトが出来上がってしまいます。</p>
+<p>ニナ・アーキタイプはお客様との密なコミュニケーションを大事に、デザインとパフォーマンスを両立したレスポンシブWebデザインで、ユーザーにとっての「見やすい」「使いやすい」をサイト上で展開し、コンテンツ訴求をサポートします。</p>
+]]></content>
+              </record>
+            </data>
+          </block>
+        </blocks>
+      </area>
+      <area name="Content Secondary">
+        <blocks>
+          <block type="html" name="">
+            <data table="btContentLocal">
+              <record>
+                <content><![CDATA[<h4 class="c-serviceArea__ttl">レスポンシブWebデザインのサービス内容</h4>
+<ul class="c-serviceArea__list">
+<li>Webサイトヒアリング・ブランディング検証</li>
+<li>現行サイトデザインの改善提案</li>
+<li>情報設計・UX設計</li>
+<li>HTML5のマークアップ</li>
+<li>PHOTOSHOP・sketchでのデザインカンプ制作</li>
+<li>css3でのコーディング実装</li>
+<li>サイト読み込みパフォーマンス対応</li>
+</ul>
+<p class="c-serviceArea__link"><a href="/price">このサービスの料金はこちら</a></p>
+]]></content>
+              </record>
+            </data>
+          </block>
+        </blocks>
+      </area>
+    </page>
+  </pages>
+</concrete5-cif>
