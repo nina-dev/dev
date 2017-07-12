@@ -278,12 +278,12 @@
 	}
 }
 
-.c-thumbnail--largeboder {
+.c-thumbnail--largeborder {
 
 
 	@include respond(pc) {
 		// padding-bottom: 32px;
-	border: 1px solid $color-gray-f2;
+	border: 1px solid $color-gray-c;
 	}
 
 	@include respond(tb) {
@@ -348,7 +348,6 @@
 					@include font-size(16);
 					margin-top: 0;
 					padding: 20px 16px;
-					border-top: 1px solid $color-gray-c;
 				}
 
 				@include respond(tb) {
