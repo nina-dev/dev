@@ -1,0 +1,65 @@
+.c-form {
+
+	display: inline-block;
+    height: 4rem;
+
+    input {
+    	background: none;
+        border: none;
+        box-sizing: border-box;
+        display: block;
+        font-size: 1rem;
+        padding: 0.25rem 0.1rem;
+        width: 100%;
+
+        &:invalid {
+        	box-shadow: none;
+        }
+
+        &:focus {
+        	 outline: none;
+        }
+    }
+
+    label {
+    	display: inline-block;
+        font-size: 0;
+        pointer-events: none;
+        position: relative;
+        width: 100%;
+
+        &:before {
+        	position: relative;
+        	transition: all 0.2s ease;
+        	will-change: font-size, top;
+        }
+
+        &:after {
+        	bottom: 0.9rem;
+        content: '';
+        height: 0.3rem;
+        left: 50%;
+        position: absolute;
+        transition: all 0.2s ease;
+        width: 0;
+        will-change: width, left;
+        }
+
+        &:before, input[required]:focus ~ label::before {
+        	font-size: 0.75rem;
+        	top: -3.25rem;
+        }
+
+        &:focus ~ label::after {
+        	left: 0%;
+        	width: 100%;
+        }
+
+        &:invalid ~ label::before {
+        	font-size: 1rem;
+        	top: -2rem;
+        }
+
+
+    }
+}
