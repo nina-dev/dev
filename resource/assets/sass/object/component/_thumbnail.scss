@@ -347,8 +347,8 @@
 				@include respond(pc) {
 					@include font-size(16);
 					margin-top: 0;
-					padding: 24px;
-					border-top: 1px solid $color-gray-f2;
+					padding: 20px 16px;
+					border-top: 1px solid $color-gray-c;
 				}
 
 				@include respond(tb) {
