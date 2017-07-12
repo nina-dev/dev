@@ -1,4 +1,4 @@
-.p-related__cache {
+.l-related__cache {
 
 	font-weight: bold;
 	color: $color-main;
@@ -21,7 +21,7 @@
 	}	
 }
 
-.p-related__item__box {
+.l-related__item__box {
 
 	@include respond(pc) {
 		background: #fff;
@@ -55,7 +55,7 @@
 	}
 }
 
-.p-related__item {
+.l-related__item {
 
 		@include respond(pc){
 			text-align: left;
@@ -78,7 +78,7 @@
 }
 
 
-.p-related__text {
+.l-related__text {
 
 	margin-top: 16px;
 
@@ -98,7 +98,7 @@
 	}
 
 	&--attention {
-		@extend .p-related__text;
+		@extend .l-related__text;
 		color: $color-accent--red;
 
 	}
@@ -106,7 +106,7 @@
 }
 
 
-.p-related {
+.l-related {
 
 	@include respond(pc) {
 		position: relative;
