@@ -19,8 +19,9 @@
 @import "object/component/loading";
 @import "object/component/tab";
 @import "object/component/cta";
-//@import "object/component/serviceArea";
-@import "object/component/index";
+@import "object/component/serviceArea";
+@import "object/component/index";	
+@import "object/component/form";
 
 
 @import "object/layout/container";
@@ -34,6 +35,7 @@
 @import "object/layout/service";
 @import "object/layout/price";
 @import "object/layout/related";
+@import "object/layout/contact";
 
 @import "object/project/bg";
 @import "object/project/box";

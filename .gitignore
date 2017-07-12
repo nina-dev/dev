@@ -2,6 +2,7 @@
 html/.vagrant/
 node_modules/
 html/css/
+html/Vagrantfile
 
 
 cms/data/*
