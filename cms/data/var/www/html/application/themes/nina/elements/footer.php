@@ -14,7 +14,13 @@ defined('C5_EXECUTE') or die(_("Access Denied."));?>
 
 <script type="text/javascript" src="<?php echo $this->getThemePath()?>/js/script.js"></script>
 
-<?php  Loader::element('footer_required'); ?>
+	  <?php
+	  $u = new User();
+	  if($u->isRegistered()) { ?>
+	  <!-- ログイン時表示 -->
+	  </div>
+	  <?php } ?>
 
+<?php  Loader::element('footer_required'); ?>
 </body>
 </html>

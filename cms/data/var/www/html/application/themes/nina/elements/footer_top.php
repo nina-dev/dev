@@ -30,6 +30,13 @@ defined('C5_EXECUTE') or die(_("Access Denied."));?>
 </script>
 
 
+    <?php
+    $u = new User();
+    if($u->isRegistered()) { ?>
+    <!-- ログイン時表示 -->
+    </div>
+    <?php } ?>
+
 <?php  Loader::element('footer_required'); ?>
 
 </body>

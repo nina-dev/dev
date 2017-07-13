@@ -19,7 +19,7 @@
 	$u = new User();
 	if($u->isRegistered()) { ?>
 	<!-- ログイン時表示 -->
-	<div style="height: 47px;"></div>
+	<div class="<?=$c->getPageWrapperClass()?>">
 	<?php } ?>
 
 	<div class="l-loading">
