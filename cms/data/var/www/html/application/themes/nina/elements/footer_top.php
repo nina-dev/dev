@@ -37,7 +37,7 @@ defined('C5_EXECUTE') or die(_("Access Denied."));?>
     </div>
     <?php } ?>
 
-<?php  Loader::element('footer_required'); ?>
+<?php Loader::element('footer_required'); ?>
 
 </body>
 </html>
