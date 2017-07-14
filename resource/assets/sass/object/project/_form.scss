@@ -1,0 +1,22 @@
+.p-form {
+    @include css3(display,flex);
+    //すべてのflexアイテム（子要素）に同じ位置揃えを指定
+    @include css3(align-items,center);
+    //文字が入力されて改行されたときに向かう方向へ並ぶ。
+    @include css3(flex-direction,column);
+    //各flexアイテムが中央揃えになります。
+    @include css3(justify-content,center);
+    
+    width: 730px;
+    @include center;
+
+    &__col {
+        width: 100%;
+        margin-top: 32px;
+
+        &:first-child {
+            margin-top: 0px; 
+        }
+    }
+    
+}
