@@ -3,6 +3,10 @@
     height: 4rem;
     padding-top: 2rem;
 
+    &--select {
+        border-bottom: 3px solid $color-main;
+    }
+
     &--input {
 
         @include css3(box-sizing,border-box);
