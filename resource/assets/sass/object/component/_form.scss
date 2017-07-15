@@ -1,100 +1,107 @@
 .c-form {
-    display: inline-block;
-    height: 4rem;
-    padding-top: 2rem;
 
-    &--select {
-        border-bottom: 3px solid $color-main;
-    }
-
-    &--input {
-
-        @include css3(box-sizing,border-box);
+    input[type="text"], input[type="tel"], input[type="email"], textarea {
+        background: $color-gray-f2;
+        border: 1px solid $color-gray-c;
+        border-radius: 0;
+        box-shadow: none;
+        box-sizing: border-box;
         display: block;
-        @include font-size(20);
-        padding: 16px 0;
+        padding: calc(1.4em - 1px);
+        @include css3(transition, all 1s);
         width: 100%;
-        background: #fff;
-        border-bottom: 1px solid $color-gray-c;
+        margin-top: 16px;
+        color: #000;
 
-        
-        &:invalid {
-            box-shadow: none;
-        }
 
         &:focus {
-            background: #fff;
-            border-bottom: 3px solid $color-main;
+            background: $color-sub;
+
         }
     }
 
-    &--textarea {
-
-        @extend .c-form--input;
-        height: 80px;
-   
-        &:invalid {
-            box-shadow: none;
-        }
-
-        &:focus {
-            background: #fff;
-            border-bottom: 2px solid $color-main;
-        }
-    }
-
-    &--label {
-        display: inline-block;
-        font-size: 0;
-        pointer-events: none;
-        position: relative;
-        @include css3(text-transform, uppercase);
-        width: 100%;
-        
-        &::before {
-            content: attr(data-content);
-            position: relative;
-            @include css3(transition, .3s);
-            will-change: font-size, top;
-        }
-        &::after {
-            bottom: 0.9rem;
-            content: '';
-            height: 0.3rem;
-            left: 50%;
-            position: absolute;
-            @include css3(transition, all 0.2s ease);
-            width: 0;
-            will-change: width, left;
-        }
+    textarea {
+        height: 24rem;
     }
 }
 
-.c-form--input:focus ~ .c-form--label::after {
-    left: 0%;
-    width: 100%;
+.c-form--label {
+    @include font-size(14);
+    color: #000;
 }
 
-.c-form--input:invalid ~ .c-form--label::before,
-.c-form--textarea:invalid ~ .c-form--label::before {
-    @include font-size(16);
-    left: 0px;  
-    top: -40px;
+.c-form--attention {
+    margin-top: 8px;
+    color: $color-accent--red;
+}
+
+.c-form--sampletext {
+    margin-left: 16px;
     color: $color-gray-a1;
-}
-
-.c-form--label::before, .c-form--input[required]:focus ~ .c-form--label::before{
     @include font-size(12);
-    top: -76px;
-    left: 0px;
-    color: $color-gray-a1;
 }
 
-.c-form--label::before, .c-form--textarea[required]:focus ~ .c-form--label::before{
+.c-form--select {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    min-width: 192px;
+    min-width: 23em;
+    background-color: #fff;
+    font-weight: bold;
+    border-bottom: 3px solid $color-main;
+
+    &::before {
+        /* content:''; 今回のサンプルはCDNを使っているため指定していないけど指定する必要があります。 */
+        font-family:'entypo',sans-serif;
+        position:absolute;
+        z-index:1;
+        top:50%;
+        right:12px;
+        right:.75rem;
+        margin-top:-8px;
+        margin-top:-.5rem;
+        font-size:16px;
+        font-size:1rem;
+        line-height:1;
+        color:#333;
+    }
+
+    select {
+        position:relative;
+        z-index:2;
+        display:block;
+        width:200%;/* fallback non calc support */
+        width:-webkit-calc(100% + 5em);
+        margin:0;
+        padding:11px 35px 11px 11px;
+        padding:.6875rem 2.1875rem .6875rem .6875rem;
+        border:0;
+        outline:none;
+        font-size:16px;
+        font-size:1rem;
+        line-height:1.5;
+    }
+}
+
+.c-form--tab {
+    padding: 4px  1.125%;
     @include font-size(12);
-    top: -90px;
-    left: 0px;
-    color: $color-gray-a1;
+    background: $color-main;
+    color: #fff;
+    line-height: 1;
+    margin-left: 8px;
+    position: relative;
+    top: -1px;
+
+    &--required {
+        @extend .c-form--tab;
+    }
+
+    &--any {
+        @extend .c-form--tab;
+        background: $color-gray-a1;
+    }
 }
 
 
