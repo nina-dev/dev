@@ -6,7 +6,6 @@
     @include css3(flex-direction,column);
     //各flexアイテムが中央揃えになります。
     @include css3(justify-content,center);
-    
     width: 800px;
     @include center;
     
@@ -25,4 +24,3 @@
          width: 60%;
     }
 }
-
