@@ -33,6 +33,13 @@
 .c-form--attention {
     margin-top: 8px;
     color: $color-accent--red;
+
+    opacity: 0;
+    @include css3(transition, all .3s);
+
+    &--show {
+        opacity: 1;
+    }
 }
 
 .c-form--sampletext {
