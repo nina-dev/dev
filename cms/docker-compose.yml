@@ -1,0 +1,22 @@
+db:
+  image: mariadb
+  environment:
+  - MYSQL_ROOT_PASSWORD=the_db_root_password
+  - MYSQL_USER=c5dbadmin
+  - MYSQL_PASSWORD=the_db_user_password
+  - MYSQL_DATABASE=c5db
+  # host volume
+  volumes:
+    - ./data/var/lib/mysql:/var/lib/mysql
+
+web:
+  image: chriswayg/concrete5.7
+  ports:
+  - "80:80"
+  - "443:443"
+  links:
+  - db
+  # host volumes
+  volumes:
+    - ./data/etc/apache2:/etc/apache2
+    - ./data/var/www/html:/var/www/html
