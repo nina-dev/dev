@@ -78,9 +78,6 @@
         </div>
         <div class="l-content--lower">
 
-            <span class="p-bg--item--primary--under c-square--primary"></span> <span class="p-bg--item--secondary--under c-square--tertiary"></span>
-
-
             <div class="l-contact">
 
                 <p class="l-contact__ttl c-contentTtl--secondary">お問い合わせ</p>
@@ -98,36 +95,76 @@
                     <ul class="p-form">
 
                         <li class="p-form__col">
-                            <select name="c-form--select">
-                                <option value="">5つの選択肢を表示</option>
-                                <option value="選択肢2">選択肢2</option>
-                                <option value="選択肢3">選択肢3</option>
-                                <option value="選択肢4">選択肢4</option>
-                                <option value="選択肢5">選択肢5</option>
-                                <option value="選択肢6">選択肢6</option>
-                                <option value="選択肢7">選択肢7</option>
-                            </select>
+
+                            <!--ここのデザイン調整中-->
+
+                                <label for="category" class="c-form--select">
+                                    <select name="" id="category">
+                                        <option value="" selected>HTML</option>
+                                        <option value="">CSS</option>
+                                        <option value="">JavaScript</option>
+                                        <option value="">IA</option>
+                                        <option value="">UI</option>
+                                        <option value="">UX</option>
+                                    </select>
+                                </label>
+
+                            <!--ここのデザイン調整中-->                            
+                            
                         </li>
 
                         <li class="p-form__col">
-                           <input class="c-form--input" required="" type="text">
-                           <label class="c-form--label" data-content="お名前 例) 田中太郎">お名前</label>  
-                       </li>
 
-                       <li class="p-form__col">
-                           <input class="c-form--input" required="" type="text">
-                           <label class="c-form--label" data-content="メールアドレス 例) aaa@yahoo.co.jp">メールアドレス</label>  
-                       </li>
+                            <div class="c-form">
 
-                       <li class="p-form__col">
-                           <input class="c-form--textarea   " required="" type="textarea">
-                           <label class="c-form--label" data-content="お問い合わせ内容">問い合わせ</label>  
-                       </li>
+                                <label class="c-form--label">お名前<span class="c-form--tab--required">必須</span><span class="c-form--sampletext">最初は非表示でfocusしたらプレースフォルダー文言を表示させたい</span></label>
+                                <input class="c-form--text" type="text" name="">
+                                                                <p class="c-form--attention">エラー</p>
 
-                       
-                   </ul>
 
-               </div>
+                            </div>
+
+                        </li>
+
+                        <li class="p-form__col">
+
+                            <div class="c-form">
+
+                                <label class="c-form--label">メールアドレス<span class="c-form--tab--required">必須</span><span class="c-form--sampletext">最初は非表示でfocusしたらプレースフォルダー文言を表示させたい</span></label>
+                                <input class="c-form--text" type="text" name="">
+                                                                <p class="c-form--attention">エラー</p>
+
+                                
+                            </div>
+
+
+                            
+                        </li>
+
+                        <li class="p-form__col">
+
+                            <div class="c-form">
+
+                                <label class="c-form--label">お問い合わせ内容<span class="c-form--tab--any">必須</span></label>
+                                <textarea id="text" name="お問い合わせ内容" placeholder="お問い合わせ内容を入力してください"></textarea>
+                                
+                            </div>
+
+
+                            
+                        </li>
+
+                        <li class="p-form__col--btn c-cta__inner__btn c-btn--secondary--orange">
+
+                            <button type="submit">送信する</button>
+
+
+                            
+                        </li>
+
+
+                    </ul>
+                </div>
             </div>
         </div>
 

@@ -1,0 +1,103 @@
+.c-form {
+    display: inline-block;
+    height: 4rem;
+    padding-top: 2rem;
+
+    &--select {
+        border-bottom: 3px solid $color-main;
+    }
+
+    &--input {
+
+        @include css3(box-sizing,border-box);
+        display: block;
+        @include font-size(20);
+        padding: 16px 0;
+        width: 100%;
+        background: #fff;
+        border-bottom: 1px solid $color-gray-c;
+
+        
+        &:invalid {
+            box-shadow: none;
+        }
+
+        &:focus {
+            background: #fff;
+            border-bottom: 3px solid $color-main;
+        }
+    }
+
+    &--textarea {
+
+        @extend .c-form--input;
+        height: 80px;
+   
+        &:invalid {
+            box-shadow: none;
+        }
+
+        &:focus {
+            background: #fff;
+            border-bottom: 2px solid $color-main;
+        }
+    }
+
+    &--label {
+        display: inline-block;
+        font-size: 0;
+        pointer-events: none;
+        position: relative;
+        @include css3(text-transform, uppercase);
+        width: 100%;
+        
+        &::before {
+            content: attr(data-content);
+            position: relative;
+            @include css3(transition, .3s);
+            will-change: font-size, top;
+        }
+        &::after {
+            bottom: 0.9rem;
+            content: '';
+            height: 0.3rem;
+            left: 50%;
+            position: absolute;
+            @include css3(transition, all 0.2s ease);
+            width: 0;
+            will-change: width, left;
+        }
+    }
+}
+
+.c-form--input:focus ~ .c-form--label::after {
+    left: 0%;
+    width: 100%;
+}
+
+.c-form--input:invalid ~ .c-form--label::before,
+.c-form--textarea:invalid ~ .c-form--label::before {
+    @include font-size(16);
+    left: 0px;  
+    top: -40px;
+    color: $color-gray-a1;
+}
+
+.c-form--label::before, .c-form--input[required]:focus ~ .c-form--label::before{
+    @include font-size(12);
+    top: -76px;
+    left: 0px;
+    color: $color-gray-a1;
+}
+
+.c-form--label::before, .c-form--textarea[required]:focus ~ .c-form--label::before{
+    @include font-size(12);
+    top: -90px;
+    left: 0px;
+    color: $color-gray-a1;
+}
+
+
+
+
+
