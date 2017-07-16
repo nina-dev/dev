@@ -1,6 +1,7 @@
 .c-form {
 
     input[type="text"], input[type="tel"], input[type="email"], textarea {
+        
         background: $color-gray-f2;
         border: 1px solid $color-gray-c;
         border-radius: 0;
@@ -12,7 +13,6 @@
         width: 100%;
         margin-top: 16px;
         color: #000;
-
 
         &:focus {
             background: $color-sub;
@@ -60,12 +60,9 @@
     min-width: 192px;
     min-width: 23em;
     background-color: #fff;
-    font-weight: bold;
     border-bottom: 3px solid $color-main;
 
     &::before {
-        /* content:''; 今回のサンプルはCDNを使っているため指定していないけど指定する必要があります。 */
-        font-family:'entypo',sans-serif;
         position:absolute;
         z-index:1;
         top:50%;
@@ -73,8 +70,6 @@
         right:.75rem;
         margin-top:-8px;
         margin-top:-.5rem;
-        font-size:16px;
-        font-size:1rem;
         line-height:1;
         color:#333;
     }
@@ -85,14 +80,16 @@
         display:block;
         width:200%;/* fallback non calc support */
         width:-webkit-calc(100% + 5em);
-        margin:0;
-        padding:11px 35px 11px 11px;
-        padding:.6875rem 2.1875rem .6875rem .6875rem;
-        border:0;
         outline:none;
         font-size:16px;
-        font-size:1rem;
         line-height:1.5;
+        padding: 0 0 16px;
+        font-weight: bold;
+
+
+        optionn {
+            font-size:12px;
+        }
     }
 }
 
