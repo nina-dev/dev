@@ -18,8 +18,21 @@ cms/data/var/www/html/application/*
 cms/data/var/www/html/application/themes/*
 !cms/data/var/www/html/application/themes/nina
 
+#外部フォームのブロックを生成ファイルは除外
+!cms/data/var/www/html/application/blocks
+cms/data/var/www/html/application/blocks/*
+!cms/data/var/www/html/application/blocks/external_form
+cms/data/var/www/html/application/blocks/external_form/*
+!cms/data/var/www/html/application/blocks/external_form/form
+cms/data/var/www/html/application/blocks/external_form/form/*
+!cms/data/var/www/html/application/blocks/external_form/form/controller
+cms/data/var/www/html/application/blocks/external_form/form/controller/*
+!cms/data/var/www/html/application/blocks/external_form/form/nina_form.php
+!cms/data/var/www/html/application/blocks/external_form/form/controller/nina_form.php
 
-
-
+#外部フォームの自動返信phpは除外
+!cms/data/var/www/html/application/mail
+cms/data/var/www/html/application/mail/*
+!cms/data/var/www/html/application/mail/return_mail.php
 
 

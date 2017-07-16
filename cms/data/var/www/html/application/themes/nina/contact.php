@@ -15,7 +15,6 @@ $this->inc('elements/header.php');
     </div>
 
     <div class="l-contact__inner">
-
     <?php
     $a = new Area('Content');
     $a->enableGridContainer();
