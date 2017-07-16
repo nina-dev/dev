@@ -95,30 +95,6 @@ $this->inc('elements/header.php');
   </div>
 </div>
 
-
-<div class="l-content--secondary">
-
-  <div class="l-related">
-    <p class="l-related__cache">あなたにオススメの記事</p>
-    <p class="l-related__text--attention">当サイトは発信型メディアとして、近日リニューアルします。</p>
-    <ul class="l-related__item">
-      <li class="l-related__item__box c-thumbnail--largeborder">
-        <p class="c-thumbnail--largeborder__item--img"><img src="<?php echo $this->getThemePath(); ?>/img/article/01.jpg"></p>
-        <p class="c-thumbnail--largeborder__item--ttl--related">制作依頼で失敗しない５つのポイントをまとめてみました。</p>
-      </li>
-      <li class="l-related__item__box c-thumbnail--largeborder">
-        <p class="c-thumbnail--largeborder__item--img"><img src="<?php echo $this->getThemePath(); ?>/img/article/02.jpg"></p>
-        <p class="c-thumbnail--largeborder__item--ttl--related">最近のお仕事でやっていることを公開します。</p>
-      </li>
-      <li class="l-related__item__box c-thumbnail--largeborder">
-        <p class="c-thumbnail--largeborder__item--img"><img src="<?php echo $this->getThemePath(); ?>/img/article/03.jpg"></p>
-        <p class="c-thumbnail--largeborder__item--ttl--related">いまWebディレクターに求められる「解析提案力」</p>
-      </li>
-    </ul> 
-  </div>
-
-</div>
-
 <?php
 $this->inc('elements/footer_contact.php');
 ?>
