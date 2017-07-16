@@ -1,3 +1,5 @@
+@font-face{font-family:"IonIcons";src:url("//code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.eot?v=2.0.1");src:url("//code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.eot?v=2.0.1#iefix") format("embedded-opentype"),url("//code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.ttf?v=2.0.1") format("truetype"),url("//code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.woff?v=2.0.1") format("woff"),url("//code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.svg?v=2.0.1#Ionicons") format("svg");font-weight:normal;font-style:normal}
+
 .c-form {
 
     input[type="text"], input[type="tel"], input[type="email"], textarea {
@@ -8,7 +10,7 @@
         box-shadow: none;
         box-sizing: border-box;
         display: block;
-        padding: calc(1.4em - 1px);
+        padding: calc(1.1em - 1px);
         @include css3(transition, all 1s);
         width: 100%;
         margin-top: 16px;
@@ -26,18 +28,19 @@
 }
 
 .c-form--label {
-    @include font-size(14);
+    @include font-size(16);
     color: #000;
 }
 
 .c-form--attention {
     margin-top: 8px;
     color: $color-accent--red;
-    opacity: 0;
+    //opacity: 0;
+    display: none;
     @include css3(transition, all .3s);
 
     &--show {
-        opacity: 1;
+        display: block;
     }
 }
 
@@ -54,43 +57,53 @@
 }
 
 .c-form--select {
-    position: relative;
-    overflow: hidden;
-    display: inline-block;
-    min-width: 192px;
-    min-width: 23em;
-    background-color: #fff;
-    border-bottom: 3px solid $color-main;
 
-    &::before {
-        position:absolute;
-        z-index:1;
-        top:50%;
-        right:12px;
-        right:.75rem;
-        margin-top:-8px;
-        margin-top:-.5rem;
-        line-height:1;
-        color:#333;
-    }
-
-    select {
-        position:relative;
-        z-index:2;
-        display:block;
-        width:200%;/* fallback non calc support */
-        width:-webkit-calc(100% + 5em);
-        outline:none;
-        font-size:16px;
-        line-height:1.5;
-        padding: 0 0 16px;
+    &__ttl {
+        @include font-size(16);
         font-weight: bold;
-
-
-        optionn {
-            font-size:12px;
-        }
     }
+}
+
+.c-form--select__item {
+
+    position: relative;
+    margin-top: 16px;
+    width: 100%;
+
+    &:before {
+        z-index: 1;
+        position: absolute;
+        right: 8px;
+        top: 6px;
+        content: "\f123";
+        font-family: "IonIcons";
+        line-height: 43px;
+        color: $color-main;
+        pointer-events: none;
+        @include font-size(16);
+    }
+
+    select{
+        text-indent: 0.01px;
+        @include font-size(16);
+        text-overflow: '';
+        vertical-align: middle;
+        padding: 6px 0;
+        color: $color-main;
+        width: 100%;
+        font-weight: bold;
+        border-bottom: 2px solid $color-main;
+
+        option {
+            background-color: #fff;
+            padding: 8px;
+            color: #333;
+            @include font-size(14);
+            font-weight: normal;
+        }
+
+    }
+
 }
 
 .c-form--tab {
@@ -99,9 +112,10 @@
     background: $color-main;
     color: #fff;
     line-height: 1;
-    margin-left: 8px;
     position: relative;
     top: -1px;
+    margin-right: 4px;
+    border-radius: 2px;
 
     &--required {
         @extend .c-form--tab;
