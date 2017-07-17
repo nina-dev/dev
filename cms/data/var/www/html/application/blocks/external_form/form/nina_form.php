@@ -58,7 +58,7 @@ if (isset($response)) {
       // メールアドレス
       echo '<div class="p-form__col"><div class="c-form">';
       echo '<span class="c-form--tab--required">必須</span>';
-      echo $form->label('email', 'メールアドレス<span class="c-form--sampletext">', array('class' => 'c-form--label'));
+      echo $form->label('email', 'メールアドレス<span class="c-form--sampletext">最初は非表示でfocusしたらプレースフォルダー文言を表示させたい</span>', array('class' => 'c-form--label'));
       echo $form->email('email',array('class' => 'c-form--text'));
       echo '<p class="c-form--attention">エラー</p>';
       echo '</div></div>';
