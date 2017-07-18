@@ -14,6 +14,7 @@ cms/data/var/www/*
 cms/data/var/www/html/*
 !cms/data/var/www/html/application
 cms/data/var/www/html/application/*
+!cms/data/var/www/html/packages
 !cms/data/var/www/html/application/themes
 cms/data/var/www/html/application/themes/*
 !cms/data/var/www/html/application/themes/nina
