@@ -8,7 +8,7 @@ spec
 ansible.cfg
 LICENSE
 README.md
-
+provision/*
 wordpress/*
 !wordpress/wp-content/
 wordpress/wp-content/*
