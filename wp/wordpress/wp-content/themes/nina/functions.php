@@ -17,6 +17,9 @@ add_image_size('mid_thumbnail', 233, 78, true);
 add_image_size('big_thumbnail', 710, 238, true);
 add_image_size('post_thumbnail', 1200, 0, true);
 
+// カスタムナビゲーションメニュー
+add_theme_support('menus');
+
 /* パンくず
 * ---------------------------------------- */
 if( !function_exists('birth_breadcrumb') ){
