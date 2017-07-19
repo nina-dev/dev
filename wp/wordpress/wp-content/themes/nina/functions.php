@@ -119,6 +119,18 @@ if( !function_exists('birth_breadcrumb') ){
   }
 }
 
+/* 本文抜粋を取得する関数
+* ---------------------------------------- */
+function new_excerpt_mblength($length) {
+  return 80;
+}
+add_filter('excerpt_mblength', 'new_excerpt_mblength');
+
+function new_excerpt_more($more) {
+  return '…';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
+
 
 /* ページャーの生成
 * ---------------------------------------- */

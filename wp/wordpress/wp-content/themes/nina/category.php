@@ -11,56 +11,43 @@
 
     <div class="l-service__inner">
       <ul class="l-service__inner__item">
+
+        <?php
+        if ( have_posts() ) :
+          while ( have_posts() ) : the_post();
+        ?>
         <li class="l-service__inner__item__col">
           <div class="c-thumbnail--table">
             <p class="c-thumbnail--table__item--img">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/service/03.png" alt="">
+              <?php the_post_thumbnail('post_thumbnail'); ?>
             </p>
             <div class="c-thumbnail--table__item--detail--right">
-              <h2 class="c-thumbnail--table__item__ttl">UIデザイン</h2>
-              <p class="c-thumbnail--table__item__text">ユーザーとの繋がりを作る上で重要な、どう感じてほしいか、どう使って欲しいか。サービスやコンテンツを理解した上で、クライアントがコンテンツを通して実現したいこと・目的に対してユーザーを誘導する手段としてのデザインを提案します。</p>
+              <h2 class="c-thumbnail--table__item__ttl">
+                <?php
+                // タグ情報を取得
+                $posttags = get_the_tags();
+                if($posttags){ ?>
+                <?php the_tags('',' ');?>
+                <?php } ?>
+              </h2>
+              <p class="c-thumbnail--table__item__text"><?php echo get_the_excerpt(); ?></p>
               <div class="c-thumbnail--table__item__btn">
-                <p class="c-btn--tertiary"><a href="<?php echo home_url() ?>/service/design" title="">VIEW MORE</a></p>
+                <p class="c-btn--tertiary"><a href="<?php the_permalink(); ?>" title="">VIEW MORE</a></p>
               </div>
             </div>
           </div>
-
         </li>
-        <li class="l-service__inner__item__col">
-          <div class="c-thumbnail--table">
-            <p class="c-thumbnail--table__item--img">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/service/02.png" alt="">
-            </p>
-            <div class="c-thumbnail--table__item--detail--right">
-              <h2 class="c-thumbnail--table__item__ttl">レスポンシブデザイン</h2>
-              <p class="c-thumbnail--table__item__text">多数の案件の経験を基に、お客様との密なコミュニケーションを大事に、デザインとパフォーマンスを両立したレスポンシブWebデザインで、ユーザーにとっての「見やすい」「使いやすい」をサイト上で展開し、コンテンツ訴求をサポートします。 </p>
-              <div class="c-thumbnail--table__item__btn">
-                <p class="c-btn--tertiary"><a href="<?php echo home_url() ?>/service/responsive" title="">VIEW MORE</a></p>
 
-              </div>
-            </div>
-          </div>
+        <?php
+        endwhile;
+        else :
+          ?>
 
-        </li>
-        <li class="l-service__inner__item__col">
-          <div class="c-thumbnail--table">
-            <p class="c-thumbnail--table__item--img">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/service/01.png" alt="">
-            </p>
-            <div class="c-thumbnail--table__item--detail--right">
-              <h2 class="c-thumbnail--table__item__ttl">ウェブコンサルティング</h2>
-              <p class="c-thumbnail--table__item__text">アクセス解析や競合分析による自社・他社を含むサイト内外の「現状分析」、サイトを戦略レベルから見直し、クライアントにとっての理想的なユーザー獲得のための、ウェブプロモーション・Web活用の改善プロセスのコンサルティングサービスを提供しています。</p>
+        <p>投稿が見つかりません。</p>
 
-              <div class="c-thumbnail--table__item__btn">
-                <p class="c-btn--tertiary"><a href="<?php echo home_url() ?>/service/support" title="">VIEW MORE</a></p>
-
-              </div>
-
-            </div>
-
-          </div>
-
-        </li>
+        <?php
+        endif;
+        ?>
       </ul>
     </div>
 
