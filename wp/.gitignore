@@ -1,0 +1,17 @@
+.vagrant
+Gemfile
+Gemfile.lock
+Rakefile
+Vagrantfile.sample
+Vagrantfile.theme-review
+spec
+ansible.cfg
+LICENSE
+README.md
+
+wordpress/*
+!wordpress/wp-content/
+wordpress/wp-content/*
+!wordpress/wp-content/themes
+wordpress/wp-content/themes/*
+!wordpress/wp-content/themes/nina
