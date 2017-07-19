@@ -9,12 +9,13 @@ set_post_thumbnail_size( 304, 214 ); // 通常の投稿サムネイル
 add_theme_support('small_thumbnail');
 add_theme_support('mid_thumbnail');
 add_theme_support('big_thumbnail');
+add_theme_support('post_thumbnail');
 
 //サイズの指定
 add_image_size('small_thumbnail', 140, 140);
 add_image_size('mid_thumbnail', 233, 78, true);
 add_image_size('big_thumbnail', 710, 238, true);
-add_image_size('post_thumbnail', 850, 0, true);
+add_image_size('post_thumbnail', 1200, 0, true);
 
 /* パンくず
 * ---------------------------------------- */
