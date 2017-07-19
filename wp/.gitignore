@@ -4,7 +4,6 @@ Gemfile.lock
 Rakefile
 Vagrantfile.sample
 Vagrantfile.theme-review
-provision/*
 spec
 ansible.cfg
 LICENSE
