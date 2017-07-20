@@ -1,5 +1,9 @@
 <?php
 
+/* 自動アップグレードを停止
+* ---------------------------------------- */
+add_filter( 'automatic_updater_disabled', '__return_true' );
+
 /* アイキャッチ
 * ---------------------------------------- */
 add_theme_support('post-thumbnails', array( 'post', 'page') );
