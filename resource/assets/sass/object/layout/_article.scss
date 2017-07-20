@@ -2,7 +2,7 @@
 .l-article {
 
 	@include respond(pc) {	
-		text-align: center;
+		text-align: left;
 		padding-bottom: 48px;
 	}
 
@@ -34,7 +34,7 @@
 	margin-top: 24px;
 
 	@include respond(pc) {
-		@include font-size(28);
+		@include font-size(26);
 		margin-top: 40px;
 		
 	}
@@ -151,8 +151,8 @@
 
 	p {
 
-		@include font-size(18);
-		line-height: 2.3;
+		@include font-size(16);
+		line-height: 2.2;
 		
 		@include respond(tb) {
 			line-height: 2;
