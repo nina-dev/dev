@@ -2,8 +2,6 @@
 .l-article {
 
 	@include respond(pc) {	
-		width: 800px;
-		@include center;
 		text-align: center;
 		padding-bottom: 48px;
 	}
