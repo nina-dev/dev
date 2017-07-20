@@ -1,5 +1,7 @@
  <?php if( !(is_home() || is_front_page()) ){ ?>
- <?php get_template_part('/template_parts/related-entries' ); ?>
+ <div class="l-content--secondary">
+ 	<?php get_template_part('/template_parts/related' ); ?>
+ </div>
  <?php } ?>
 
 <footer class="l-footer">
