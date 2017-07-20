@@ -78,6 +78,6 @@ gulp.task('watch', function(){
 
 gulp.task('default',['sass','minify-js','copy'],function(){
     watch(['resource/**/*.scss'], function(event){
-        gulp.start(['sass']); // sassに変更があったら実行。cssを吐き出すので下のwatchが動く。
+        gulp.start(['sass','minify-js','copy']); // sassに変更があったら実行。cssを吐き出すので下のwatchが動く。
     });
 });

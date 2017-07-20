@@ -51,7 +51,8 @@
 	margin-top: 24px;
 
 	@include respond(pc) {
-		width: 100%;
+		width: 1160px;
+		@include center;
 		
 	}
 

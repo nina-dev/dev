@@ -84,9 +84,62 @@
 .l-content--lower {
 
 	@include respond(pc){
-		@include widtnPercent( 640, 600 );
-		@include center;
-		position: relative;
+		@include widtnPercent( 640, 640 );
 		margin-top: 40px;
+		position: relative;
+		background: #f1f8fd;
+	}
+
+	&::before {
+
+		@include respond(pc){
+			position: absolute;
+			content: "";
+			height: 100%;
+			left: 0;
+			top: 0;
+			width: 50%;
+			background: #fff;
+			z-index: 1;
+		}
+	}
+}
+
+.l-content--lower__inner {
+
+	@include respond(pc){
+		width: 1160px;
+		@include center;
+		@include clearfix;
+		position: relative;
+		z-index: 2;
+
+	}
+}
+
+.l-content--lower__item {
+
+	@include respond(pc){
+		min-height: 1px;
+		padding: 32px;
+	}
+
+	&--left {
+		@extend .l-content--lower__item;
+
+		@include respond(pc){
+			float: left;
+			@include widtnPercent( 640, 440 );
+			background: #fff;
+		}
+	}
+
+	&--right {
+		@extend .l-content--lower__item;
+
+		@include respond(pc){
+			float: right;
+			@include widtnPercent( 640, 200 );
+		}
 	}
 }

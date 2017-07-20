@@ -2,10 +2,9 @@
 
 <div class="l-content--lower">
 
-  <span class="p-bg--item--primary--under c-square--primary"></span> <span class="p-bg--item--secondary--under c-square--tertiary"></span>
+<div class="l-content--lower__inner">
 
-
-  <div class="l-article">
+<div class="l-content--lower__item--left l-article">
 
     <?php
       if ( have_posts() ) :
@@ -97,9 +96,16 @@
     endif;
     ?>
 
-  </div>
+</div>
+
+<div class="l-content--lower__item--right l-side">
+テキストテキストテキストテキストテキストテキスト
+</div>
+
+
+
+</div>
 </div>
 
 <?php get_footer(); ?>
-
 
