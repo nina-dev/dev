@@ -1,0 +1,19 @@
+.l-sidebar__col {
+	margin-top: 32px;
+
+	&:first-child {
+		margin-top: 0px;
+	}
+}
+
+.l-sidebar__col__item {
+	margin-top: 16px;
+}
+
+.l-sidebar__col__item__list {
+	margin-top: 24px;
+
+	&:first-child {
+		margin-top: 0px;
+	}
+}

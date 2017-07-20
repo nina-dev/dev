@@ -1,0 +1,42 @@
+.c-list {
+
+	&--category {
+		
+		li {
+			margin-top: 5px;
+
+			&:before {
+				color: $color-gray-c;
+				content: " > ";
+				@include font-size(16);
+				margin-right: 3px;
+			}
+		}
+
+		a {
+			@include font-size(12);
+			color: $color-main;
+		}
+    
+
+	}
+
+	&--tag {
+
+		li {
+			display: inline-block;
+
+			&:after {
+				color: $color-gray-c;
+				content: " / ";
+			}
+		}
+
+		a {
+			@include font-size(12);
+			color: $color-main;
+		}
+
+	}
+
+}
