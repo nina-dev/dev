@@ -19,7 +19,7 @@ var svg2png = require('gulp-svg2png');
 var cheerio = require('gulp-cheerio');
 var destDir = 'html/css'; // 出力用ディレクトリ
 var srcSass = 'resource/assets/sass/**/*.scss';
-var cmsDir = 'cms/data/var/www/html/application/themes/nina';
+var cmsDir = 'wp/wordpress/wp-content/themes/nina';
 
 var cleanCSS = require('gulp-clean-css');
 
