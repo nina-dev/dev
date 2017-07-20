@@ -15,3 +15,5 @@ wordpress/wp-content/*
 !wordpress/wp-content/themes
 wordpress/wp-content/themes/*
 !wordpress/wp-content/themes/nina
+wordpress/wp-content/themes/nina/css/*
+wordpress/wp-content/themes/nina/js/*
