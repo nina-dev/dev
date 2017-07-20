@@ -4,21 +4,7 @@ node_modules/
 html/css/
 html/Vagrantfile
 .vagrant/
-
-
-cms/data/*
-!cms/data/var
-cms/data/var/*
-!cms/data/var/www
-cms/data/var/www/*
-!cms/data/var/www/html
-cms/data/var/www/html/*
-!cms/data/var/www/html/application
-cms/data/var/www/html/application/*
-!cms/data/var/www/html/packages
-!cms/data/var/www/html/application/themes
-cms/data/var/www/html/application/themes/*
-!cms/data/var/www/html/application/themes/nina
+cms/*
 
 
 
