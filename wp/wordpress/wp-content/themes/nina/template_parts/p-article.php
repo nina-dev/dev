@@ -76,7 +76,7 @@
     </div>
 
     <div class="p-article__item--cta c-cta">
-      <?php get_template_part('/template_parts/cta' ); ?>
+      <?php get_template_part('/template_parts/p-cta' ); ?>
     </div>
 
     <?php

@@ -37,7 +37,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   <?php } ?>
 
-  <?php get_template_part('/template_parts/menu' ); ?>
+  <?php get_template_part('/template_parts/p-menu' ); ?>
 
   <div class="l-container">
     <header class="l-header">
