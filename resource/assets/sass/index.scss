@@ -25,18 +25,13 @@
 @import "object/component/introduce";
 @import "object/component/list";
 
-
-
 @import "object/layout/container";
 @import "object/layout/content";
 @import "object/layout/header";
 @import "object/layout/footer";
 @import "object/layout/main";
-@import "object/layout/article";
-@import "object/layout/related";
 @import "object/layout/contact";
 @import "object/layout/sidebar";
-
 
 @import "object/project/bg";
 @import "object/project/box";
@@ -45,6 +40,8 @@
 @import "object/project/workTop";
 @import "object/project/contactTop";
 @import "object/project/form";
+@import "object/project/article";
+@import "object/project/related";
 
 @import "object/animation/animation";
 @import "object/animation/transforms";

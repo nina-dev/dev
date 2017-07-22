@@ -95,7 +95,7 @@ Template Name: ニナ・アーキタイプについて
       </div>
 
       <div class="l-about__item--cta c-cta">
-        <?php get_template_part('/template_parts/cta' ); ?>
+        <?php get_template_part('/template_parts/p-cta' ); ?>
       </div>
 
     </div>

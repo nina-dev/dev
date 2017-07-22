@@ -1,5 +1,5 @@
 
-.l-article {
+.p-article {
 
 	@include respond(pc) {	
 		text-align: left;
@@ -23,12 +23,12 @@
 	}
 }
 
-.l-article__ttl {
+.p-article__ttl {
 
 	@include center;
 }
 
-.l-article__cache {
+.p-article__cache {
 
 	font-weight: bold;
 	margin-top: 24px;
@@ -54,7 +54,7 @@
 	}
 }
 
-.l-article__img {
+.p-article__img {
 
 	@include respond(pc) {
 		margin-top: 40px;
@@ -69,7 +69,7 @@
 	}
 }
 
-.l-article__item {
+.p-article__item {
 
 	margin-top: 24px;
 	
@@ -102,7 +102,7 @@
 
 }
 
-.l-article__inner {
+.p-article__inner {
 
 	text-align: left;
 	
