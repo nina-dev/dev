@@ -1,12 +1,32 @@
-.l-related__cache {
+.p-related {
+
+	@include respond(pc) {
+		position: relative;
+		padding: 16px 8px 0;
+		width: 1148px;
+		@include center;
+		text-align: left;
+	}
+
+	@include respond(tb) {
+		padding: 32px 0px 0px 0px;
+	}
+
+	@include respond(xs) {
+		padding: 24px 0px 0px;
+	}
+
+}
+
+.p-related__cache {
 
 	font-weight: bold;
-	color: $color-main;
 		
 	@include respond(pc) {
-		@include font-size(20);
+		@include font-size(16);
 		line-height: 1;
-		margin-left:  1.61%;
+		margin-left: 12px;
+		color: $color-gray-3;
 		
 	}
 
@@ -21,12 +41,34 @@
 	}	
 }
 
-.l-related__item__box {
+.p-related__item {
+
+		@include respond(pc){
+			text-align: left;
+			@include css3(display, flex);
+			@include css3(flex-wrap, wrap);
+		}
+
+		@include respond(tb) {
+			margin-top: 16px;
+			background: $color-gray-f5;
+			padding-bottom: 24px;
+		}
+
+		@include respond(xs) {
+			margin-top: 16px;
+			padding: 12px 3.125%;
+			background: #eee;
+		}
+}
+
+.p-related__item__box {
 
 	@include respond(pc) {
 		background: #fff;
-		@include widtnPercent( 1100, 309 );
-		margin: 40px 2.61% 0;
+		width: 251px;
+		margin: 32px 16px 0;
+
 	}
 
 	@include respond(tb) {
@@ -55,29 +97,10 @@
 	}
 }
 
-.l-related__item {
-
-		@include respond(pc){
-			text-align: left;
-			@include css3(display, flex);
-			@include css3(flex-wrap, wrap);
-		}
-
-		@include respond(tb) {
-			margin-top: 16px;
-			background: $color-gray-f5;
-			padding-bottom: 24px;
-		}
-
-		@include respond(xs) {
-			margin-top: 16px;
-			padding: 12px 3.125%;
-			background: #eee;
-		}
-}
 
 
-.l-related__text {
+
+.p-related__text {
 
 	margin-top: 16px;
 
@@ -97,7 +120,7 @@
 	}
 
 	&--attention {
-		@extend .l-related__text;
+		@extend .p-related__text;
 		color: $color-accent--red;
 
 	}
@@ -105,24 +128,3 @@
 }
 
 
-.l-related {
-
-	@include respond(pc) {
-		position: relative;
-		padding: 60px 0 0;
-		@include widtnPercent( 640, 540 );
-		max-width: 1100px;
-		@include center;
-		text-align: left;
-		border-top: 1px solid $color-gray-f2;
-	}
-
-	@include respond(tb) {
-		padding: 32px 0px 0px 0px;
-	}
-
-	@include respond(xs) {
-		padding: 24px 0px 0px;
-	}
-
-}

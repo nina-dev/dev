@@ -14,7 +14,7 @@
 
     <h2 class="p-article__cache"><?php the_title(); ?></h2>
 
-    <ul class="p-article__item--tag c-tab">
+    <!--<ul class="p-article__item--tag c-tab">
       <li>
         <?php
         // タグ情報を取得
@@ -23,7 +23,7 @@
         <?php the_tags('',' ');?>
         <?php } ?>
       </li>
-    </ul>
+    </ul>-->
 
     <p class="p-article__img">
     <?php the_post_thumbnail('post_thumbnail'); ?>
