@@ -6,6 +6,12 @@
 	}
 }
 
+.l-sidebar__col__ttl {
+	font-weight: bold;
+	@include font-size(12);
+	color: $color-gray-6;
+}
+
 .l-sidebar__col__item {
 	margin-top: 16px;
 }

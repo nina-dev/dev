@@ -114,30 +114,23 @@
 
 .c-thumbnail--small__item {
 	display: table-cell;
+	
 
 	&--img {
 		@extend .c-thumbnail--small__item;
-		height: 72px;
-		width: 72px;
-		overflow: hidden;
-		position: relative;
-		background: #fff;
-		margin-right: 8px;
 
-		img {
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			@include css3(transform, translate(-50%, -50%));
-			width: 100%;
-			height: auto;
+		& .photo {
+			height: 64px;
+			width: 64px;
+			overflow: hidden;
+			background: #ff0000;
 		}
 
 	}
 
 	&--detail {
 		@extend .c-thumbnail--small__item;
-		padding-left: 16px;
+		padding-left: 12px;
 	}
 }
 
@@ -148,12 +141,12 @@
 }
 
 .c-thumbnail--small__item__list {
-	margin-top: 8px;
+	margin-top: 2px;
 }
 
 .c-thumbnail--small__item__list__text {
 	@include font-size(12);
-	color: $color-gray-6;
+	color: $color-gray-a1;
 }
 
 
@@ -253,7 +246,7 @@
 				@extend .c-thumbnail--large__item--ttl;
 				
 				@include respond(pc) {
-					@include font-size(16);
+					@include font-size(15);
 					margin-top: 12px;
 				}
 
