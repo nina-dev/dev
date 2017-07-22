@@ -1,4 +1,4 @@
-<div class="l-content--lower__item--right l-sidebar">
+<div class="l-sidebar">
     <div class="l-sidebar__col">
         <div class="c-introduce">
             <p class="c-introduce__text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
