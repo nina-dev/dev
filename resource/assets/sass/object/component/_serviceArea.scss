@@ -5,7 +5,7 @@
 }
 
 .c-serviceArea__ttl {
-	@include font-size(22);
+	@include font-size(20);
 	font-weight: bold;
 	color: $color-cache;
 	text-align: left;
@@ -31,7 +31,7 @@
 		font-weight: bold;
 		
 		@include respond(xs) {
-			@include font-size(13);
+			@include font-size(813);
 		}
 		
 		&:hover {
@@ -41,7 +41,7 @@
 }
 
 .c-serviceArea__list {
-	margin-top: 16px;
+	margin-top: px;
 	border: 1px solid $color-main;
 	border-left: none;
 	border-right: none;
@@ -60,8 +60,8 @@
 		
 		@include respond(pc) {
 			font-weight: bold;
-			@include font-size(16);
-			padding-right: 24px;
+			@include font-size(15);
+			padding-right: 42px;
 			padding-bottom: 24px;
 		}
 		

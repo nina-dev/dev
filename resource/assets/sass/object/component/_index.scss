@@ -2,11 +2,15 @@
 
 	&__ttl {
 
+		background: $color-accent--green;
+		color: #fff!important;
+		position: relative;
+
 		@include respond(pc) {
-			font-size: 16px!important;
-			padding: 16px 24px;
+			font-size: 14px!important;
 			display: inline-block;
 			margin-top: 0px!important;
+			padding: 2px 16px; 
 		}
 
 		@include respond(tb) {
@@ -25,11 +29,6 @@
 			line-height: 1.3!important;
 		}
 		
-		
-		background: $color-accent--green;
-		color: #fff!important;
-		position: relative;
-
 		&:after{ 
 			content: "";
 			position: absolute;
@@ -48,7 +47,8 @@
 		
 		li {
 			@include respond(pc) {
-				font-size: 18px!important;
+				font-size: 16px!important;
+				line-height: 1.5!important;
 			}
 			@include respond(xs) {
 				//font-size: 1px!important;
