@@ -9,9 +9,11 @@
         </li>
 
         <li>
-          <a href="<?php echo home_url() ?>/archives/category/service">サービス</a>
+          <a href="<?php echo home_url() ?>/service">サービス</a>
           <ul class="p-menu__item--secondary">
-            <?php wp_nav_menu( array('menu_id' => 'nav' )); ?>
+            <li><a href="<?php echo home_url() ?>/service/ui">UIデザイン</a></li>
+            <li><a href="<?php echo home_url() ?>/service/responsive">レスポンシブデザイン</a></li>
+            <li><a href="<?php echo home_url() ?>/service/support">ウェブコンサルティング</a></li>
           </ul>
         </li>
 
