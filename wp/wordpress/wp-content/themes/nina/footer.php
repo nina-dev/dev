@@ -1,4 +1,4 @@
- <?php if( !(is_home() || is_front_page()) && !is_page('contact') ){ //トップとお問い合わせ以外は以下を表示 ?>
+ <?php if( !(is_home() || is_front_page()) && !is_page('contact') && !is_page('service') ){ //トップとスラッグ名が一致するページ以外は表示 ?>
  <div class="l-content--primary">
  	<?php get_template_part('/template_parts/p-related' ); ?>
  </div>

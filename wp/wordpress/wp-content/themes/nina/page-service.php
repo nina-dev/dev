@@ -18,7 +18,7 @@ Template Name: できること
         <li class="l-service__inner__item__col">
           <div class="c-thumbnail--table">
             <p class="c-thumbnail--table__item--img">
-              <img src="/img/service/03.png" alt="">
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/service/03.png" alt="">
             </p>
             <div class="c-thumbnail--table__item--detail--right">
               <h2 class="c-thumbnail--table__item__ttl">UIデザイン</h2>
@@ -33,7 +33,7 @@ Template Name: できること
         <li class="l-service__inner__item__col">
           <div class="c-thumbnail--table">
             <p class="c-thumbnail--table__item--img">
-              <img src="/img/service/02.png" alt="">
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/service/02.png" alt="">
             </p>
             <div class="c-thumbnail--table__item--detail--right">
               <h2 class="c-thumbnail--table__item__ttl">レスポンシブデザイン</h2>
@@ -48,7 +48,7 @@ Template Name: できること
         <li class="l-service__inner__item__col">
           <div class="c-thumbnail--table">
             <p class="c-thumbnail--table__item--img">
-              <img src="/img/service/01.png" alt="">
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/service/01.png" alt="">
             </p>
             <div class="c-thumbnail--table__item--detail--right">
               <h2 class="c-thumbnail--table__item__ttl">ウェブコンサルティング</h2>
