@@ -21,7 +21,7 @@ ip: 192.168.22.10
 #
 # WordPress Settings
 #
-version: latest
+version: 4.8
 lang: ja
 title: nina
 multisite: false
