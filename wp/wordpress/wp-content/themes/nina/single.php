@@ -6,6 +6,8 @@
 
 <div class="l-content--lower__item--left">
 
+<?php get_template_part('/template_parts/p-breadcrumb' ); ?>
+
 <?php get_template_part('/template_parts/p-article' ); ?>
 
 </div>
