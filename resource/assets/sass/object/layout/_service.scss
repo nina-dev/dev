@@ -1,0 +1,115 @@
+.l-service {
+
+	@include respond(pc) {	
+		@include center;
+		text-align: center;
+		padding-bottom: 16px;
+		width: 100%;
+	}
+
+	@include respond(tb) {	
+		width: 100%;
+		padding: 0 3.125% 24px;
+		margin-top: 50px;
+		text-align: center;
+		box-shadow: 0 5px 4px 0 rgba(209,209,209,0.50);
+	}
+
+	@include respond(xs) {	
+		width: 100%;
+		padding-bottom: 16px;
+		margin-top: 50px;
+		text-align: center;
+		border-bottom: 1px solid $color-gray-c;
+	}
+}
+
+
+.l-service__ttl {
+
+	@include respond(xs) {
+		@include center;
+	}
+
+	@include respond(tb) {
+		@include center;
+		
+	}
+}
+
+.l-service__cache {
+
+	font-weight: bold;
+
+	@include respond(pc) {
+		@include font-size(28);
+		
+		margin-top: 40px;
+	}
+
+	@include respond(tb) {
+		margin-top: 24px;
+		@include font-size(24);
+	}
+
+	@include respond(xs) {
+		margin-top: 24px;
+		line-height: 1.5;
+		@include font-size(18);
+		padding: 0 4.125% 0;
+		@include widtnPercent( 640, 540 );
+		@include center;
+	}
+}
+
+.l-service__inner__item__col {
+	@include respond(pc) {
+		margin-top: 60px;
+	}
+
+	&:first-child {
+		margin-top: 0px;
+	}
+
+	@include respond(xs) {
+		padding: 0 5.125%;
+		margin-top: 16px;
+	}
+
+	
+}
+
+.l-service__inner {
+
+	@include respond(pc) {
+		position: relative;
+		padding: 40px 0;
+		text-align: left;
+		border-top: 1px solid $color-gray-f2;
+		margin-top: 40px;
+		@include widtnPercent( 640, 566 );
+		max-width: 1060px;
+		@include center;
+	}
+
+	@include respond(tb) {
+		padding: 32px 0px 0px 0px;
+	}
+
+	@include respond(xs) {
+		padding: 0px;
+		background: #fff;
+		margin-top: 16px;
+	}
+
+	> li {
+
+		@include respond(pc) {
+			background: #fff;
+			@include widtnPercent( 618, 186 );
+			margin: 0 1.61%;
+		}
+
+	}
+		
+}

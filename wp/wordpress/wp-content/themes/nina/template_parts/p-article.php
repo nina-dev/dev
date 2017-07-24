@@ -5,12 +5,12 @@
         while ( have_posts() ) : the_post();
     ?>
 
-    <p class="p-article__ttl c-contentTtl--secondary">
+    <!--<p class="p-article__ttl c-contentTtl--secondary">
       <?php
       $category = get_the_category();
       echo $category[0]->cat_name;
       ?>
-    </p>
+    </p>-->
 
     <h2 class="p-article__cache"><?php the_title(); ?></h2>
 
