@@ -105,6 +105,18 @@
 .p-article__inner {
 
 	text-align: left;
+
+	h1 {
+		@include font-size(22);
+		font-weight: bold;
+		margin-top: 32px;
+	}
+
+	h2 {
+		@include font-size(20);
+		font-weight: bold;
+		margin-top: 32px;
+	}
 	
 	h3 {
 
@@ -131,13 +143,31 @@
 			margin-top: 24px;
 			padding: 16px 3.125%;
 			border-radius: 2px;
-			//color: #fff;
 			background: $color-gray-f2;
 		}
 	}
 
+	h4, h5, h6 {
+		@include font-size(16);
+		font-weight: bold;
+	}
 
-	p, ul, h2, ul, div, blockquote, table {
+	blockquote {
+		background: $color-gray-f2;
+		padding: 16px 24px;
+		margin-left: 0px;
+		margin-top: 8px;
+		
+		p {
+			margin-top: 0px;
+
+		}
+	}
+
+
+
+
+	p, ul, h1, h4, h5, h6, ul, div, table, dl {
 		@include respond(pc) {
 			margin-top: 24px;
 		}
@@ -171,6 +201,45 @@
 			color: #000;
 		}
 			
+	}
+
+
+	table {
+
+		th {
+			@include font-size(14);
+			padding: 8px 40px 8px 0;
+		}
+
+		td {
+			@include font-size(14);
+			padding: 8px 32px 8px 0;
+		}
+	}
+
+	dl {
+		width: 100%;
+		@include clearfix();
+		line-height: 2;
+
+
+		dt {
+			float: left;
+			clear: left;
+			width: 20%;
+			margin-right: 3.125%;
+			font-weight: bold;
+			padding-bottom: 16px;
+
+		}
+
+		dd {
+			float: left;
+			width: 70%;
+			margin-left: 0px;
+			padding-bottom: 16px;
+
+		}
 	}
 
 	img {
