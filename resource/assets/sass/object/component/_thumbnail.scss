@@ -182,7 +182,7 @@
 .c-thumbnail--large {
 
 	@include respond(pc) {
-		padding-bottom: 32px;
+		padding-bottom: 8px;
 	}
 
 	@include respond(tb) {
