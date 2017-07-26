@@ -96,6 +96,15 @@ textarea:focus {
             box-sizing: border-box;
 }
 
+
+pre {
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
 article,aside,canvas,details,figcaption,figure,
 header,footer,main,menu,nav,section,summary {
     display: block;
