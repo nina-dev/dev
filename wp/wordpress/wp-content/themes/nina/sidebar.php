@@ -92,7 +92,7 @@
                       <?php if ( has_post_thumbnail() ): // サムネイルを持っているとき ?>
                         <?php the_post_thumbnail(); ?>
                     <?php else: // サムネイルを持っていないとき ?>
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/common/noimg_small.jpg">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/common/noimg02.png">
                     <?php endif; ?>
 
                 </div>
@@ -137,7 +137,7 @@
                           <?php if ( has_post_thumbnail() ): // サムネイルを持っているとき ?>
                             <?php the_post_thumbnail(); ?>
                         <?php else: // サムネイルを持っていないとき ?>
-                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/common/noimg_small.jpg">
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/common/noimg02.png">
                         <?php endif; ?>
 
                     </div>
