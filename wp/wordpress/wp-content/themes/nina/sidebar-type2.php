@@ -119,7 +119,7 @@
                     <?php endwhile;?>
 
                 <?php else:?>
-                    <p>記事はありませんでした</p>
+                    <p>準備中になります</p>
                     <?php
                     endif;
                     wp_reset_postdata();
