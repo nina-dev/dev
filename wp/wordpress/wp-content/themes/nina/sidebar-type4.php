@@ -11,7 +11,7 @@
             <li class="l-sidebar__col__item__list c-thumbnail--large">
             <a href="/about">
                     <p class="c-thumbnail--large__item--img">
-                        <img src="http://nina.dev/wp-content/themes/nina/img/article/01.jpg">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/article/01.jpg">
                     </p>
                     <p class="c-thumbnail--large__item--ttl">制作依頼で失敗しない５つのポイントをまとめてみました。</p>
                 </a>
@@ -19,7 +19,7 @@
             <li class="l-sidebar__col__item__list c-thumbnail--large">
                 <a href="/flow">
                     <p class="c-thumbnail--large__item--img">
-                        <img src="http://nina.dev/wp-content/themes/nina/img/article/01.jpg">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/article/01.jpg">
                     </p>
                     <p class="c-thumbnail--large__item--ttl">制作依頼で失敗しない５つのポイントをまとめてみました。</p>
                 </a>
@@ -27,7 +27,7 @@
             <li class="l-sidebar__col__item__list c-thumbnail--large">
                 <a href="/price">
                     <p class="c-thumbnail--large__item--img">
-                        <img src="http://nina.dev/wp-content/themes/nina/img/article/01.jpg">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/article/01.jpg">
                     </p>
                     <p class="c-thumbnail--large__item--ttl">制作依頼で失敗しない５つのポイントをまとめてみました。</p>
                 </a>
@@ -93,7 +93,7 @@
                                         <?php if ( has_post_thumbnail() ): // サムネイルを持っているとき ?>
                                             <?php the_post_thumbnail(); ?>
                                         <?php else: // サムネイルを持っていないとき ?>
-                                            <img src="http://nina.dev/wp-content/themes/nina/img/article/01.jpg">
+                                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/common/noimg_small.jpg">
                                         <?php endif; ?>
 
                                     </div>
