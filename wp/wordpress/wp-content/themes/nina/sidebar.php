@@ -42,7 +42,7 @@
                 <p class="c-thumbnail--large__item--img">
                     <img src="http://nina.dev/wp-content/themes/nina/img/article/01.jpg">
                 </p>
-                <p class="c-thumbnail--large__item--ttl--related">制作依頼で失敗しない５つのポイントをまとめてみました。</p>
+                <p class="c-thumbnail--large__item--ttl">制作依頼で失敗しない５つのポイントをまとめてみました。</p>
             </a>
         </li>
         <li class="l-sidebar__col__item__list c-thumbnail--large">
@@ -50,7 +50,7 @@
                 <p class="c-thumbnail--large__item--img">
                     <img src="http://nina.dev/wp-content/themes/nina/img/article/01.jpg">
                 </p>
-                <p class="c-thumbnail--large__item--ttl--related">制作依頼で失敗しない５つのポイントをまとめてみました。</p>
+                <p class="c-thumbnail--large__item--ttl">制作依頼で失敗しない５つのポイントをまとめてみました。</p>
             </a>
         </li>
         <li class="l-sidebar__col__item__list c-thumbnail--large">
@@ -58,7 +58,7 @@
                 <p class="c-thumbnail--large__item--img">
                     <img src="http://nina.dev/wp-content/themes/nina/img/article/01.jpg">
                 </p>
-                <p class="c-thumbnail--large__item--ttl--related">制作依頼で失敗しない５つのポイントをまとめてみました。</p>
+                <p class="c-thumbnail--large__item--ttl">制作依頼で失敗しない５つのポイントをまとめてみました。</p>
             </a>
         </li>
     </ul>
