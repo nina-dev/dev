@@ -75,9 +75,7 @@
       <p class="c-serviceArea__link"><a href="<?php echo home_url() ?>/price">このサービスの料金はこちら</a></p>
     </div>
 
-    <div class="p-article__item--cta c-cta">
       <?php get_template_part('/template_parts/p-cta' ); ?>
-    </div>
 
     <?php
     endwhile;
