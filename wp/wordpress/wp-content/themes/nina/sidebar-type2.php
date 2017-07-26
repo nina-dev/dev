@@ -13,7 +13,7 @@
                     <p class="c-thumbnail--large__item--img">
                         <img src="http://nina.dev/wp-content/themes/nina/img/article/01.jpg">
                     </p>
-                    <p class="c-thumbnail--large__item--ttl--related">制作依頼で失敗しない５つのポイントをまとめてみました。</p>
+                    <p class="c-thumbnail--large__item--ttl--related">コンテンツ力を引き出す、心地よいUIデザインを提供します</p>
                 </a>
             </li>
             <li class="l-sidebar__col__item__list c-thumbnail--large">
@@ -21,7 +21,7 @@
                     <p class="c-thumbnail--large__item--img">
                         <img src="http://nina.dev/wp-content/themes/nina/img/article/01.jpg">
                     </p>
-                    <p class="c-thumbnail--large__item--ttl--related">制作依頼で失敗しない５つのポイントをまとめてみました。</p>
+                    <p class="c-thumbnail--large__item--ttl--related">マルチスクリーン対応は、ユーザーとの関係づくりに必須です</p>
                 </a>
             </li>
             <li class="l-sidebar__col__item__list c-thumbnail--large">
@@ -29,7 +29,7 @@
                     <p class="c-thumbnail--large__item--img">
                         <img src="http://nina.dev/wp-content/themes/nina/img/article/01.jpg">
                     </p>
-                    <p class="c-thumbnail--large__item--ttl--related">制作依頼で失敗しない５つのポイントをまとめてみました。</p>
+                    <p class="c-thumbnail--large__item--ttl--related">ユーザに届いて伝わる。そんなサイトに育てませんか？</p>
                 </a>
             </li>
         </ul>
