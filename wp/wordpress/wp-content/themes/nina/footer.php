@@ -1,5 +1,7 @@
- <?php if( !(is_home() || is_front_page()) ){ ?>
- <?php get_template_part('/template_parts/related-entries' ); ?>
+ <?php if( !(is_home() || is_front_page()) && !is_page('contact') && !is_page('service') ){ //トップとスラッグ名が一致するページ以外は表示 ?>
+ <div class="l-content--primary">
+ 	<?php get_template_part('/template_parts/p-related' ); ?>
+ </div>
  <?php } ?>
 
 <footer class="l-footer">

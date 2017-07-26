@@ -1,5 +1,9 @@
 <?php
 
+/* 自動アップグレードを停止
+* ---------------------------------------- */
+add_filter( 'automatic_updater_disabled', '__return_true' );
+
 /* アイキャッチ
 * ---------------------------------------- */
 add_theme_support('post-thumbnails', array( 'post', 'page') );
@@ -19,6 +23,13 @@ add_image_size('post_thumbnail', 1200, 0, true);
 
 // カスタムナビゲーションメニュー
 add_theme_support('menus');
+
+/* 固定ページにタグを表示
+* ---------------------------------------- */
+function add_tag_to_page() {
+ register_taxonomy_for_object_type('post_tag', 'page');
+}
+add_action('init', 'add_tag_to_page');
 
 /* パンくず
 * ---------------------------------------- */

@@ -1,0 +1,30 @@
+.p-breadcrumb {
+	//@include font-size(10);
+
+	li {
+		margin-left: 24px;
+		display: inline-block;
+		border-bottom: 2px solid $color-accent--blue;
+		padding-bottom: 6px;
+		@include font-size(12);
+
+		
+
+		&.is-first {
+			display: inline-block;	
+			margin-left: 0px;
+			padding: 0 4px 6px;
+			border-bottom: 2px solid $color-main;
+			position: relative;
+
+			&::after {
+				content: ">"; 
+				font-size:  small; 
+				color: $color-gray-c;
+				position: absolute;
+				right: -17px;
+				top: -1px;
+			}
+		}
+	}
+}

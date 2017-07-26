@@ -1,5 +1,5 @@
 
-.l-article {
+.p-article {
 
 	@include respond(pc) {	
 		text-align: left;
@@ -23,12 +23,12 @@
 	}
 }
 
-.l-article__ttl {
+.p-article__ttl {
 
 	@include center;
 }
 
-.l-article__cache {
+.p-article__cache {
 
 	font-weight: bold;
 	margin-top: 24px;
@@ -54,7 +54,7 @@
 	}
 }
 
-.l-article__img {
+.p-article__img {
 
 	@include respond(pc) {
 		margin-top: 40px;
@@ -69,7 +69,7 @@
 	}
 }
 
-.l-article__item {
+.p-article__item {
 
 	margin-top: 24px;
 	
@@ -102,23 +102,35 @@
 
 }
 
-.l-article__inner {
+.p-article__inner {
 
 	text-align: left;
+
+	h1 {
+		@include font-size(22);
+		font-weight: bold;
+		margin-top: 32px;
+	}
+
+	h2 {
+		@include font-size(20);
+		font-weight: bold;
+		margin-top: 32px;
+	}
 	
 	h3 {
+
+		font-weight: bold;
+		@include font-size(18);
+
 		@include respond(pc) {
-			@include font-size(24);
 			font-weight: bold;
 			margin-top: 60px;
-			padding: 0px 8px 8px 0;
-			
-			border-bottom: 3px solid $color-main;
+			padding: 0px 8px 6px 0;
+			border-bottom: 2px solid $color-main;
 		}
 
 		@include respond(tb) {
-			@include font-size(20);
-			font-weight: bold;
 			margin-top: 40px;
 			padding: 0px 8px 4px 0;
 			border-bottom: 3px solid $color-main;
@@ -131,15 +143,33 @@
 			margin-top: 24px;
 			padding: 16px 3.125%;
 			border-radius: 2px;
-			//color: #fff;
 			background: $color-gray-f2;
 		}
 	}
 
+	h4, h5, h6 {
+		@include font-size(16);
+		font-weight: bold;
+	}
 
-	p, ul, h2, ul, div, blockquote, table {
+	blockquote {
+		background: $color-gray-f2;
+		padding: 16px 24px;
+		margin-left: 0px;
+		margin-top: 8px;
+		
+		p {
+			margin-top: 0px;
+
+		}
+	}
+
+
+
+
+	p, ul, h1, h4, h5, h6, ul, div, table, dl {
 		@include respond(pc) {
-			margin-top: 32px;
+			margin-top: 24px;
 		}
 		@include respond(tb) {
 			margin-top: 16px;
@@ -152,7 +182,7 @@
 	p {
 
 		@include font-size(16);
-		line-height: 2.2;
+		line-height: 2.1;
 		
 		@include respond(tb) {
 			line-height: 2;
@@ -173,12 +203,51 @@
 			
 	}
 
+
+	table {
+
+		th {
+			@include font-size(14);
+			padding: 8px 40px 8px 0;
+		}
+
+		td {
+			@include font-size(14);
+			padding: 8px 32px 8px 0;
+		}
+	}
+
+	dl {
+		width: 100%;
+		@include clearfix();
+		line-height: 2;
+
+
+		dt {
+			float: left;
+			clear: left;
+			width: 20%;
+			margin-right: 3.125%;
+			font-weight: bold;
+			padding-bottom: 16px;
+
+		}
+
+		dd {
+			float: left;
+			width: 70%;
+			margin-left: 0px;
+			padding-bottom: 16px;
+
+		}
+	}
+
 	img {
 		text-align: center;
 	}
 
 	ul {
-		padding: 24px 24px 24px 16px;
+		padding: 24px 24px 24px 8px;
 		background: $color-gray-f5;
 		
 		@include respond(xs) {
@@ -217,8 +286,8 @@
 	}
 
 		ul li::after {
-			top: 0.5em;
-			left: -1.4em;
+			left: -25px;
+			top: 4px;
 			width: 16px;
 			height: 16px;
 			background-color: $color-main;
@@ -236,7 +305,7 @@
 			border-right: 1px solid #fff;
 			height: 6px;
 			left: -21px;
-			top: 14px;
+			top: 10px;
 			transform: rotate(-45deg);
 			width: 6px;
 			z-index: 2;
