@@ -13,6 +13,7 @@ wordpress/*
 !wordpress/wp-content/
 wordpress/wp-content/*
 !wordpress/wp-content/themes
+!wordpress/wp-content/uploads
 wordpress/wp-content/themes/*
 !wordpress/wp-content/themes/nina
 wordpress/wp-content/themes/nina/css/*
