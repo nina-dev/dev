@@ -24,10 +24,13 @@
             <div class="c-thumbnail--table__item--detail--right">
               <h2 class="c-thumbnail--table__item__ttl">
                 <?php
-                // タグ情報を取得
-                $posttags = get_the_tags();
-                echo $posttags[0]->name;
-                ?>
+                // 文字数制限
+                if(mb_strlen($post->post_title, 'UTF-8')>28){
+                  $title= mb_substr($post->post_title, 0, 28, 'UTF-8');
+                  echo $title.'・・・';
+                }else{
+                  echo $post->post_title;
+                }?>
               </h2>
               <p class="c-thumbnail--table__item__text"><?php echo get_the_excerpt(); ?></p>
               <div class="c-thumbnail--table__item__btn">
