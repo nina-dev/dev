@@ -19,7 +19,7 @@ add_theme_support('post_thumbnail');
 add_image_size('small_thumbnail', 72, 72, true);
 add_image_size('middle_thumbnail', 251, 147, true);
 add_image_size('large_thumbnail', 1004, 588, true);
-add_image_size('post_thumbnail', 1506, 882, true);
+add_image_size('post_thumbnail', 1506, 0, true);
 
 // カスタムナビゲーションメニュー
 add_theme_support('menus');
