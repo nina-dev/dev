@@ -25,7 +25,7 @@
               <a href="<?php the_permalink(); ?>">
                 <p class="c-thumbnail--large__item--img">
                   <?php if ( has_post_thumbnail() ): // サムネイルを持っているとき ?>
-                    <?php the_post_thumbnail(); ?>
+                    <?php the_post_thumbnail('middle_thumbnail'); ?>
                 <?php else: // サムネイルを持っていないとき ?>
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/common/noimg01.png">
                 <?php endif; ?>

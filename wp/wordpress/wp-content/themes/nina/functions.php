@@ -11,15 +11,15 @@ set_post_thumbnail_size( 304, 214 ); // 通常の投稿サムネイル
 
 //アイキャッチ画像の追加
 add_theme_support('small_thumbnail');
-add_theme_support('mid_thumbnail');
-add_theme_support('big_thumbnail');
+add_theme_support('middle_thumbnail');
+add_theme_support('large_thumbnail');
 add_theme_support('post_thumbnail');
 
 //サイズの指定
-add_image_size('small_thumbnail', 140, 140);
-add_image_size('mid_thumbnail', 233, 78, true);
-add_image_size('big_thumbnail', 710, 238, true);
-add_image_size('post_thumbnail', 1200, 0, true);
+add_image_size('small_thumbnail', 72, 72, true);
+add_image_size('middle_thumbnail', 251, 147, true);
+add_image_size('large_thumbnail', 1004, 588, true);
+add_image_size('post_thumbnail', 1506, 0, true);
 
 // カスタムナビゲーションメニュー
 add_theme_support('menus');
