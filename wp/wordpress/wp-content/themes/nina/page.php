@@ -13,7 +13,7 @@
 </div>
 
 <div class="l-content--lower__item--right">
-<?php get_sidebar(); ?>
+<?php get_sidebar('type3'); ?>
 </div>
 
 </div>
