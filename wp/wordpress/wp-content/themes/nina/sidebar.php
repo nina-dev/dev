@@ -40,25 +40,25 @@
         <li class="l-sidebar__col__item__list c-thumbnail--large">
             <a href="#">
                 <p class="c-thumbnail--large__item--img">
-                    <img src="http://nina.dev/wp-content/themes/nina/img/article/01.jpg">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/article/01.jpg">
                 </p>
-                <p class="c-thumbnail--large__item--ttl--related">制作依頼で失敗しない５つのポイントをまとめてみました。</p>
+                <p class="c-thumbnail--large__item--ttl">制作依頼で失敗しない５つのポイントをまとめてみました。</p>
             </a>
         </li>
         <li class="l-sidebar__col__item__list c-thumbnail--large">
             <a href="#">
                 <p class="c-thumbnail--large__item--img">
-                    <img src="http://nina.dev/wp-content/themes/nina/img/article/01.jpg">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/article/01.jpg">
                 </p>
-                <p class="c-thumbnail--large__item--ttl--related">制作依頼で失敗しない５つのポイントをまとめてみました。</p>
+                <p class="c-thumbnail--large__item--ttl">制作依頼で失敗しない５つのポイントをまとめてみました。</p>
             </a>
         </li>
         <li class="l-sidebar__col__item__list c-thumbnail--large">
             <a href="#">
                 <p class="c-thumbnail--large__item--img">
-                    <img src="http://nina.dev/wp-content/themes/nina/img/article/01.jpg">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/article/01.jpg">
                 </p>
-                <p class="c-thumbnail--large__item--ttl--related">制作依頼で失敗しない５つのポイントをまとめてみました。</p>
+                <p class="c-thumbnail--large__item--ttl">制作依頼で失敗しない５つのポイントをまとめてみました。</p>
             </a>
         </li>
     </ul>
@@ -92,7 +92,7 @@
                       <?php if ( has_post_thumbnail() ): // サムネイルを持っているとき ?>
                         <?php the_post_thumbnail(); ?>
                     <?php else: // サムネイルを持っていないとき ?>
-                        <img src="http://nina.dev/wp-content/themes/nina/img/article/01.jpg">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/common/noimg02.png">
                     <?php endif; ?>
 
                 </div>
@@ -115,7 +115,7 @@
 <?php endwhile;?>
 
 <?php else:?>
-    <p>記事はありませんでした</p>
+    <p>準備中になります</p>
     <?php
     endif;
     wp_reset_postdata();
@@ -137,7 +137,7 @@
                           <?php if ( has_post_thumbnail() ): // サムネイルを持っているとき ?>
                             <?php the_post_thumbnail(); ?>
                         <?php else: // サムネイルを持っていないとき ?>
-                            <img src="http://nina.dev/wp-content/themes/nina/img/article/01.jpg">
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/common/noimg02.png">
                         <?php endif; ?>
 
                     </div>
