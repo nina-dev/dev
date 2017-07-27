@@ -93,7 +93,7 @@
                                     <div class="photo">
 
                                         <?php if ( has_post_thumbnail() ): // サムネイルを持っているとき ?>
-                                            <?php the_post_thumbnail(); ?>
+                                            <?php the_post_thumbnail('small_thumbnail'); ?>
                                         <?php else: // サムネイルを持っていないとき ?>
                                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/common/noimg02.png">
                                         <?php endif; ?>
