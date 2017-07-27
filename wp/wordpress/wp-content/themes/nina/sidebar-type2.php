@@ -7,31 +7,37 @@
 
     <div class="l-sidebar__col">
         <p class="l-sidebar__col__ttl">コンテンツ</p>
-        <ul class="l-sidebar__col__item">
-            <li class="l-sidebar__col__item__list c-thumbnail--large">
-                <a href="/service/ui">
-                    <p class="c-thumbnail--large__item--img">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/article/01.jpg">
-                    </p>
-                    <p class="c-thumbnail--large__item--ttl">制作依頼で失敗しない５つのポイントをまとめてみました。</p>
-                </a>
-            </li>
-            <li class="l-sidebar__col__item__list c-thumbnail--large">
-                <a href="/service/responsive">
-                    <p class="c-thumbnail--large__item--img">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/article/01.jpg">
-                    </p>
-                    <p class="c-thumbnail--large__item--ttl">制作依頼で失敗しない５つのポイントをまとめてみました。</p>
-                </a>
-            </li>
-            <li class="l-sidebar__col__item__list c-thumbnail--large">
-                <a href="/service/support">
-                    <p class="c-thumbnail--large__item--img">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/article/01.jpg">
-                    </p>
-                    <p class="c-thumbnail--large__item--ttl">制作依頼で失敗しない５つのポイントをまとめてみました。</p>
-                </a>
-            </li>
+            <ul class="l-sidebar__col__item">
+                <?php if (!is_single('ui')) : ?>
+                    <li class="l-sidebar__col__item__list c-thumbnail--large">
+                        <a href="/service/ui">
+                            <p class="c-thumbnail--large__item--img">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/article/ui.jpg">
+                            </p>
+                            <p class="c-thumbnail--large__item--ttl">コンテンツ力を引き出す、心地よいUIデザインを提供します</p>
+                        </a>
+                    </li>
+                <?php endif; ?>
+                <?php if ( !is_single('responsive')) : ?>
+                    <li class="l-sidebar__col__item__list c-thumbnail--large">
+                        <a href="/service/responsive">
+                            <p class="c-thumbnail--large__item--img">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/article/responsive.jpg">
+                            </p>
+                            <p class="c-thumbnail--large__item--ttl">レスポンシブ</p>
+                        </a>
+                    </li>
+                <?php endif; ?>
+                <?php if ( !is_single('support')) : ?>
+                    <li class="l-sidebar__col__item__list c-thumbnail--large">
+                        <a href="/service/support">
+                            <p class="c-thumbnail--large__item--img">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/article/support.jpg">
+                            </p>
+                            <p class="c-thumbnail--large__item--ttl">ウェブコンサル</p>
+                        </a>
+                    </li>
+                <?php endif; ?>
         </ul>
     </div>
 
