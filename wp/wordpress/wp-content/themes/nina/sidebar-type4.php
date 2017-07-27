@@ -11,25 +11,25 @@
             <li class="l-sidebar__col__item__list c-thumbnail--large">
             <a href="/about">
                     <p class="c-thumbnail--large__item--img">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/article/01.jpg">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/article/about.jpg">
                     </p>
-                    <p class="c-thumbnail--large__item--ttl">制作依頼で失敗しない５つのポイントをまとめてみました。</p>
+                    <p class="c-thumbnail--large__item--ttl">ニナ・アーキタイプについて</p>
                 </a>
             </li>
             <li class="l-sidebar__col__item__list c-thumbnail--large">
                 <a href="/flow">
                     <p class="c-thumbnail--large__item--img">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/article/01.jpg">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/article/flow.jpg">
                     </p>
-                    <p class="c-thumbnail--large__item--ttl">制作依頼で失敗しない５つのポイントをまとめてみました。</p>
+                    <p class="c-thumbnail--large__item--ttl">お仕事の流れについて</p>
                 </a>
             </li>
             <li class="l-sidebar__col__item__list c-thumbnail--large">
                 <a href="/price">
                     <p class="c-thumbnail--large__item--img">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/article/01.jpg">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/article/price.jpg">
                     </p>
-                    <p class="c-thumbnail--large__item--ttl">制作依頼で失敗しない５つのポイントをまとめてみました。</p>
+                    <p class="c-thumbnail--large__item--ttl">プロジェクトの形態や規模、期間に応じて柔軟にご提案させていただきます。</p>
                 </a>
             </li>
         </ul>

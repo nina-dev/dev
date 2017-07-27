@@ -13,7 +13,12 @@
 </div>
 
 <div class="l-content--lower__item--right">
+<?php if ( is_single('ui') || is_single('responsive') ||is_single('support') ) : ?>
+<?php get_sidebar('type2'); ?>
+<?php else: ?>
 <?php get_sidebar('type4'); ?>
+<?php endif; ?>
+
 </div>
 
 </div>
