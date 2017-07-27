@@ -34,7 +34,7 @@
     </div>
 
 
-    <div class="p-article__item c-serviceArea">
+    <!-- <div class="p-article__item c-serviceArea">
 
       <?php
       // タグのslugを取得
@@ -73,7 +73,7 @@
       </ul>
       <?php }?>
       <p class="c-serviceArea__link"><a href="<?php echo home_url() ?>/price">このサービスの料金はこちら</a></p>
-    </div>
+    </div> -->
 
       <?php get_template_part('/template_parts/p-cta' ); ?>
 
