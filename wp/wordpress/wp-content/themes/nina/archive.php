@@ -2,16 +2,11 @@
 
 <div class="l-content--lower">
 
+<div class="l-content--lower__inner">
 
-  <div class="l-service">
+<div class="l-content--lower__item--left">
 
-    <p class="l-service__ttl c-contentTtl--secondary">サービス</p>
-
-    <h2 class="l-service__cache">伝わるUIデザインでオーダーメイドな解決策をつくります</h2>
-
-    <div class="l-service__inner">
-      <ul class="l-service__inner__item">
-
+ <ul class="l-service__inner__item">
         <?php
         if ( have_posts() ) :
           while ( have_posts() ) : the_post();
@@ -19,7 +14,12 @@
         <li class="l-service__inner__item__col">
           <div class="c-thumbnail--table">
             <p class="c-thumbnail--table__item--img">
-              <?php the_post_thumbnail('post_thumbnail'); ?>
+
+                  <?php if ( has_post_thumbnail() ): // サムネイルを持っているとき ?>
+                    <?php the_post_thumbnail('large_thumbnail'); ?>
+                <?php else: // サムネイルを持っていないとき ?>
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/common/noimg01.png">
+                <?php endif; ?>
             </p>
             <div class="c-thumbnail--table__item--detail--right">
               <h2 class="c-thumbnail--table__item__ttl">
@@ -48,9 +48,13 @@
         endif;
         ?>
       </ul>
-    </div>
+</div>
 
-  </div>
+<div class="l-content--lower__item--right">
+<?php get_sidebar('type1'); ?>
+</div>
+
+</div>
 </div>
 
 <?php get_footer(); ?>
