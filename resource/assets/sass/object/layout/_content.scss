@@ -108,12 +108,11 @@
 .l-content--lower__inner {
 
 	@include respond(pc){
-		width: 1160px;
+		width: 1200px;
 		@include center;
 		@include clearfix;
 		position: relative;
 		z-index: 2;
-
 	}
 }
 
