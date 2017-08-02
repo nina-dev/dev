@@ -1,0 +1,11 @@
+.p-archive {
+    width: 100%;
+
+    &__col {
+        margin-top: 24px;
+
+        &:first-child {
+            margin-top: 0px;
+        }
+    }
+}
