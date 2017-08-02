@@ -23,7 +23,6 @@
 @import "object/layout/content";
 @import "object/layout/header";
 @import "object/layout/footer";
-@import "object/layout/main";
 @import "object/layout/contact";
 @import "object/layout/sidebar";
 
@@ -39,6 +38,8 @@
 @import "object/project/breadcrumb";
 @import "object/project/cta";
 @import "object/project/archive";
+
+@import "object/page/page-top";
 
 
 @import "object/animation/animation";

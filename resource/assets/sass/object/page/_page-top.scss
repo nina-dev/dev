@@ -1,0 +1,942 @@
+
+.l-main {
+
+	@include respond(pc){
+		@include center;
+		//max-width: 1120px;
+		min-height: 800px;
+		width: 1080px;
+		position: relative;
+	}
+
+	@include respond(tb) {
+		@include center;
+		height: 620px;
+		@include widtnPercent( 640, 600 );
+		position: relative;
+	}
+
+	@include respond(xs) {
+		@include widtnPercent( 640, 640 );
+		@include center;
+		position: relative;
+		margin-top:  16px;
+	}
+}
+
+
+.l-main__item {
+
+	@include respond(pc){
+		position: absolute;
+		top: 0px;
+	}
+
+	&--bg {
+
+		@extend .l-main__item;	
+		background: url('../img/sprite/mainBg.png');
+		@include css3(background-size, cover);
+		z-index: 1;
+
+		@include respond(pc){
+			@include css3(box-shadow, 5px 10px 30px #a3a3a3);
+			top: 60px;
+			right: 0px;
+			position: absolute;
+			width: 630px;
+			height: 580px;
+		}
+
+		@include respond(tb) {
+			@include css3(box-shadow, 2px 6px 10px #a3a3a3);
+			top: 40px;
+			right: 1.125%;
+			position: absolute;
+			width: 80%;
+			height: 580px;
+		}
+
+		@include respond(xs) {
+			width: 100%;
+			height: 320px;
+		}		
+
+		img {
+			width: 820px;
+		}
+	}
+
+	&--text {
+		@extend .l-main__item;
+		//background: #fff;
+		@include respond(pc){
+			@include font-size(17);
+			font-weight: bold;
+			line-height: 2.4;
+			top: 320px;
+			width: 400px;
+			z-index: 2;
+			text-align: left;
+			color: $color-cache;
+		}
+
+		@include respond(tb) {
+			@include font-size(18);
+			font-weight: bold;
+			left: 0px;
+			line-height: 2;
+			top: 350px;
+			width: 400px	;
+			position: absolute;
+			z-index: 2;
+			background: #fff;
+		}
+
+		@include respond (xs) {
+			display: none;
+		}
+	}
+
+}
+
+.l-main__item--ttl {
+
+	@extend .l-main__item;
+	left: 0;
+	position: absolute;
+
+	@include respond(pc){
+		top: 130px;
+		width: 760px;
+		z-index: 2;
+	}
+
+	@include respond(tb) {
+		left: 0px;
+		top: 185px;
+		width: 620px;
+		z-index: 2;
+	}
+
+	@include respond(xs) {
+		@include widtnPercent( 640, 540 );
+		left: 5.125%;
+		top: 40px;
+	}
+}
+
+
+.p-aboutTop {
+	width: 100%;
+	
+	&__bg {
+		position: absolute;
+		width: 32px;
+		height: 260px;
+		
+		&--primary {
+			@extend .p-aboutTop__bg;
+			left: 0px;
+			top: 193px;
+		}
+
+		&--secondary {
+			@extend .p-aboutTop__bg;
+			bottom: 160px;
+			right: 0px;
+		}
+
+		&--tertiary {
+			@extend .p-aboutTop__bg;
+			 height: 100px;
+			 opacity: 0.6;
+			 right: -230px;
+			 top: 210px;
+			 width: 100px;
+		}
+
+		&--quinary {
+			@extend .p-aboutTop__bg;
+			 bottom: 290px;
+			 height: 110px;
+			 left: -192px;
+			 opacity: 0.3;
+			 width: 120px;
+		}
+	}
+}
+
+.p-aboutTop__inner__ttl  {
+	@include respond(pc){
+		margin-left: -130px;
+	}
+}
+
+.p-aboutTop__inner__item  {
+	margin-top: 60px;
+}
+
+
+.p-aboutTop__inner__item__text  {
+
+	margin-top: 60px;
+	
+	&--primary {
+		@include font-size(16);
+		font-weight: bold;
+		margin-top: 32px;
+		line-height: 2.4;
+	}
+
+	&--secondary {
+		margin-top: 48px;
+		text-align: center;
+	}
+
+}
+
+
+.p-aboutTop__inner__item__logo {
+	width: 128px;
+	height: 50px;
+}
+
+
+.p-aboutTop__inner {
+
+	background: #F8EEFF;
+	position: relative;
+
+
+	@include respond(pc){
+		width: 680px;
+		padding: 64px 108px;
+		@include center;
+	}
+
+
+.p-aboutTop__inner__item.is-animate {
+	@extend .a-scale-up-bottom;
+}
+
+.p-box__ttl {
+
+	&--primary {
+		@include respond(pc){
+			position: absolute;
+			top: -40px;
+			left: -80px;
+		}
+		@include respond(tb){
+			width: 100%;
+		}
+
+		@include respond(xs){
+			display: none;
+		}
+	}
+
+	&--secondary {
+		@include center;
+	}
+}
+.p-box__cache {
+
+	font-weight: bold;
+	text-align: left;
+	color: $color-cache;
+
+	@include respond(pc) {
+		@include font-size(32);
+		padding-top: 80px;
+		left: -192px;
+		position: relative;
+		width: 100%;
+	}
+
+	@include respond(tb) {
+		@include font-size (28);
+		text-align: center;
+		line-height: 1.6;
+		padding: 0 4.125%;
+		margin-top: 24px;
+		
+	}
+
+	@include respond(xs) {
+		@include font-size(18);
+		line-height: 1.4;
+		padding: 0px 8.25%;
+		color: #000;
+	}
+
+	&--primary {
+		@extend .p-box__cache;
+	}
+
+	&--secondary {
+		@extend .p-box__cache;
+		padding-top: 60px;
+		text-align: center;
+		
+	}
+}
+
+
+.p-box__item__text {
+
+	@include respond(pc) {
+		@include font-size(18);
+		line-height: 2.2;
+		margin-top: 32px;
+		font-weight: bold;
+	}
+	&--cache {
+		@extend .p-box__item__text;
+		
+		@include respond(pc) {
+			@include font-size(32);
+		}
+	}
+
+	@include respond(tb) {
+		@include font-size(18);
+		line-height: 2.3;
+		margin-top: 24px;
+		font-weight: bold;
+		color: $color-gray-3;
+	}
+
+	@include respond(xs) {
+		@include font-size(17);
+		margin-top: 12px;
+		line-height: 1.7;
+	}
+
+	&:first-child {
+		margin-top: 0px;
+	}
+
+	&--center {
+		@extend .p-box__item__text;
+		text-align: center;
+		margin-top: 60px;
+	}
+}
+
+
+.p-box__item__btn {
+
+
+	> a {
+		@include respond(tb) {
+			padding: 24px 0;
+			@include css3(box-shadow,0 1px 1px 0 #457545);
+		}
+	}
+
+	text-align: center;
+	width: 100%;
+	@include center;
+
+	@include respond(pc) {
+		margin-top: 60px;
+	}
+
+	@include respond(tb) {
+		margin-top: 40px;
+	}
+
+	@include respond(xs) {
+		margin-top: 32px;
+	}
+
+	&--primary {
+		@extend .p-box__item__btn;
+	}
+
+	&--secondary {
+		@extend .p-box__item__btn;
+		width: 100%;
+	}
+}
+
+
+
+.p-box__item {
+
+	text-align: left;
+
+	@include respond(pc) {
+		margin-top: 40px;
+	}
+
+	@include respond(tb) {
+		margin-top: 32px;
+		@include widtnPercent( 640, 580 );
+		@include center;
+	}
+
+	@include respond(xs) {
+		margin-top: 16px;
+		padding: 0 8.125%;
+	}
+
+	&--primary {
+		@extend .p-box__item;
+	}
+
+	&--secondary {
+		@extend .p-box__item;
+		width: 640px;
+		@include center;
+		text-align: center;
+
+		@include respond(pc){
+			width: 740px;
+		}
+
+		@include respond(xs) {
+			margin-top: 16px;
+			width: 100%;
+			padding: 0 8.125%;
+		}
+	}
+}
+
+.p-box__logo {
+	width: 128px;
+	height: 50px;
+}
+
+.p-box {
+
+	@include respond(pc) {
+		width: 720px;
+		padding: 0 108px;
+		text-align: center;
+		position: relative;
+	}
+
+	&--primary {
+		@extend .p-box;
+		background: #fff;
+
+		@include respond(tb){
+			margin-top: 100px;
+			@include widtnPercent( 640, 600 );
+			@include center;
+		}
+
+		@include respond(xs){
+			padding-bottom: 40px;
+			margin-top: 24px;
+			box-shadow: 0 5px 4px 0 rgba(209,209,209,0.50);
+		}
+
+	}
+}
+
+
+.p-service__cache {
+
+	font-weight: bold;
+	@include font-size(30);
+	margin-top: 60px;
+	color: $color-cache;
+
+	@include respond(tb) {
+		@include font-size(28);
+		text-align: center;
+		margin-top: 24px;
+	}
+
+	@include respond(xs) {
+		margin-top: 24px;
+		@include font-size(18);
+		line-height: 1.4;
+		text-align: center;
+		@include widtnPercent( 640, 540 );
+		text-align: center;
+		@include center;
+		color: #000;
+	}
+
+	&--secondary {
+		@extend .p-service__cache;
+		@include font-size(28);
+	}
+}
+
+.p-service__category {
+	
+	@include respond(pc) {
+		margin-top: 32px;
+		width: 240px;
+		@include center;
+	}
+}
+
+.p-service__text {
+
+	line-height: 1.8;
+
+	@include respond(pc) {
+		margin-top: 24px;
+		width: 570px;
+		@include center;
+	}
+	@include respond(tb) {
+		margin-top: 16px;
+		@include widtnPercent( 640, 460 );
+		@include center;
+		text-align: center;
+	}
+	@include respond(xs) {
+		display: none;
+	}
+}
+
+.p-service__ttl {
+	@include respond(xs){
+		@include center;
+	}
+
+	@include respond(tb){
+		@include center;
+	}
+}
+
+.p-service__item__text {
+	
+	@include respond(pc) {
+		margin-top: 40px;
+	}
+}
+
+
+
+.p-service__item__img {
+
+	@include respond(pc) {
+		text-align: center;
+		width: 100%;
+		overflow: hidden;
+		@include center;
+	}
+
+	img {
+		width: 100%;
+	}
+}
+
+.p-service__item {
+
+	@include center;
+
+	@include respond(pc) {
+		@include widtnPercent( 640, 580 );
+		max-width: 1280px;
+		background: #fff;
+		@include css3(box-shadow, 5px 15px 50px #a3a3a3);
+		padding: 40px 16px 24px;
+		margin-top: 42px;
+		@include css3(display, flex);
+		@include css3(flex-wrap, wrap);
+	}
+
+	@include respond(tb) {
+		width: 100%;
+		margin-top: 24px;
+	}
+
+	@include respond(xs) {
+		background: #fff;
+		width: 100%;
+		margin-top: 24px;
+	}
+
+	&--secondary {
+		@extend .p-service__item;
+
+		@include respond(pc) {
+			width: 100%;
+			padding: 0px 0 60px 0;
+			margin-top: 60px;
+		}
+	}
+
+}
+
+.p-service__item__col {
+
+	@include respond(pc) {
+		//-webkit-box-shadow:0px 0px 13px -4px #adadad;
+		background: #fff;
+		@include widtnPercent( 618, 186 );
+		margin: 0 1.61%;
+		
+	}
+
+	@include respond(tb) {
+		//-webkit-box-shadow:0px 0px 13px -4px #adadad;
+		background: #fff;
+		margin: 32px 0 0;
+		padding: 32px 6.125% 24px;
+		border-top: 3px solid $color-gray-c;
+		
+		&:first-child {
+			margin: 0px;
+			border-top: none;
+			padding: 0px 6.125% 0;
+		}
+	}
+
+	@include respond(xs) {
+		background: #fff;
+		border-top: 2px solid $color-gray-c;
+		padding: 24px 5.125% 16px;
+		//margin-top: 16px;
+		
+		&:first-child {
+			margin-top: 0px;
+			border-top: none;
+			padding-top: 0px;
+		}
+	}
+
+	a {
+		display: inline-block;
+		
+		@include respond(xs) {
+			display: block;
+		}
+	}
+}
+
+
+.p-service {
+	
+	@include respond(pc) {
+		text-align: center;
+		position: relative;
+		padding: 80px 0 0;
+		margin-top: 100px;
+		width: 100%;
+	}
+
+	@include respond(tb) {
+		padding: 60px .6% 40px;
+		margin-top: 60px;
+		border-top: 24px solid #eee;
+	}
+
+	@include respond(xs) {
+		padding-top: 40px;
+		box-shadow: 0 5px 4px 0 rgba(209,209,209,0.50);
+	}
+
+	&--secondary {
+		@include respond(pc) {
+			text-align: center;
+			width: 848px;
+		}
+	}
+}
+
+.p-service__cache {
+
+	font-weight: bold;
+	@include font-size(30);
+	margin-top: 60px;
+	color: $color-cache;
+	
+	@include respond(tb) {
+		@include font-size(28);
+		text-align: center;
+		margin-top: 24px;
+	}
+
+	@include respond(xs) {
+		margin-top: 24px;
+		@include font-size(18);
+		line-height: 1.4;
+		text-align: center;
+		@include widtnPercent( 640, 540 );
+		text-align: center;
+		@include center;
+		color: #000;
+	}
+
+	&--secondary {
+		@extend .p-service__cache;
+		@include font-size(28);
+	}
+}
+
+.p-service__category {
+	
+	@include respond(pc) {
+		margin-top: 32px;
+		width: 240px;
+		@include center;
+	}
+}
+
+.p-service__text {
+
+	line-height: 1.8;
+
+	@include respond(pc) {
+		margin-top: 24px;
+		width: 570px;
+		@include center;
+	}
+	@include respond(tb) {
+		margin-top: 16px;
+		@include widtnPercent( 640, 460 );
+		@include center;
+		text-align: center;
+	}
+	@include respond(xs) {
+		display: none;
+	}
+}
+
+.p-service__ttl {
+	@include respond(xs){
+		@include center;
+	}
+
+	@include respond(tb){
+		@include center;
+	}
+}
+
+.p-service__item__text {
+	
+	@include respond(pc) {
+		margin-top: 40px;
+	}
+}
+
+
+
+.p-service__item__img {
+
+	@include respond(pc) {
+		text-align: center;
+		width: 100%;
+		overflow: hidden;
+		@include center;
+	}
+
+	img {
+		width: 100%;
+	}
+}
+
+.p-service__item {
+
+	@include center;
+
+	@include respond(pc) {
+		@include widtnPercent( 640, 580 );
+		max-width: 1280px;
+		background: #fff;
+		@include css3(box-shadow, 5px 15px 50px #a3a3a3);
+		padding: 40px 16px 24px;
+		margin-top: 42px;
+		@include css3(display, flex);
+		@include css3(flex-wrap, wrap);
+	}
+
+	@include respond(tb) {
+		width: 100%;
+		margin-top: 24px;
+	}
+
+	@include respond(xs) {
+		background: #fff;
+		width: 100%;
+		margin-top: 24px;
+	}
+
+	&--secondary {
+		@extend .p-service__item;
+
+		@include respond(pc) {
+			width: 100%;
+			padding: 0px 0 60px 0;
+			margin-top: 60px;
+		}
+	}
+
+}
+
+.p-service__item__col {
+
+	@include respond(pc) {
+		//-webkit-box-shadow:0px 0px 13px -4px #adadad;
+		background: #fff;
+		@include widtnPercent( 618, 186 );
+		margin: 0 1.61%;
+		
+	}
+
+	@include respond(tb) {
+		//-webkit-box-shadow:0px 0px 13px -4px #adadad;
+		background: #fff;
+		margin: 32px 0 0;
+		padding: 32px 6.125% 24px;
+		border-top: 3px solid $color-gray-c;
+		
+		&:first-child {
+			margin: 0px;
+			border-top: none;
+			padding: 0px 6.125% 0;
+		}
+	}
+
+	@include respond(xs) {
+		background: #fff;
+		border-top: 2px solid $color-gray-c;
+		padding: 24px 5.125% 16px;
+		//margin-top: 16px;
+		
+		&:first-child {
+			margin-top: 0px;
+			border-top: none;
+			padding-top: 0px;
+		}
+	}
+
+	a {
+		display: inline-block;
+		
+		@include respond(xs) {
+			display: block;
+		}
+	}
+}
+
+
+.p-workTop {
+
+	text-align: center;
+
+	@include respond(pc) {
+		padding-top: 100px;
+	}
+
+	@include respond(tb) {
+		padding-top: 60px;
+		border-top: 24px solid #eee;
+	}
+
+	@include respond(xs) {
+		padding-top: 40px;
+	}
+}
+
+
+.p-workTop__ttl {
+	@include center;
+}
+
+.p-workTop__cache {
+	font-weight: bold;
+	color: $color-cache;
+
+	@include respond(pc) {
+		@include font-size(30);
+		margin-top: 40px;
+	}
+
+	@include respond(tb) {
+		@include font-size(28);
+		margin-top: 24px;
+	}
+
+	@include respond(xs) {
+		@include font-size(18);
+		line-height: 1.4;
+		margin-top: 24px;
+		@include widtnPercent( 640, 540 );
+		@include center;
+		color: #000;
+		
+	}
+}
+
+.p-workTop__text {
+	margin-top: 24px;
+	width: 420px;
+	text-align: center;
+	@include center;
+
+	@include respond(xs) {
+		display: none;
+	}
+}
+
+
+.p-workTop__item {
+	
+	background: #fff;
+	
+	@include respond(pc) {
+		margin-top: 32px;
+		@include center;
+		width: 920px;
+		@include css3(display, flex); 
+		@include css3(flex-wrap, wrap);
+	}
+	@include respond(tb) {
+		margin-top: 32px;
+		background: $color-gray-f5;
+		padding: 32px 0;
+		@include center;
+		@include widtnPercent( 640, 640 );
+	}
+
+	@include respond(xs) {
+		width: 100%;
+		margin-top: 24px;
+		padding: 0px;
+		background: #eee;
+		padding: 12px 3.125%;
+		
+	}
+
+	> li {
+		@include respond(pc) {
+			width: 50%;
+			padding: 24px 2.125%;
+		}
+
+		@include respond(tb) {
+			background: #fff;
+			@include widtnPercent( 640, 560 );
+			@include center;
+			margin-top: 24px;
+			
+			&:first-child {
+				margin-top: 0px;
+			}
+		}
+
+		@include respond(xs) {
+			background: #fff;
+			@include center;
+			border-top: 1px solid $color-gray-c;
+			
+			&:first-child {
+				border-top: none;
+			}
+		}
+	}
+}
+
+
