@@ -14,7 +14,7 @@ Template Name: お問い合わせテンプレート
 
 			<?php get_template_part('/template_parts/p-breadcrumb' ); ?>
 
-			<?php get_template_part('/template_parts/p-contact' ); ?>
+			<?php get_template_part('/template_parts/p-form' ); ?>
 
 		</div>
 

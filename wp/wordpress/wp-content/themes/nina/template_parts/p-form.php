@@ -21,7 +21,7 @@
 	</li>
 	<li class="p-form__col">
 		<div class="c-form">
-			<span class="c-form--tab--required">必須</span>
+			<span class="c-form--tab--any">任意</span>
 			<label class="c-form--label">お問い合わせ内容</label>
 			<textarea id="text" name="お問い合わせ内容" placeholder="お問い合わせ内容を入力してください"></textarea>
 		</div>
