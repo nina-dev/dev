@@ -1,4 +1,4 @@
- <?php if( !(is_home() || is_front_page()) && !is_page('contact') && !is_page('service') ){ //トップとスラッグ名が一致するページ以外は表示 ?>
+ <?php if( !(is_home() || is_front_page()) && !is_page('contact') && !is_page('service') && !is_page_template('page-contact.php') ){ //トップとスラッグ名が一致するページ以外は表示 ?>
  <div class="l-content--primary">
  	<?php get_template_part('/template_parts/p-related' ); ?>
  </div>
@@ -18,6 +18,11 @@
 <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/script.js"></script>
 <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/particles.min.js"></script>
 <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/app.js"></script>
+
+<?php if( is_page_template('page-contact.php') ){  ?>
+<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/c-form.js"></script>
+<?php } ?>
+
 
 <?php if( is_home() || is_front_page() ){ ?>
 

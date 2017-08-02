@@ -28,7 +28,11 @@
 				<li class="c-status__col">完了画面</li>
 			</ul>
 
-			<?php the_content(); ?>
+			<?php
+			//出力される改行タグを削除
+			remove_filter( 'the_content', 'wpautop' );
+			the_content();
+			?>
 
 			<?php
 			endwhile;
