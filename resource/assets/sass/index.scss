@@ -14,12 +14,7 @@
 @import "object/component/particles-js";
 @import "object/component/pagetop";
 @import "object/component/overlay";
-@import "object/component/table";
-@import "object/component/profile";
-@import "object/component/loading";
-@import "object/component/tab";
-@import "object/component/serviceArea";
-@import "object/component/index";	
+@import "object/component/loading";	
 @import "object/component/form";
 @import "object/component/introduce";
 @import "object/component/list";
@@ -31,7 +26,6 @@
 @import "object/layout/main";
 @import "object/layout/contact";
 @import "object/layout/sidebar";
-@import "object/layout/service";
 
 @import "object/project/bg";
 @import "object/project/box";
@@ -44,6 +38,7 @@
 @import "object/project/related";
 @import "object/project/breadcrumb";
 @import "object/project/cta";
+@import "object/project/archive";
 
 
 @import "object/animation/animation";
