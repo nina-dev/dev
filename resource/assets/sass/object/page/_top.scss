@@ -1,5 +1,5 @@
 
-.l-main {
+.page-top--main {
 
 	@include respond(pc){
 		@include center;
@@ -25,7 +25,7 @@
 }
 
 
-.l-main__item {
+.page-top--main__item {
 
 	@include respond(pc){
 		position: absolute;
@@ -34,7 +34,7 @@
 
 	&--bg {
 
-		@extend .l-main__item;	
+		@extend .page-top--main__item;	
 		background: url('../img/sprite/mainBg.png');
 		@include css3(background-size, cover);
 		z-index: 1;
@@ -68,7 +68,7 @@
 	}
 
 	&--text {
-		@extend .l-main__item;
+		@extend .page-top--main__item;
 		//background: #fff;
 		@include respond(pc){
 			@include font-size(17);
@@ -100,9 +100,9 @@
 
 }
 
-.l-main__item--ttl {
+.page-top--main__item--ttl {
 
-	@extend .l-main__item;
+	@extend .page-top--main__item;
 	left: 0;
 	position: absolute;
 
@@ -221,7 +221,39 @@
 	@extend .a-scale-up-bottom;
 }
 
-.p-box__ttl {
+
+.page-top--introduction {
+
+	@include respond(pc) {
+		width: 720px;
+		padding: 0 108px;
+		text-align: center;
+		position: relative;
+	}
+
+	@extend .page-top--introduction;
+	background: #fff;
+
+	@include respond(tb){
+		margin-top: 100px;
+		@include widtnPercent( 640, 600 );
+		@include center;
+	}
+
+	@include respond(xs){
+		padding-bottom: 40px;
+		margin-top: 24px;
+		box-shadow: 0 5px 4px 0 rgba(209,209,209,0.50);
+	}
+}
+
+.page-top--introduction__logo {
+	width: 128px;
+	height: 50px;
+}
+
+
+.page-top--introduction__ttl {
 
 	&--primary {
 		@include respond(pc){
@@ -242,7 +274,7 @@
 		@include center;
 	}
 }
-.p-box__cache {
+.page-top--introduction__cache {
 
 	font-weight: bold;
 	text-align: left;
@@ -273,11 +305,11 @@
 	}
 
 	&--primary {
-		@extend .p-box__cache;
+		@extend .page-top--introduction__cache;
 	}
 
 	&--secondary {
-		@extend .p-box__cache;
+		@extend .page-top--introduction__cache;
 		padding-top: 60px;
 		text-align: center;
 		
@@ -285,7 +317,7 @@
 }
 
 
-.p-box__item__text {
+.page-top--introduction__item__text {
 
 	@include respond(pc) {
 		@include font-size(18);
@@ -294,7 +326,7 @@
 		font-weight: bold;
 	}
 	&--cache {
-		@extend .p-box__item__text;
+		@extend .page-top--introduction__item__text;
 		
 		@include respond(pc) {
 			@include font-size(32);
@@ -320,14 +352,14 @@
 	}
 
 	&--center {
-		@extend .p-box__item__text;
+		@extend .page-top--introduction__item__text;
 		text-align: center;
 		margin-top: 60px;
 	}
 }
 
 
-.p-box__item__btn {
+.page-top--introduction__item__btn {
 
 
 	> a {
@@ -354,18 +386,18 @@
 	}
 
 	&--primary {
-		@extend .p-box__item__btn;
+		@extend .page-top--introduction__item__btn;
 	}
 
 	&--secondary {
-		@extend .p-box__item__btn;
+		@extend .page-top--introduction__item__btn;
 		width: 100%;
 	}
 }
 
 
 
-.p-box__item {
+.page-top--introduction__item {
 
 	text-align: left;
 
@@ -385,11 +417,11 @@
 	}
 
 	&--primary {
-		@extend .p-box__item;
+		@extend .page-top--introduction__item;
 	}
 
 	&--secondary {
-		@extend .p-box__item;
+		@extend .page-top--introduction__item;
 		width: 640px;
 		@include center;
 		text-align: center;
@@ -406,41 +438,8 @@
 	}
 }
 
-.p-box__logo {
-	width: 128px;
-	height: 50px;
-}
 
-.p-box {
-
-	@include respond(pc) {
-		width: 720px;
-		padding: 0 108px;
-		text-align: center;
-		position: relative;
-	}
-
-	&--primary {
-		@extend .p-box;
-		background: #fff;
-
-		@include respond(tb){
-			margin-top: 100px;
-			@include widtnPercent( 640, 600 );
-			@include center;
-		}
-
-		@include respond(xs){
-			padding-bottom: 40px;
-			margin-top: 24px;
-			box-shadow: 0 5px 4px 0 rgba(209,209,209,0.50);
-		}
-
-	}
-}
-
-
-.p-service__cache {
+.page-top--service__cache {
 
 	font-weight: bold;
 	@include font-size(30);
@@ -465,12 +464,12 @@
 	}
 
 	&--secondary {
-		@extend .p-service__cache;
+		@extend .page-top--service__cache;
 		@include font-size(28);
 	}
 }
 
-.p-service__category {
+.page-top--service__category {
 	
 	@include respond(pc) {
 		margin-top: 32px;
@@ -479,7 +478,7 @@
 	}
 }
 
-.p-service__text {
+.page-top--service__text {
 
 	line-height: 1.8;
 
@@ -499,7 +498,7 @@
 	}
 }
 
-.p-service__ttl {
+.page-top--service__ttl {
 	@include respond(xs){
 		@include center;
 	}
@@ -509,7 +508,7 @@
 	}
 }
 
-.p-service__item__text {
+.page-top--service__item__text {
 	
 	@include respond(pc) {
 		margin-top: 40px;
@@ -518,7 +517,7 @@
 
 
 
-.p-service__item__img {
+.page-top--service__item__img {
 
 	@include respond(pc) {
 		text-align: center;
@@ -532,7 +531,7 @@
 	}
 }
 
-.p-service__item {
+.page-top--service__item {
 
 	@include center;
 
@@ -559,7 +558,7 @@
 	}
 
 	&--secondary {
-		@extend .p-service__item;
+		@extend .page-top--service__item;
 
 		@include respond(pc) {
 			width: 100%;
@@ -570,7 +569,7 @@
 
 }
 
-.p-service__item__col {
+.page-top--service__item__col {
 
 	@include respond(pc) {
 		//-webkit-box-shadow:0px 0px 13px -4px #adadad;
@@ -617,7 +616,7 @@
 }
 
 
-.p-service {
+.page-top--service {
 	
 	@include respond(pc) {
 		text-align: center;
@@ -646,7 +645,7 @@
 	}
 }
 
-.p-service__cache {
+.page-top--service__cache {
 
 	font-weight: bold;
 	@include font-size(30);
@@ -671,12 +670,12 @@
 	}
 
 	&--secondary {
-		@extend .p-service__cache;
+		@extend .page-top--service__cache;
 		@include font-size(28);
 	}
 }
 
-.p-service__category {
+.page-top--service__category {
 	
 	@include respond(pc) {
 		margin-top: 32px;
@@ -685,7 +684,7 @@
 	}
 }
 
-.p-service__text {
+.page-top--service__text {
 
 	line-height: 1.8;
 
@@ -705,7 +704,7 @@
 	}
 }
 
-.p-service__ttl {
+.page-top--service__ttl {
 	@include respond(xs){
 		@include center;
 	}
@@ -715,7 +714,7 @@
 	}
 }
 
-.p-service__item__text {
+.page-top--service__item__text {
 	
 	@include respond(pc) {
 		margin-top: 40px;
@@ -724,7 +723,7 @@
 
 
 
-.p-service__item__img {
+.page-top--service__item__img {
 
 	@include respond(pc) {
 		text-align: center;
@@ -738,7 +737,7 @@
 	}
 }
 
-.p-service__item {
+.page-top--service__item {
 
 	@include center;
 
@@ -765,7 +764,7 @@
 	}
 
 	&--secondary {
-		@extend .p-service__item;
+		@extend .page-top--service__item;
 
 		@include respond(pc) {
 			width: 100%;
@@ -776,7 +775,7 @@
 
 }
 
-.p-service__item__col {
+.page-top--service__item__col {
 
 	@include respond(pc) {
 		//-webkit-box-shadow:0px 0px 13px -4px #adadad;
@@ -823,7 +822,7 @@
 }
 
 
-.p-workTop {
+.page-top--works {
 
 	text-align: center;
 
@@ -842,11 +841,11 @@
 }
 
 
-.p-workTop__ttl {
+.page-top--works__ttl {
 	@include center;
 }
 
-.p-workTop__cache {
+.page-top--works__cache {
 	font-weight: bold;
 	color: $color-cache;
 
@@ -871,7 +870,7 @@
 	}
 }
 
-.p-workTop__text {
+.page-top--works__text {
 	margin-top: 24px;
 	width: 420px;
 	text-align: center;
@@ -883,7 +882,7 @@
 }
 
 
-.p-workTop__item {
+.page-top--works__item {
 	
 	background: #fff;
 	
@@ -940,4 +939,114 @@
 	}
 }
 
+
+.p-page-top--contactTop__ttl {
+	@include center;
+}
+
+.p-page-top--contactTop__cache {
+	font-weight: bold;
+	
+
+	@include respond(pc) {
+		@include font-size(20);
+		margin-top: 40px;
+		color: $color-accent--red;
+	}
+
+	@include respond(tb) {
+		@include font-size(26);
+		margin-top: 40px;
+	}
+
+	@include respond(xs) {
+		@include font-size(18);
+		line-height: 1.4;
+		margin-top: 24px;
+		@include widtnPercent( 640, 430 );
+		@include center;
+		
+	}
+}
+
+.p-page-top--contactTop__item__text {
+	text-align: center;
+	@include center;
+	
+	@include respond(pc) {
+		width: 630px;
+		@include center;
+		@include font-size(18);
+		line-height: 2;
+		font-weight: bold;
+	}
+
+	@include respond(xs) {
+		display: none;
+	}
+}
+
+
+.p-page-top--contactTop__item__btn {
+
+	@include respond(pc) {
+		position: relative;
+		width: 480px;
+		@include center;
+		top: 86px;
+	}
+
+	@include respond(tb) {
+		margin-top: 32px;
+	}
+}
+
+
+.p-page-top--contactTop__item {
+
+	
+	@include respond(pc) {
+		//@include gradient(#5D6FE8, #4B5EDA, vertical);
+		background: url("/img/common/shape4.png") repeat left top;
+		margin-top: 32px;
+		@include center;
+		//color: #fff;
+		width: 920px;
+		padding: 48px 40px 60px 40px;
+		@include css3(box-shadow, 1px 1px 4px #f2f2f2);
+		//border: 1px solid $color-main;
+	}
+
+	@include respond(tb) {
+		margin-top: 32px;
+		@include center;
+		@include widtnPercent( 640, 480 );
+	}
+
+	@include respond(xs) {
+		width: 100%;
+		margin-top: 24px;
+		padding: 24px 6.125% 24px;
+		background: #eee;
+	}
+}
+
+.p-page-top--contactTop {
+
+	text-align: center;
+
+	@include respond(pc) {
+		padding-top: 100px;
+		border-top: 1px solid $color-gray-f2;
+		//@include gradient(#fff, #fff, vertical);
+	}
+
+	@include respond(tb) {
+		padding-top: 60px;
+	}
+
+	@include respond(xs) {
+		padding-top: 40px;
+	}
+}
 

@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
-<div class="l-main">
- <h2 class="l-main__item--ttl"><svg class="start" id="a-animation--mainTxt" version="1.1" viewbox="0 0 1035 204" xmlns="http://www.w3.org/2000/svg">
+<div class="page-top--main">
+ <h2 class="page-top--main__item--ttl"><svg class="start" id="a-animation--mainTxt" version="1.1" viewbox="0 0 1035 204" xmlns="http://www.w3.org/2000/svg">
   <g fill-rule="evenodd" id="Page-1" stroke="none" stroke-width="1">
    <g id="main">
     <g id="Group">
@@ -36,29 +36,26 @@
    </g>
  </g>
 </g></svg></h2>
-<div class="l-main__item--bg"></div>
-<h3 class="l-main__item--text">伝わるUIデザインでオーダーメイドな解決策を。</h3>
+<div class="page-top--main__item--bg"></div>
+<h3 class="page-top--main__item--text">伝わるUIデザインでオーダーメイドな解決策を。</h3>
 </div>
-
-
-
 
 <div class="l-content--primary">
   <span class="p-bg--item--primary c-square--primary"></span> <span class="p-bg--item--secondary c-square--secondary"></span> 
-  <div class="l-content__inner p-box--primary">
+  <div class="l-content__inner page-top--introduction">
    <span class="p-bg--item--tertiary c-cube--tertiary"></span> <span class="p-bg--item--quaternary c-cube--primary"></span>
    <span class="p-bg--item--quinary c-cube--border"></span>
-   <p class="p-box__ttl--primary c-contentTtl--primary">INTRODUCTION</p>
+   <p class="page-top--introduction__ttl--primary c-contentTtl--primary">INTRODUCTION</p>
 
-   <h3 class="p-box__cache">UIデザインの改善でクライアントの可能性をさらにひろげます</h3>
-   <div class="p-box__item">
-    <p class="p-box__item__text">こんにちわ。国内のWebサービス企業を中心としたクライアントを中心にWebサイトのUX/UIデザインを受託しているニナ・アーキタイプのサイトへようこそ。</p>
-    <p class="p-box__item__text">今や、どのクライアントにもかかせないウェブ戦略をデザインの面からサポートすることを得意としています。</p>
-    <p class="p-box__item__text">このデザインの面というのは、ユーザーとクライアントの接点に&nbsp;"ふさわしいもてなし”&nbsp;を演出する役割ともいえます。</p>
-    <p class="p-box__item__text">いいデザインは相手にプラスイメージの想像をつくります。"見せ方"と"操作性"が一体となることでパーソナリティの良さを引き出され、自然な共感をつくることができるからです。</p>
-    <p class="p-box__item__text">伝えるべきユーザーに最適なもてなしを。</p>
-    <p class="p-box__item__text">それをクライアントと一緒に考え可能性をさらにひろげます。</p>
-    <p class="p-box__item__btn c-btn--secondary"><a href="/about">ninaについて</a></p>
+   <h3 class="page-top--introduction__cache">UIデザインの改善でクライアントの可能性をさらにひろげます</h3>
+   <div class="page-top--introduction__item">
+    <p class="page-top--introduction__item__text">こんにちわ。国内のWebサービス企業を中心としたクライアントを中心にWebサイトのUX/UIデザインを受託しているニナ・アーキタイプのサイトへようこそ。</p>
+    <p class="page-top--introduction__item__text">今や、どのクライアントにもかかせないウェブ戦略をデザインの面からサポートすることを得意としています。</p>
+    <p class="page-top--introduction__item__text">このデザインの面というのは、ユーザーとクライアントの接点に&nbsp;"ふさわしいもてなし”&nbsp;を演出する役割ともいえます。</p>
+    <p class="page-top--introduction__item__text">いいデザインは相手にプラスイメージの想像をつくります。"見せ方"と"操作性"が一体となることでパーソナリティの良さを引き出され、自然な共感をつくることができるからです。</p>
+    <p class="page-top--introduction__item__text">伝えるべきユーザーに最適なもてなしを。</p>
+    <p class="page-top--introduction__item__text">それをクライアントと一緒に考え可能性をさらにひろげます。</p>
+    <p class="page-top--introduction__item__btn c-btn--secondary"><a href="/about">ninaについて</a></p>
   </div>
 
 
@@ -66,14 +63,14 @@
 </div>
 <div class="l-content--secondary">
   <div id="particles-js"></div>
-  <div class="l-content__inner p-service">
+  <div class="l-content__inner page-top--service">
 
-   <p class="p-service__ttl c-contentTtl--primary">SERVICE</p>
+   <p class="page-top--service__ttl c-contentTtl--primary">SERVICE</p>
 
-   <h3 class="p-service__cache">届けたいユーザーとのポジティブな交点をつくります</h3>
-   <p class="p-service__text">コンテンツ訴求と「いいね！」が生まれるユーザー心理を柱にクライアントと届けたいユーザーを繋げる関係づくりのサポートをします。</p>
-   <ul class="p-service__item">
-    <li class="c-thumbnail--large p-service__item__col">
+   <h3 class="page-top--service__cache">届けたいユーザーとのポジティブな交点をつくります</h3>
+   <p class="page-top--service__text">コンテンツ訴求と「いいね！」が生まれるユーザー心理を柱にクライアントと届けたいユーザーを繋げる関係づくりのサポートをします。</p>
+   <ul class="page-top--service__item">
+    <li class="c-thumbnail--large page-top--service__item__col">
      <a href="/service/design" title="">
       <div class="c-thumbnail--large__item--img">
 
@@ -84,7 +81,7 @@
    </a>
    <p class="c-thumbnail--large__item--btn c-btn--tertiary"><a href="/service/design" title="">VIEW MORE</a></p>
  </li>
- <li class="c-thumbnail--large p-service__item__col">
+ <li class="c-thumbnail--large page-top--service__item__col">
    <a href="/service/responsive" title="">
     <div class="c-thumbnail--large__item--img">
 
@@ -95,7 +92,7 @@
  </a>
  <p class="c-thumbnail--large__item--btn c-btn--tertiary"><a href="/service/responsive" title="">VIEW MORE</a></p>
 </li>
-<li class="c-thumbnail--large p-service__item__col">
+<li class="c-thumbnail--large page-top--service__item__col">
  <a href="/service/support" title="">
   <div class="c-thumbnail--large__item--img">
 
@@ -113,11 +110,11 @@
 </div>
 <div class="l-content--primary">
   <span class="p-bg--item--primary--workTop c-square--primary"></span> <span class="p-bg--item--secondary--workTop c-square--tertiary"></span>
-  <div class="l-content__inner p-workTop">
-   <p class="p-workTop__ttl c-contentTtl--primary">WORK</p>
-   <h3 class="p-workTop__cache">さまざまなサイト提案・運用に携わってきました</h3>
-   <p class="p-workTop__text">才能やひらめきだけでデザインするだけではなく、伝えたいコトの要素を丁寧に整理し、「伝わる」をデザインします。</p>
-   <ul class="p-workTop__item">
+  <div class="l-content__inner page-top--works">
+   <p class="page-top--works__ttl c-contentTtl--primary">WORK</p>
+   <h3 class="page-top--works__cache">さまざまなサイト提案・運用に携わってきました</h3>
+   <p class="page-top--works__text">才能やひらめきだけでデザインするだけではなく、伝えたいコトの要素を丁寧に整理し、「伝わる」をデザインします。</p>
+   <ul class="page-top--works__item">
     <li class="c-thumbnail--large">
      <p class="c-thumbnail--large__item--img"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/thumnail/bitmap01.png"></p>
      <p class="c-thumbnail--large__item--ttl">都内商業施設</p>
@@ -142,14 +139,14 @@
 </div>
 </div>
 <div class="l-content--secondary">
-  <div class="l-content__inner p-contactTop">
+  <div class="l-content__inner p-page-top--contactTop">
 
-   <p class="p-contactTop__ttl c-contentTtl--primary">CONTACT</p>
-   <p class="p-contactTop__cache">現在コンタクトフォームは停止しています</p>
-   <div class="p-contactTop__item">
+   <p class="p-page-top--contactTop__ttl c-contentTtl--primary">contact</p>
+   <p class="p-page-top--contactTop__cache">現在コンタクトフォームは停止しています</p>
+   <div class="p-page-top--contactTop__item">
 
-    <p class="p-contactTop__item__text">レスポンシブWebデザインサイト構築・コーポレートサイトやサービス画面のUIデザインなど、お気軽にお問い合わせください。</p>
-    <p class="p-contactTop__item__btn c-btn--secondary--orange"><a href="#">COMMING SOON</a></p>
+    <p class="p-page-top--contactTop__item__text">レスポンシブWebデザインサイト構築・コーポレートサイトやサービス画面のUIデザインなど、お気軽にお問い合わせください。</p>
+    <p class="p-page-top--contactTop__item__btn c-btn--secondary--orange"><a href="#">COMMING SOON</a></p>
   </div>
 
 </div>
