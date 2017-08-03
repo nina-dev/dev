@@ -24,7 +24,7 @@
                             <p class="c-thumbnail--large__item--img">
                                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/article/responsive.jpg">
                             </p>
-                            <p class="c-thumbnail--large__item--ttl">レスポンシブ</p>
+                            <p class="c-thumbnail--large__item--ttl">デザインとパフォーマンスを両立したレスポンシブWebデザイン</p>
                         </a>
                     </li>
                 <?php endif; ?>
@@ -34,7 +34,7 @@
                             <p class="c-thumbnail--large__item--img">
                                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/article/support.jpg">
                             </p>
-                            <p class="c-thumbnail--large__item--ttl">ウェブコンサル</p>
+                            <p class="c-thumbnail--large__item--ttl">マーケティング効果を最大限引き出すウェブコンサルティング</p>
                         </a>
                     </li>
                 <?php endif; ?>
