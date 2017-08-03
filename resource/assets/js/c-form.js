@@ -2,10 +2,10 @@ $(function(){
   $('.c-form').each(function() {
       //focusしたらプレースフォルダー文言を表示・非表示
       $(this).find('.c-form--text').focus(function(){
-          $(this).prev('label').find('.c-form--sampletext').addClass('c-form--sampletext--show');
+          $(this).parent().parent().find('label').find('.c-form--sampletext').addClass('c-form--sampletext--show');
       })
       .blur(function(){
-          $(this).prev('label').find('.c-form--sampletext').removeClass('c-form--sampletext--show');
+          $(this).parent().parent().find('label').find('.c-form--sampletext').removeClass('c-form--sampletext--show');
       });
 
       //textボックスの値が空の場合、エラー文言を表示・非表示
