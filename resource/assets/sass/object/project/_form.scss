@@ -28,3 +28,25 @@
          }
     }
 }
+
+.p-form__status {
+    width:100%;
+    background: $color-gray-c;
+    display: table;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    &__item {
+        width:33.3333%;
+        display: table-cell;
+        padding: 16px 0;
+
+        &.is_active {
+            background: $color-gray-6;
+        }
+    }
+}
+
+
+
