@@ -1,0 +1,54 @@
+.page-about--companyTable {
+
+	padding: 16px 0;
+
+	&__col {
+		margin-top: 16px;
+
+		&:first-child {
+			margin-top: 0px;
+		} 
+	}
+}
+
+.page-about--profile {
+	display: table;
+}
+
+.page-about--profile__item {
+	display: table-cell;
+	vertical-align: top;
+
+	&--img {
+		@extend .page-about--profile__item;
+		height: 120px;
+		width: 120px;
+
+		img {
+			border-radius: 50%;
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	&--detail {
+		@extend .page-about--profile__item;
+		padding-left: 48px;
+
+	}
+}
+
+.page-about--profile__item__ttl {
+	margin-top: 0px!important;
+	font-weight: bold;
+}
+.page-about--profile__item__subtext {
+	margin-top: 0px!important;
+	color: $color-gray-a1;
+	font-size: 13px!important;
+}
+
+.page-about--profile__item__text {
+	margin-top: 8px!important;
+	line-height: 2;
+}
