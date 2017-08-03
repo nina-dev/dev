@@ -22,9 +22,9 @@ Template Name: お問い合わせテンプレート
 
 
 			<ul class="p-form__status">
-				<li class="p-form__status__col">入力画面</li>
-				<li class="p-form__status__col is_active">確認画面</li>
-				<li class="p-form__status__col">完了画面</li>
+				<li class="p-form__status__item">入力画面</li>
+				<li class="p-form__status__item is_active">確認画面</li>
+				<li class="p-form__status__item">完了画面</li>
 			</ul>
 
 			<?php
