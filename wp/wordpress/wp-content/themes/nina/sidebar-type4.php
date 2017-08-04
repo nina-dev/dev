@@ -1,8 +1,6 @@
 <div class="l-sidebar">
     <div class="l-sidebar__col">
-        <div class="c-introduce">
-        <p class="c-introduce__text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-        </div>
+        <?php get_template_part('/template_parts/p-introduce' ); ?>
     </div>
 
     <div class="l-sidebar__col">
