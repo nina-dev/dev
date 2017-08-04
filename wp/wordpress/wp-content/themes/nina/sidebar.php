@@ -35,7 +35,7 @@
     </ul>
 </div>
 <div class="l-sidebar__col">
-    <p class="l-sidebar__col__ttl">コンテンツ</p>
+    <p class="l-sidebar__col__ttl">人気コンテンツ</p>
     <ul class="l-sidebar__col__item">
         <li class="l-sidebar__col__item__list c-thumbnail--large">
             <a href="#">

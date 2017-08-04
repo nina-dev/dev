@@ -6,7 +6,7 @@
     </div>
 
     <div class="l-sidebar__col">
-        <p class="l-sidebar__col__ttl">コンテンツ</p>
+        <p class="l-sidebar__col__ttl">人気コンテンツ</p>
         <ul class="l-sidebar__col__item">
 
             <?php if ( !is_page('about') ) : ?>
@@ -15,7 +15,7 @@
                         <p class="c-thumbnail--large__item--img">
                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/article/about.jpg">
                         </p>
-                        <p class="c-thumbnail--large__item--ttl">ニナ・アーキタイプについて</p>
+                        <p class="c-thumbnail--large__item--ttl--small">ニナ・アーキタイプについて</p>
                     </a>
                 </li>
             <?php endif; ?>
@@ -25,7 +25,7 @@
                     <p class="c-thumbnail--large__item--img">
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/article/flow.jpg">
                     </p>
-                    <p class="c-thumbnail--large__item--ttl">お仕事の流れについて</p>
+                    <p class="c-thumbnail--large__item--ttl--small">お仕事の流れについて</p>
                 </a>
             </li>
             <?php endif; ?>
@@ -35,7 +35,7 @@
                     <p class="c-thumbnail--large__item--img">
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/article/price.jpg">
                     </p>
-                    <p class="c-thumbnail--large__item--ttl">プロジェクトの形態や規模、期間に応じて柔軟にご提案させていただきます。</p>
+                    <p class="c-thumbnail--large__item--ttl--small">プロジェクトの形態や規模、期間に応じて柔軟にご提案させていただきます。</p>
                 </a>
             </li>
             <?php endif; ?>

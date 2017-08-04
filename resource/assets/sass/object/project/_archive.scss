@@ -9,3 +9,41 @@
         }
     }
 }
+
+.p-archive__cache {
+
+    font-weight: bold;
+    margin-top: 24px;
+
+    @include respond(pc) {
+        @include font-size(16);
+        margin-top: 60px;
+        border-left: 3px solid $color-main;
+        padding-left: 16px;
+        line-height: 1.2;
+    }
+
+    @include respond(tb) {
+        @include font-size(24);
+        @include widtnPercent( 640,540 );
+        @include center;
+        line-height: 1.6;
+    }
+    @include respond(xs) {
+        line-height: 1.5;
+        @include font-size(18);
+        padding: 0 8.125% 0;
+    }
+}
+
+.p-archive__inner {
+    margin-top: 32px;
+}
+
+.p-archive__inner__col {
+    margin-top: 24px;
+
+    &:first-child {
+        margin-top: 0px;
+    }
+}
