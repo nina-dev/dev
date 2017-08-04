@@ -1,5 +1,7 @@
 <ul class="p-breadcrumb">
-<?php if (is_single()) : ?>
+
+
+<?php if (is_single()||is_category()) : ?>
 	<li class="is-first"><a href="<?php echo home_url() ?>">TOP</a></li>
 	<li><?php $cat = get_the_category(); echo get_category_parents($cat[0], true, ''); ?></li>
 <?php endif; ?>

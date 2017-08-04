@@ -6,8 +6,10 @@
     @include css3(flex-direction,column);
     //各flexアイテムが中央揃えになります。
     @include css3(justify-content,center);
-    width: 800px;
+
+    width: 100%;
     @include center;
+    margin-top: 40px;
     
 }
 
@@ -30,20 +32,24 @@
 }
 
 .p-form__status {
-    width:100%;
-    background: $color-gray-c;
+    width: 100%;
+    //background: $color-gray-c;
     display: table;
     text-align: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 60px;
+    
 
     &__item {
-        width:33.3333%;
+        width: 33.3333%;
         display: table-cell;
-        padding: 16px 0;
+        padding: 24px 0 16px;
+        border-top: 2px solid $color-gray-f2;
+        color: $color-gray-a1;
+        @include font-size(12);
 
         &.is_active {
-            background: $color-gray-6;
+            border-top: 2px solid $color-main;
+            color: $color-main;
         }
     }
 }

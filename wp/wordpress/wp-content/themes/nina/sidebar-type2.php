@@ -6,7 +6,7 @@
     </div>
 
     <div class="l-sidebar__col">
-        <p class="l-sidebar__col__ttl">コンテンツ</p>
+        <p class="l-sidebar__col__ttl">人気コンテンツ</p>
             <ul class="l-sidebar__col__item">
                 <?php if (!is_single('ui')) : ?>
                     <li class="l-sidebar__col__item__list c-thumbnail--large">
@@ -14,7 +14,7 @@
                             <p class="c-thumbnail--large__item--img">
                                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/article/ui.jpg">
                             </p>
-                            <p class="c-thumbnail--large__item--ttl">コンテンツ力を引き出す、心地よいUIデザインを提供します</p>
+                            <p class="c-thumbnail--large__item--ttl--small">コンテンツ力を引き出す、心地よいUIデザインを提供します</p>
                         </a>
                     </li>
                 <?php endif; ?>
@@ -24,7 +24,7 @@
                             <p class="c-thumbnail--large__item--img">
                                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/article/responsive.jpg">
                             </p>
-                            <p class="c-thumbnail--large__item--ttl">デザインとパフォーマンスを両立したレスポンシブWebデザイン</p>
+                            <p class="c-thumbnail--large__item--ttl--small">デザインとパフォーマンスを両立したレスポンシブWebデザイン</p>
                         </a>
                     </li>
                 <?php endif; ?>
@@ -34,7 +34,7 @@
                             <p class="c-thumbnail--large__item--img">
                                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/article/support.jpg">
                             </p>
-                            <p class="c-thumbnail--large__item--ttl">マーケティング効果を最大限引き出すウェブコンサルティング</p>
+                            <p class="c-thumbnail--large__item--ttl--small">マーケティング効果を最大限引き出すウェブコンサルティング</p>
                         </a>
                     </li>
                 <?php endif; ?>
