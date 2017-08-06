@@ -10,7 +10,36 @@
     width: 100%;
     @include center;
     margin-top: 40px;
-    
+
+
+    &--btn {
+        margin-top: 64px;
+        @extend .p-form;
+        @include css3(flex-direction,row);
+    }
+
+    &--thanks {
+        margin-top: 40px;
+    }
+}
+
+.p-form--btn__item {
+
+    a, button {
+        width: 320px;
+        margin: 0 4px;
+        cursor: pointer;
+        padding: 24px 0px;
+
+    }
+}
+
+.p-form--thanks p {
+    margin-top: 4px;
+
+    &:first-child {
+        margin-top: 0px;
+    }
 }
 
 .p-form__col {
@@ -20,15 +49,6 @@
     &:first-child {
         margin-top: 0px; 
     }
-
-    &--btn {
-         margin-top: 64px;
-         width: 60%;
-
-         button {
-           cursor: pointer!important; 
-         }
-    }
 }
 
 .p-form__status {
@@ -36,19 +56,19 @@
     //background: $color-gray-c;
     display: table;
     text-align: center;
-    margin-top: 60px;
+    margin-top: 56px;
     
 
     &__item {
         width: 33.3333%;
         display: table-cell;
-        padding: 24px 0 16px;
-        border-top: 2px solid $color-gray-f2;
+        padding: 16px 0;
+        border-top: 3px solid $color-gray-f2;
         color: $color-gray-a1;
-        @include font-size(12);
+        @include font-size(14);
 
         &.is_active {
-            border-top: 2px solid $color-main;
+            border-top: 3px solid $color-main;
             color: $color-main;
         }
     }

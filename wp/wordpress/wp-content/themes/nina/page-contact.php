@@ -22,9 +22,9 @@ Template Name: お問い合わせテンプレート
 
 
 			<ul class="p-form__status">
-				<li class="p-form__status__item">入力画面</li>
-				<li class="p-form__status__item is_active">確認画面</li>
-				<li class="p-form__status__item">完了画面</li>
+				<li class="p-form__status__item <?php if ( is_page('input') ) { echo 'is_active'; } ?>">入力画面</li>
+				<li class="p-form__status__item <?php if ( is_page('confirm') ) { echo 'is_active'; } ?>">確認画面</li>
+				<li class="p-form__status__item <?php if ( is_page('thanks') ) { echo 'is_active'; } ?>">完了画面</li>
 			</ul>
 
 			<?php
