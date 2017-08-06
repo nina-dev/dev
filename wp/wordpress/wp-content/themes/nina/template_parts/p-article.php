@@ -25,9 +25,9 @@
       </li>
     </ul>-->
 
-    <p class="p-article__img">
-    <?php the_post_thumbnail('post_thumbnail'); ?>
-    </p>
+    <?php if (has_post_thumbnail()) : ?>
+      <p class="p-article__img"><?php the_post_thumbnail('post_thumbnail'); ?></p>
+    <?php endif ; ?>
 
     <div class="p-article__inner">
       <?php the_content(); ?>
