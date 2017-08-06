@@ -1,6 +1,13 @@
 <div class="p-archive">
 
-  <h2 class="p-archive__cache">私たちのサービスについて</h2>
+  <h2 class="p-archive__cache">
+    <?php
+    $category = get_the_category();
+    $cat_id   = $category[0]->cat_ID;
+    $cat_name = $category[0]->cat_name;
+    $cat_slug = $category[0]->category_nicename;
+    ?><?php echo $cat_name; ?>に関する記事一覧
+  </h2>
 
   <ul class="p-archive__inner">
 

@@ -9,13 +9,13 @@
 				color: $color-gray-c;
 				content: " > ";
 				@include font-size(16);
-				margin-right: 3px;
+				margin-right: 0px;
 			}
 		}
 
 		a {
 			@include font-size(12);
-			color: $color-main;
+			color: $color-link;
 		}
     
 
@@ -28,13 +28,13 @@
 
 			&:after {
 				color: $color-gray-c;
-				content: " / ";
+				content: "・";
 			}
 		}
 
 		a {
 			@include font-size(12);
-			color: $color-main;
+			color: $color-link;
 		}
 
 	}
