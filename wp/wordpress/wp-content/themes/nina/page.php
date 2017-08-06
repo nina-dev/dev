@@ -8,7 +8,7 @@
 
 <?php get_template_part('/template_parts/p-breadcrumb' ); ?>
 
-<?php get_template_part('/template_parts/p-article' ); ?>
+<?php get_template_part('/template_parts/p-page' ); ?>
 
 </div>
 
