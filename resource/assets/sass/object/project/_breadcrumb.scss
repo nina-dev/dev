@@ -4,7 +4,7 @@
 	li {
 		margin-left: 24px;
 		display: inline-block;
-		border-bottom: 2px solid $color-accent--blue;
+		//border-bottom: 2px solid $color-gray-c;
 		padding-bottom: 6px;
 		@include font-size(12);
 
@@ -13,7 +13,7 @@
 		&.is-first {
 			display: inline-block;	
 			margin-left: 0px;
-			padding: 0 4px 6px;
+			padding: 0 2px 6px;
 			border-bottom: 2px solid $color-main;
 			position: relative;
 

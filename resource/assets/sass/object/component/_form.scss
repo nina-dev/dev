@@ -27,12 +27,12 @@
     }
 }
 
-.c-form--label {
+.c-form__label {
     @include font-size(16);
     color: #000;
 }
 
-.c-form--attention {
+.c-form__attention {
     margin-top: 8px;
     color: $color-accent--red;
     //opacity: 0;
@@ -44,7 +44,7 @@
     }
 }
 
-.c-form--sampletext {
+.c-form__sampletext {
     margin-left: 16px;
     color: $color-gray-a1;
     @include font-size(12);
@@ -56,7 +56,13 @@
     }
 }
 
-.c-form--select {
+.c-form__answer {
+    margin-top: 16px;
+   //border-bottom: 2px solid $color-gray-f2;
+    //padding-bottom: 16px;
+}
+
+.c-form__select {
 
     &__ttl {
         @include font-size(16);
@@ -64,7 +70,7 @@
     }
 }
 
-.c-form--select__item {
+.c-form__select__item {
 
     position: relative;
     margin-top: 16px;
@@ -106,7 +112,7 @@
 
 }
 
-.c-form--tab {
+.c-form__tab {
     padding: 4px  1.125%;
     @include font-size(12);
     background: $color-main;
@@ -118,11 +124,11 @@
     border-radius: 2px;
 
     &--required {
-        @extend .c-form--tab;
+        @extend .c-form__tab;
     }
 
     &--any {
-        @extend .c-form--tab;
+        @extend .c-form__tab;
         background: $color-gray-a1;
     }
 }

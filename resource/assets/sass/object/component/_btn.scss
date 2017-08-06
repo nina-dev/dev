@@ -1,6 +1,6 @@
 .c-btn--primary {
 
-    > a {
+    > a, button {
         @include respond(pc) {
             width: 100%;
             color: #FFF;
@@ -127,6 +127,53 @@
     }
 }
 
+
+.c-btn--secondary--gray {
+
+    > a, button {
+            width: 100%;
+            color: #FFF;
+            font-weight: bold;
+            background-color: $color-gray-c;
+            position: relative;
+            z-index: 2;
+            display: block;
+            padding: 24px 8px;
+            text-align: center;
+            border: 1px solid $color-gray-c;
+            @include css3(transition, all 0.4s ease-in);
+            
+            @include respond(xs) {
+                padding: 16px 8px;
+            }
+            
+
+
+        &:hover {
+            color: $color-gray-c;;
+            background: #fff;
+            
+            &:after {
+                border: 1px solid $color-gray-c;
+                width: 100%;
+            }
+        }
+
+        &:after {
+            width: 0%;
+            height: 100%;
+            background-color: #FFF;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            @include css3(transition, all 0.4s ease-out);
+            z-index: -1;
+            border: 1px solid $color-gray-c;
+        }
+
+    }
+}
 
 .c-btn--tertiary {
     text-align: center;

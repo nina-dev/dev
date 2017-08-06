@@ -1,0 +1,11 @@
+.c-link {
+
+	> a {
+		color: $color-link;
+		text-decoration: underline;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}

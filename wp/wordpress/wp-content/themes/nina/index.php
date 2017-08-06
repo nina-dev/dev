@@ -142,11 +142,10 @@
   <div class="l-content__inner p-page-top--contactTop">
 
    <p class="p-page-top--contactTop__ttl c-contentTtl--primary">contact</p>
-   <p class="p-page-top--contactTop__cache">現在コンタクトフォームは停止しています</p>
    <div class="p-page-top--contactTop__item">
 
     <p class="p-page-top--contactTop__item__text">レスポンシブWebデザインサイト構築・コーポレートサイトやサービス画面のUIデザインなど、お気軽にお問い合わせください。</p>
-    <p class="p-page-top--contactTop__item__btn c-btn--secondary--orange"><a href="#">COMMING SOON</a></p>
+    <p class="p-page-top--contactTop__item__btn c-btn--secondary--orange"><a href="/input">問い合わせしてみる</a></p>
   </div>
 
 </div>
