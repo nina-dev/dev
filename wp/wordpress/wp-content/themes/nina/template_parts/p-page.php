@@ -7,8 +7,10 @@
     ?>
     
     <h2 class="p-page__cache"><?php the_title(); ?></h2>
-    
-    <p class="p-page__img"><?php the_post_thumbnail('post_thumbnail'); ?></p>
+
+    <?php if (has_post_thumbnail()) : ?>
+      <p class="p-page__img"><?php the_post_thumbnail('post_thumbnail'); ?></p>
+    <?php endif ; ?>
     
     <div class="p-page__inner">
 
