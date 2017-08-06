@@ -26,7 +26,7 @@
         </li>
       </ul>
       <p class="p-menu__cta c-btn--secondary--orange">
-        <a href="<?php echo home_url() ?>#">COMMING SOON</a>
+        <a href="<?php echo home_url() ?>/input">お問い合わせ</a>
       </p>
     </nav>
   </div>
