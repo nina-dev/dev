@@ -120,7 +120,7 @@
         font-weight: bold;
     }
 
-    h2, h2, h3, h4, h5, h6, div, table, ol {
+    h5, h6, div, table, ol {
         @include respond(pc) {
             margin-top: 24px;
         }
