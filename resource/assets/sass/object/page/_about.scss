@@ -1,13 +1,33 @@
 .page-about--companyTable {
+	padding: 16px 0 32px 0;
+}
 
-	padding: 16px 0;
+.page-about--companyTable__col {
+	margin-top: 24px;
+	display: table;
 
-	&__col {
-		margin-top: 16px;
+	&:first-child {
+		margin-top: 0px;
+	}
+}
 
-		&:first-child {
-			margin-top: 0px;
-		} 
+.page-about--companyTable__col__item {
+	display: table-cell;
+	@include font-size(14);
+
+	&--ttl {
+		@extend .page-about--companyTable__col__item;
+		width: 10em;
+		padding: 8px 16px;
+		background: $color-gray-f2;
+
+	}
+
+	&--text {
+		@extend .page-about--companyTable__col__item;
+		padding: 0 3.125%;
+		line-height: 2;
+		width: 86%;
 	}
 }
 
@@ -39,16 +59,18 @@
 }
 
 .page-about--profile__item__ttl {
-	margin-top: 0px!important;
+	margin-top: 0px;
 	font-weight: bold;
+	@include font-size(16);
 }
 .page-about--profile__item__subtext {
-	margin-top: 0px!important;
+	@include font-size(12);
 	color: $color-gray-a1;
-	font-size: 13px!important;
+	padding: 4px 0 8px;
 }
 
 .page-about--profile__item__text {
-	margin-top: 8px!important;
-	line-height: 2;
+	line-height: 1.6;
+	@include font-size(14);
+	margin-top: 12px;
 }
