@@ -117,11 +117,12 @@
     }
 
     h4 {
-        @include font-size(16);
+        @include font-size(18);
+        color: $color-main;
 
         @include respond(pc) {
             font-weight: bold;
-            margin-top: 40px!important;
+            margin-top: 32px;
         }
 
     }
@@ -140,6 +141,13 @@
         }
         @include respond(xs) {
             margin-top: 16px;
+        }
+    }
+
+
+    dl {
+        dd {
+            margin-left: 0px;
         }
     }
 
