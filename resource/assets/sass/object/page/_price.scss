@@ -1,26 +1,22 @@
-.page-price--nav {
-	@include css3(display, flex);
-	@include css3(flex-wrap, nowrap);
-	@include css3(flex-direction, row);
-	@include css3(justify-content, center);
+.page-price--item {
 	width: 100%;
-	margin-top: 24px;
-	@include center;
-	padding-bottom: 16px;
+	padding: 24px;
+	margin-top: 8px;
+	border: 1px solid $color-gray-f2;
+	border-top: 2px solid $color-main;
+
+	//@include gradient(#fff, #eee, vertical);
+
 }
 
-.page-price--nav__item {
-
-	//border: 1px solid $color-link;
-	margin: 0 8px;
-	@include font-size(12);
-	border-radius: 8px;
-	padding: 16px;
-	min-width: 29.3%;
-	text-align: center;
-	background: $color-main;
-	color: #fff;
+.page-price--item__text {
 	font-weight: bold;
+	@include font-size(14);
+	margin-top: 12px;
+
+	&:first-child {
+		margin-top: 0px;
+	}	
 }
 
 
@@ -44,7 +40,7 @@
 	padding: 4px  16px;
 	@include font-size(14);
 
-	&--ttl {
+	& {
 		@extend .page-price--table__item;
 		width: 8em;
 		background: $color-gray-f5;
