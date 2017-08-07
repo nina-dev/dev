@@ -47,17 +47,35 @@
     margin-top: 40px;
 
     &:first-child {
-        margin-top: 0px; 
+        margin-top: 0px;
+    }
+}
+
+.p-form__btn {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 64px;
+
+    &__item {
+        width: 60%;
+        margin-left: 8px;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        button {
+            cursor: pointer!important;
+        }
     }
 }
 
 .p-form__status {
     width: 100%;
-    //background: $color-gray-c;
     display: table;
     text-align: center;
     margin-top: 56px;
-    
 
     &__item {
         width: 33.3333%;
