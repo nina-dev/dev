@@ -39,7 +39,7 @@
         <ul class="l-sidebar__col__item">
             <?php query_posts('posts_per_page=4'); ?>
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-                <li class="l-sidebar__col__item__list c-thumbnail--small">
+                <li class="l-sidebar__col__item--list c-thumbnail--small">
                     <div class="c-thumbnail--small__item--img">
                         <a href="<?php the_permalink(); ?>">
                             <div class="photo">

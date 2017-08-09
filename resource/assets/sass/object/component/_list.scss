@@ -1,27 +1,56 @@
 .c-list {
 
 	&--category {
+
+		@include respond(xs) {
+			background: #fff;
+		}
 		
 		li {
-			margin-top: 5px;
+			@include respond(pc) {
+				margin-top: 5px;
+			}
+			
+			@include respond(xs) {
+				border-top: 1px solid $color-gray-f2;
+				position: relative;
+
+				&:first-child {
+					border-top: none;
+				}
+			}
 
 			&:before {
 				color: $color-gray-c;
 				content: " > ";
 				@include font-size(16);
 				margin-right: 0px;
+
+				@include respond(xs) {
+					position: absolute;
+					left: 0;
+					top: 2px;
+				}
 			}
 		}
 
 		a {
 			@include font-size(12);
 			color: $color-link;
-		}
-    
 
+			@include respond(xs) {
+				padding: 8px 3.125% 8px 5.125%;
+				display: block;
+			}
+		}
 	}
 
 	&--tag {
+
+		@include respond(xs) {
+			background: #fff;
+			padding: 8px 3.125%!important;
+		}
 
 		li {
 			display: inline-block;

@@ -4,7 +4,7 @@
     </div>
     <div class="l-sidebar__col">
         <p class="l-sidebar__col__ttl">カテゴリー一覧</p>
-        <ul class="l-sidebar__col__item c-list--category">
+        <ul class="l-sidebar__col__item--list c-list--category">
            <?php
             // カテゴリー一覧を出力
            $args = array(
@@ -82,7 +82,7 @@
           <?php if( $query -> have_posts() && !empty($tag_ids) ): ?>
             <?php while ($query -> have_posts()) : $query -> the_post(); ?>
 
-              <li class="l-sidebar__col__item__list c-thumbnail--small">
+              <li class="l-sidebar__col__item--list c-thumbnail--small">
                 <div class="c-thumbnail--small__item--img">
                   <a href="<?php the_permalink(); ?>">
                     <div class="photo">
@@ -128,7 +128,7 @@
         <?php query_posts('posts_per_page=4'); ?>
 
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-            <li class="l-sidebar__col__item__list c-thumbnail--small">
+            <li class="l-sidebar__col__item--list c-thumbnail--small">
                 <div class="c-thumbnail--small__item--img">
                     <a href="<?php the_permalink(); ?>">
                         <div class="photo">

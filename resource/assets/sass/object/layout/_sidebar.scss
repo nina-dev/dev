@@ -33,6 +33,14 @@
 		padding: 0 3.125%;
 	}
 
+	&--list {
+		@extend .l-sidebar__col__item;
+
+		@include respond(xs){
+			margin: 0 3.125%;
+		}
+	}
+
 }
 
 .l-sidebar__col__item__list {
