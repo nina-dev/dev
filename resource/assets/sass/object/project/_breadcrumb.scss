@@ -1,6 +1,11 @@
 .p-breadcrumb {
 	//@include font-size(10);
 
+	@include respond(xs){
+		padding: 1.125% 3.125%;
+		background: $color-gray-f5;
+	}
+
 	li {
 		margin-left: 24px;
 		display: inline-block;

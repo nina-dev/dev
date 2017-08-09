@@ -84,12 +84,12 @@
 	}
 
 	@include respond(xs) {
-		padding: 16px 4.125% 16px 4.125%;
+		background: #fff;
+		border: 1px solid $color-gray-f2;
+		box-shadow: 0 1px 1px 0 rgba(164,164,164,0.50);
 	}
 
 	&__item {
-
-		
 		
 		@include respond(pc) {
 			margin-top: 8px;
@@ -126,7 +126,6 @@
 			@include respond(tb) {
 				@include font-size(18);
 				margin-top: 16px;
-					//padding: 0 3.125%;
 				text-align: left;
 			}
 
@@ -134,6 +133,7 @@
 				@include font-size(16);
 				margin-top: 8px;
 				text-align: left;
+				padding: 0 3.125% 16px;
 			}
 
 			&--small {

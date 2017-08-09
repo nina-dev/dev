@@ -68,10 +68,6 @@
 			@include clearfix;
 			opacity: 0;
 		}
-			
-		@include respond(xs) {	
-				
-		}
 	}
 
 	@include respond(xs){
@@ -102,6 +98,10 @@
 			background: #fff;
 			z-index: 1;
 		}
+	}
+
+	@include respond(xs){
+		margin-top: 16px;
 	}
 }
 

@@ -1,3 +1,9 @@
+.l-sidebar {
+	@include respond(xs){
+		background: $color-gray-f5;
+	}
+}
+
 .l-sidebar__col {
 	margin-top: 32px;
 
@@ -10,10 +16,23 @@
 	font-weight: bold;
 	@include font-size(12);
 	color: $color-gray-6;
+
+	@include respond(xs){
+		background: $color-main;
+		padding: 4px 3.125%;
+		margin: 0 3.125%;
+		color: #fff;
+
+	}
 }
 
 .l-sidebar__col__item {
 	margin-top: 16px;
+
+	@include respond(xs){
+		padding: 0 3.125%;
+	}
+
 }
 
 .l-sidebar__col__item__list {

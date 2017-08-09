@@ -1,48 +1,91 @@
 .page-about--companyTable {
-	padding: 16px 0 32px 0;
+
+	@include respond(pc) {	
+		padding: 16px 0 32px 0;
+	}
 }
 
 .page-about--companyTable__col {
-	margin-top: 24px;
-	display: table;
+	
 
+	@include respond(pc) {
+		display: table;
+		margin-top: 24px;
+	}
+
+	@include respond(xs) {
+		margin-top: 16px;
+	}
+	
 	&:first-child {
 		margin-top: 0px;
 	}
 }
 
 .page-about--companyTable__col__item {
-	display: table-cell;
+	
 	@include font-size(14);
+
+	@include respond(pc) {
+		display: table-cell;
+	}
 
 	&--ttl {
 		@extend .page-about--companyTable__col__item;
-		width: 10em;
-		padding: 8px 16px;
-		background: $color-gray-f2;
+
+		@include respond(pc) {
+			width: 10em;
+			padding: 8px 16px;
+			background: $color-gray-f2;
+		}
+
+		@include respond(xs) {
+			font-weight: bold;
+			border-bottom: 1px solid $color-main;
+		}
 
 	}
 
 	&--text {
 		@extend .page-about--companyTable__col__item;
-		padding: 0 3.125%;
-		line-height: 2;
-		width: 86%;
+
+		@include respond(pc) {
+			padding: 0 3.125%;
+			line-height: 2;
+			width: 86%;
+		}
+
+		@include respond(xs) {
+			margin-top: 4px;
+			@include font-size(12);
+		}	
 	}
 }
 
 .page-about--profile {
-	display: table;
+
+	@include respond(pc) {
+		display: table;
+	}
+	
 }
 
 .page-about--profile__item {
-	display: table-cell;
-	vertical-align: top;
+
+	@include respond(pc) {
+		display: table-cell;
+		vertical-align: top;
+	}
+	
 
 	&--img {
 		@extend .page-about--profile__item;
 		height: 120px;
 		width: 120px;
+
+		@include respond(xs) {
+			@include center;
+		}
 
 		img {
 			border-radius: 50%;
@@ -53,8 +96,10 @@
 
 	&--detail {
 		@extend .page-about--profile__item;
-		padding-left: 48px;
-
+		
+		@include respond(pc) {
+			padding-left: 48px;
+		}
 	}
 }
 
@@ -62,6 +107,12 @@
 	margin-top: 0px;
 	font-weight: bold;
 	@include font-size(16);
+
+	@include respond(xs) {
+		text-align: center;
+	}
+
+
 }
 .page-about--profile__item__subtext {
 	@include font-size(12);
