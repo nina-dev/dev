@@ -187,3 +187,23 @@ if( !function_exists('pagination') ){
    }
  }
 
+
+ //MW WP Formバリデーション設定----------------------------------------------------------------------------
+/**
+* my_error_message
+* @param string $error
+* @param string $key
+* @param string $rule（半角小文字）
+*/
+function my_error_message( $error, $key, $rule ) {
+if ( $key === 'your_name' && $rule === 'noEmpty' ) return '※名前を入力してください';
+if ( $key === 'your_mail' && $rule === 'mail' ) return '※メールアドレスを入力してください';
+if ( $key === 'chk_mail' && $rule === 'mail' ) return '※メールアドレスの形式ではありません';
+return $error;
+}
+add_filter( 'mwform_error_message_mw-wp-form-2296', 'my_error_message', 10, 3 );
+
+
+
+
+

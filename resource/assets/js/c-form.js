@@ -9,12 +9,12 @@ $(function(){
       });
 
       //textボックスの値が空の場合、エラー文言を表示・非表示
-      $(this).find('.c-form__text').blur(function(){
+      /*$(this).find('.c-form__text').blur(function(){
           if($(this).val() == ''){
               $(this).next('.c-form__attention').addClass('c-form__attention--show');
           }else{
               $(this).next('.c-form__attention').removeClass('c-form__attention--show');
           }
-      })
+      })*/
   });
 })
