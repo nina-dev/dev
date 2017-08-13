@@ -27,26 +27,47 @@
 }
 
 .l-sidebar__col__item {
-	margin-top: 16px;
+	
+
+	@include respond(pc){
+		margin-top: 16px;
+	}
 
 	@include respond(xs){
-		padding: 0 3.125%;
+		background: #fff;
+		margin: 0 3.125%;
+		padding-top: 16px;
 	}
 
 	&--list {
 		@extend .l-sidebar__col__item;
 
 		@include respond(xs){
-			margin: 0 3.125%;
+			padding: 0px 3.125%;
 		}
 	}
 
 }
 
 .l-sidebar__col__item__list {
-	margin-top: 24px;
+
+	@include respond(pc){
+		margin-top: 24px;
+	}
+
+	@include respond(xs){
+		border-top: 1px solid $color-gray-f2;
+		padding: 16px 3.125%;
+		width: 100%;
+	}
 
 	&:first-child {
 		margin-top: 0px;
+		border-top: none;
+
+		@include respond(xs){
+			padding-top: 0px;
+		}
+
 	}
 }

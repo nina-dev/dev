@@ -82,7 +82,7 @@
             border-bottom: 3px solid $color-main;
         }
         @include respond(xs) {
-            @include font-size(18);
+            @include font-size(16);
             line-height: 1.4;
             font-weight: bold;
             margin-top: 24px;
@@ -128,13 +128,15 @@
     p, pre {
         @include font-size(16);
         line-height: 2.3;
+        
+
         @include respond(tb) {
             line-height: 2;
         }
         @include respond(xs) {
-            @include font-size(16);
-            line-height: 1.8;
             color: $color-gray-2;
+            @include font-size(15);
+            line-height: 1.8;
         }
         b {
             font-weight: bold;
@@ -220,7 +222,6 @@
         width: 6px;
         z-index: 2;
         @include respond(xs) {
-            left: -17px;
             top: 8px;
         }
     }

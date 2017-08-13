@@ -1,19 +1,31 @@
 .page-price--item {
 	width: 100%;
-	padding: 24px;
-	margin-top: 8px;
-	border: 1px solid $color-gray-f5;
-	border-top: 2px solid $color-main;
+	
+	@include respond(pc) {
+		padding: 24px;
+		margin-top: 8px;
+		border: 1px solid $color-gray-f5;
+		border-top: 2px solid $color-main;
+	}
 
-	//@include gradient(#fff, #eee, vertical);
-
+	@include respond(xs) {
+		margin-top: 8px;
+		padding: 16px 3.125%;
+		background: $color-gray-f5;
+	}
 }
 
 
 .page-price--item__text {
 	font-weight: bold;
 	@include font-size(14);
-	margin-top: 12px;
+
+	@include respond(pc) {
+		margin-top: 12px;
+	}
+	@include respond(xs) {
+		margin-top: 4px;
+	}
 
 	&:first-child {
 		margin-top: 0px;

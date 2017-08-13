@@ -1,7 +1,6 @@
 .c-thumbnail--small {
 	display: table;
 	overflow: hidden;
-
 }
 
 .c-thumbnail--small__item {
@@ -9,11 +8,12 @@
 
 
 	&--img {
+
 		@extend .c-thumbnail--small__item;
+		height: 64px;
+		width: 64px;
 
 		& .photo {
-			height: 64px;
-			width: 64px;
 			overflow: hidden;
 			background: #ff0000;
 		}
@@ -133,7 +133,6 @@
 				@include font-size(16);
 				margin-top: 8px;
 				text-align: left;
-				padding: 0 3.125% 16px;
 			}
 
 			&--small {

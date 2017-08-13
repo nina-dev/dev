@@ -84,7 +84,7 @@
                 $query = new WP_Query($args); ?>
                 <?php if( $query -> have_posts() && !empty($tag_ids) ): ?>
                     <?php while ($query -> have_posts()) : $query -> the_post(); ?>
-                        <li class="l-sidebar__col__item--list c-thumbnail--small">
+                        <li class="l-sidebar__col__item__list c-thumbnail--small">
                             <div class="c-thumbnail--small__item--img">
                                 <a href="<?php the_permalink(); ?>">
                                     <div class="photo">

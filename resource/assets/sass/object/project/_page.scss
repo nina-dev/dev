@@ -33,8 +33,9 @@
     }
 
     @include respond(xs) {
-        @include font-size(14);
-        line-height: 1.8;
+         color: $color-gray-2;
+         line-height: 1.8;
+         @include font-size(15);
     }
 }
 
@@ -117,17 +118,21 @@
             margin-top: 24px;
             padding: 8px 3.125%;
             border-radius: 2px;
-            background: $color-gray-f5;
+            background: $color-gray-f2;
         }
     }
 
     h4 {
-        @include font-size(18);
+        @include font-size(16);
         color: $color-main;
+        font-weight: bold;
 
         @include respond(pc) {
-            font-weight: bold;
             margin-top: 32px;
+        }
+        @include respond(xs) {
+            margin-top: 16px;
+            @include font-size(16);
         }
 
     }

@@ -7,14 +7,21 @@
 	}
 
 	li {
-		margin-left: 24px;
+		
 		display: inline-block;
 		//border-bottom: 2px solid $color-gray-c;
 		padding-bottom: 6px;
 		@include font-size(12);
 
-		
+		@include respond(pc) {
+			margin-left: 24px;
+		}
 
+		@include respond(xs) {
+			margin-left: 3.125%;
+		}
+
+	
 		&.is-first {
 			display: inline-block;	
 			margin-left: 0px;
@@ -27,8 +34,16 @@
 				font-size:  small; 
 				color: $color-gray-c;
 				position: absolute;
-				right: -17px;
+				right: -3.125%;
 				top: -1px;
+
+				@include respond(pc) {
+					right: -17px;
+				}
+
+				@include respond(xs) {
+					right: -11px;
+				}
 			}
 		}
 	}
