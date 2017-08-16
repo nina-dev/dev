@@ -190,7 +190,10 @@
 		&--fixed {
 
 			@extend .l-header__info__item--left;
-			padding-left: 0%;
+
+			@include respond(pc) {
+				padding-left: 0%;
+			}
 			
 			img {
 				@include respond(xs) {
@@ -198,10 +201,6 @@
 				}
 
 			}
-		}
-
-		@include respond(xs) {
-			padding-left: 5.125%;
 		}
 
 		img {

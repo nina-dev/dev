@@ -2,7 +2,7 @@
 .l-content {
 
 	@include respond(pc){
-		@include widtnPercent( 640, 630 );
+		@include widtnPercent( 640, 640 );
 		@include center;
 		position: relative;
 	}

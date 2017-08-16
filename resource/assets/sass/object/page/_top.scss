@@ -1,25 +1,20 @@
-
 .page-top--main {
 
+	@include center;
+	position: relative;
+
 	@include respond(pc){
-		@include center;
-		//max-width: 1120px;
 		min-height: 800px;
 		width: 1080px;
-		position: relative;
 	}
 
 	@include respond(tb) {
-		@include center;
 		height: 620px;
 		@include widtnPercent( 640, 600 );
-		position: relative;
 	}
 
 	@include respond(xs) {
 		@include widtnPercent( 640, 640 );
-		@include center;
-		position: relative;
 		margin-top:  16px;
 	}
 }
@@ -33,11 +28,11 @@
 	}
 
 	&--bg {
-
 		@extend .page-top--main__item;	
 		background: url('../img/sprite/mainBg.png');
 		@include css3(background-size, cover);
 		z-index: 1;
+		height: 580px;
 
 		@include respond(pc){
 			@include css3(box-shadow, 5px 10px 30px #a3a3a3);
@@ -45,7 +40,7 @@
 			right: 0px;
 			position: absolute;
 			width: 630px;
-			height: 580px;
+			
 		}
 
 		@include respond(tb) {
@@ -54,7 +49,6 @@
 			right: 1.125%;
 			position: absolute;
 			width: 80%;
-			height: 580px;
 		}
 
 		@include respond(xs) {
@@ -69,7 +63,7 @@
 
 	&--text {
 		@extend .page-top--main__item;
-		//background: #fff;
+
 		@include respond(pc){
 			@include font-size(17);
 			font-weight: bold;
@@ -87,7 +81,7 @@
 			left: 0px;
 			line-height: 2;
 			top: 350px;
-			width: 400px	;
+			width: 400px;
 			position: absolute;
 			z-index: 2;
 			background: #fff;
@@ -168,6 +162,7 @@
 }
 
 .p-aboutTop__inner__ttl  {
+
 	@include respond(pc){
 		margin-left: -130px;
 	}
@@ -274,14 +269,16 @@
 		@include center;
 	}
 }
+
 .page-top--introduction__cache {
 
 	font-weight: bold;
 	text-align: left;
 	color: $color-cache;
+	@include font-size(28);
 
 	@include respond(pc) {
-		@include font-size(32);
+		
 		padding-top: 80px;
 		left: -192px;
 		position: relative;
@@ -289,7 +286,6 @@
 	}
 
 	@include respond(tb) {
-		@include font-size (28);
 		text-align: center;
 		line-height: 1.6;
 		padding: 0 4.125%;
@@ -325,7 +321,9 @@
 		margin-top: 32px;
 		font-weight: bold;
 	}
+
 	&--cache {
+
 		@extend .page-top--introduction__item__text;
 		
 		@include respond(pc) {
@@ -442,23 +440,21 @@
 .page-top--service__cache {
 
 	font-weight: bold;
-	@include font-size(30);
+	@include font-size(28);
 	margin-top: 60px;
 	color: $color-cache;
 
 	@include respond(tb) {
-		@include font-size(28);
 		text-align: center;
 		margin-top: 24px;
 	}
 
 	@include respond(xs) {
 		margin-top: 24px;
-		@include font-size(18);
+		@include font-size(16);
 		line-height: 1.4;
 		text-align: center;
 		@include widtnPercent( 640, 540 );
-		text-align: center;
 		@include center;
 		color: #000;
 	}
@@ -499,6 +495,7 @@
 }
 
 .page-top--service__ttl {
+
 	@include respond(xs){
 		@include center;
 	}
@@ -536,14 +533,13 @@
 	@include center;
 
 	@include respond(pc) {
-		@include widtnPercent( 640, 580 );
-		max-width: 1280px;
-		background: #fff;
-		@include css3(box-shadow, 5px 15px 50px #a3a3a3);
-		padding: 40px 16px 24px;
-		margin-top: 42px;
+		@include widtnPercent( 640, 640 );
+		max-width: 1200px;
+		padding: 0 0 24px;
+		margin-top: 48px;
 		@include css3(display, flex);
 		@include css3(flex-wrap, wrap);
+		@include css3(justify-content, center);
 	}
 
 	@include respond(tb) {
@@ -571,17 +567,14 @@
 
 .page-top--service__item__col {
 
+	background: #fff;
+
 	@include respond(pc) {
-		//-webkit-box-shadow:0px 0px 13px -4px #adadad;
-		background: #fff;
 		@include widtnPercent( 618, 186 );
-		margin: 0 1.61%;
-		
+		margin: 0 1.61%;	
 	}
 
 	@include respond(tb) {
-		//-webkit-box-shadow:0px 0px 13px -4px #adadad;
-		background: #fff;
 		margin: 32px 0 0;
 		padding: 32px 6.125% 24px;
 		border-top: 3px solid $color-gray-c;
@@ -594,7 +587,6 @@
 	}
 
 	@include respond(xs) {
-		background: #fff;
 		border-top: 2px solid $color-gray-c;
 		padding: 24px 5.125% 16px;
 		//margin-top: 16px;
@@ -627,7 +619,7 @@
 	}
 
 	@include respond(tb) {
-		padding: 60px .6% 40px;
+		padding: 60px 0.6% 40px;
 		margin-top: 60px;
 		border-top: 24px solid #eee;
 	}
@@ -645,44 +637,6 @@
 	}
 }
 
-.page-top--service__cache {
-
-	font-weight: bold;
-	@include font-size(30);
-	margin-top: 60px;
-	color: $color-cache;
-	
-	@include respond(tb) {
-		@include font-size(28);
-		text-align: center;
-		margin-top: 24px;
-	}
-
-	@include respond(xs) {
-		margin-top: 24px;
-		@include font-size(18);
-		line-height: 1.4;
-		text-align: center;
-		@include widtnPercent( 640, 540 );
-		text-align: center;
-		@include center;
-		color: #000;
-	}
-
-	&--secondary {
-		@extend .page-top--service__cache;
-		@include font-size(28);
-	}
-}
-
-.page-top--service__category {
-	
-	@include respond(pc) {
-		margin-top: 32px;
-		width: 240px;
-		@include center;
-	}
-}
 
 .page-top--service__text {
 
@@ -705,6 +659,7 @@
 }
 
 .page-top--service__ttl {
+
 	@include respond(xs){
 		@include center;
 	}
@@ -714,71 +669,11 @@
 	}
 }
 
-.page-top--service__item__text {
-	
-	@include respond(pc) {
-		margin-top: 40px;
-	}
-}
 
-
-
-.page-top--service__item__img {
-
-	@include respond(pc) {
-		text-align: center;
-		width: 100%;
-		overflow: hidden;
-		@include center;
-	}
-
-	img {
-		width: 100%;
-	}
-}
-
-.page-top--service__item {
-
-	@include center;
-
-	@include respond(pc) {
-		@include widtnPercent( 640, 580 );
-		max-width: 1280px;
-		background: #fff;
-		@include css3(box-shadow, 5px 15px 50px #a3a3a3);
-		padding: 40px 16px 24px;
-		margin-top: 42px;
-		@include css3(display, flex);
-		@include css3(flex-wrap, wrap);
-	}
-
-	@include respond(tb) {
-		width: 100%;
-		margin-top: 24px;
-	}
-
-	@include respond(xs) {
-		background: #fff;
-		width: 100%;
-		margin-top: 24px;
-	}
-
-	&--secondary {
-		@extend .page-top--service__item;
-
-		@include respond(pc) {
-			width: 100%;
-			padding: 0px 0 60px 0;
-			margin-top: 60px;
-		}
-	}
-
-}
 
 .page-top--service__item__col {
 
 	@include respond(pc) {
-		//-webkit-box-shadow:0px 0px 13px -4px #adadad;
 		background: #fff;
 		@include widtnPercent( 618, 186 );
 		margin: 0 1.61%;
@@ -786,7 +681,6 @@
 	}
 
 	@include respond(tb) {
-		//-webkit-box-shadow:0px 0px 13px -4px #adadad;
 		background: #fff;
 		margin: 32px 0 0;
 		padding: 32px 6.125% 24px;
@@ -850,7 +744,7 @@
 	color: $color-cache;
 
 	@include respond(pc) {
-		@include font-size(30);
+		@include font-size(28);
 		margin-top: 40px;
 	}
 
@@ -860,7 +754,7 @@
 	}
 
 	@include respond(xs) {
-		@include font-size(18);
+		@include font-size(16);
 		line-height: 1.4;
 		margin-top: 24px;
 		@include widtnPercent( 640, 540 );
@@ -892,6 +786,7 @@
 		width: 920px;
 		@include css3(display, flex); 
 		@include css3(flex-wrap, wrap);
+		@include css3(justify-content, center);
 	}
 	@include respond(tb) {
 		margin-top: 32px;
@@ -906,35 +801,27 @@
 		margin-top: 24px;
 		padding: 0px;
 		background: #eee;
-		padding: 12px 3.125%;
+		padding: 12px 0;
 		
 	}
+}
 
-	> li {
-		@include respond(pc) {
-			width: 50%;
-			padding: 24px 2.125%;
-		}
+.page-top--works__item__col {
 
-		@include respond(tb) {
-			background: #fff;
-			@include widtnPercent( 640, 560 );
-			@include center;
-			margin-top: 24px;
-			
-			&:first-child {
-				margin-top: 0px;
-			}
-		}
+	@include respond(pc) {
+		width: 47%;
+		margin: 8px 1.125%;
+		//padding: 24px 2.125%;
+	}
 
-		@include respond(xs) {
-			background: #fff;
-			@include center;
-			border-top: 1px solid $color-gray-c;
-			
-			&:first-child {
-				border-top: none;
-			}
+
+	@include respond(xs) {
+		background: #fff;
+		margin: 12px 3.125% 0;
+		padding: 3.125% 3.125% 12px 3.125%;
+
+		&:first-child {
+			margin-top: 0px;
 		}
 	}
 }
@@ -1003,7 +890,6 @@
 
 
 .p-page-top--contactTop__item {
-
 	
 	@include respond(pc) {
 		//@include gradient(#5D6FE8, #4B5EDA, vertical);

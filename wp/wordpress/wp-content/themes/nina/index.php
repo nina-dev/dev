@@ -115,22 +115,22 @@
    <h3 class="page-top--works__cache">さまざまなサイト提案・運用に携わってきました</h3>
    <p class="page-top--works__text">才能やひらめきだけでデザインするだけではなく、伝えたいコトの要素を丁寧に整理し、「伝わる」をデザインします。</p>
    <ul class="page-top--works__item">
-    <li class="c-thumbnail--large">
+    <li class="page-top--works__item__col c-thumbnail--large">
      <p class="c-thumbnail--large__item--img"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/thumnail/bitmap01.png"></p>
      <p class="c-thumbnail--large__item--ttl">都内商業施設</p>
      <p class="c-thumbnail--large__item--text">デザイン・ディレクション</p>
    </li>
-   <li class="c-thumbnail--large">
+   <li class="page-top--works__item__col c-thumbnail--large">
      <p class="c-thumbnail--large__item--img"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/thumnail/bitmap08.png"></p>
      <p class="c-thumbnail--large__item--ttl">某コンベンション キャンペーン</p>
      <p class="c-thumbnail--large__item--text">デザイン</p>
    </li>
-   <li class="c-thumbnail--large">
+   <li class="page-top--works__item__col c-thumbnail--large">
      <p class="c-thumbnail--large__item--img"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/thumnail/bitmap09.png"></p>
      <p class="c-thumbnail--large__item--ttl">コーポレートサイト</p>
      <p class="c-thumbnail--large__item--text">デザイン・ディレクション</p>
    </li>
-   <li class="c-thumbnail--large">
+   <li class="page-top--works__item__col c-thumbnail--large">
      <p class="c-thumbnail--large__item--img"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/thumnail/bitmap13.png"></p>
      <p class="c-thumbnail--large__item--ttl">商業施設コンペ提案案件</p>
      <p class="c-thumbnail--large__item--text">デザイン</p>

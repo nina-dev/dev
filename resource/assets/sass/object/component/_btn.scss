@@ -180,15 +180,14 @@
 
     > a {
         @include respond(pc) {
-            width: 57%;
+            width: 48%;
             height: 50px;
-            line-height: 50px;
+            line-height: 55px;
             font-weight: bold;
             position: relative;
             display: inline-block;
             text-align: center;
-            
-
+            @include font-size(12);
             
             &:after {
                 content: "";
@@ -197,7 +196,7 @@
                 right: 0;
                 bottom: 0;
                 width: 100%;
-                height: 2px;
+                height: 1px;
                 background: #333;
                 @include css3(transition, width .4s);
                 
@@ -205,8 +204,6 @@
         }
 
         &:hover {
-
-            
             
             &:after {
                 content: "";
@@ -215,7 +212,7 @@
                 right: 0;
                 bottom: 0;
                 width: 0%;
-                height: 3px;
+                height: 1px;
                 background: #333;
                 
             }

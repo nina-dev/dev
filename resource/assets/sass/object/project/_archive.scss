@@ -31,17 +31,29 @@
     }
     @include respond(xs) {
         line-height: 1.5;
-        @include font-size(18);
-        padding: 0 8.125% 0;
+        @include font-size(14);
+        text-align: left;
+        padding: 0 3.125%;
+        color: $color-main;
     }
 }
 
 .p-archive__inner {
     margin-top: 32px;
+
+    @include respond(xs) {
+        margin-top: 8px;
+        padding-bottom: 16px;
+        background: #fff;
+    }
 }
 
 .p-archive__inner__col {
     margin-top: 24px;
+
+    @include respond(xs) {
+        margin-top: 2px;
+    }
 
     &:first-child {
         margin-top: 0px;
